@@ -1,0 +1,81 @@
+.benefits2-section{
+    position: relative;
+    width: 100%!important;
+    background-color: #f7f7f7!important;
+  }
+
+
+.benefit-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+}
+/* Rectangles */
+.benefit{
+  display: flex; 
+  flex-direction: column;
+  min-height: min-content;
+  width: 90%;
+  margin: 5%;
+  border-radius: 20px;
+}
+.benefit-title{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30%;
+}
+.benefit-title img{
+  margin: 10px;
+  width: 20%;
+  max-height: 50px;
+
+}
+
+
+.benefit-text{
+  display:flex;
+  flex-direction: row;
+  height: 70%;
+}
+.benefit-text img{
+  margin: 10px;
+  width: 20%;
+  max-height: 50px;
+  border:none;
+  outline: none;
+}
+.benefit-text p{
+  width: 80%;
+  height: 100%;
+  margin: 10px;
+  font-family: Outfit;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.tool h2{
+    color: #425DA7!important;
+    word-break: break-all;
+}
+.tool li{
+    color: #425DA7!important;
+}
+
+.homestaging h2{
+    color: #00B4CE!important;
+}
+.homestaging li{
+    color: #00B4CE!important;
+}
+
+.shop h2{
+    color: #585BA5!important;
+}
+.shop li{
+    color: #585BA5!important;
+}
+

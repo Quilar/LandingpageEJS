@@ -1,0 +1,28 @@
+/* Styles for screen width below 500px*/
+@media (width < 500px) {
+    .illustration-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    .illustration-arrow{
+        transform: rotate(90deg);
+    }
+}
+
+
+
+/* Styles for screen width over 500px*/
+@media (width > 501px) {
+    .illustration-section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5%;
+    }
+}
+

@@ -1,0 +1,129 @@
+.benefits-section{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    width: 100%!important;
+  }
+
+
+.bulletpoint-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+/* Rectangles */
+.bulletpoint{
+  display: flex; 
+  flex-direction: column;
+  min-height: min-content;
+  width: 90%;
+  margin: 5%;
+  border-radius: 20px;
+}
+.bulletpoint-title{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30%;
+}
+.bulletpoint-title img{
+  margin: 10px;
+  width: 20%;
+  max-height: 50px;
+
+}
+.bulletpoint-title h3{
+  display: flex;
+  align-items: flex-end;
+  width: 80%;
+  height: 100%;
+  margin: 10px;
+  font-family: Outfit;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.bulletpoint-text{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70%;
+}
+.bulletpoint-text img{
+  margin: 10px;
+  width: 20%;
+  max-height: 50px;
+}
+.bulletpoint-text p{
+  width: 80%;
+  height: 100%;
+  margin: 10px;
+  font-family: Outfit;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+/* Rectangle 1*/
+.individuell{
+  background: #435DA3;
+}
+
+/* Rectangle 2*/
+.zeit{
+  background: #20B3CC;
+}
+/* Rectangle 3*/
+.sicherheit{
+  background: #585BA1;
+}
+
+
+/* Value Proposition */
+.value-proposition-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.vp-text{
+  font-family: Outfit;
+  font-size: 18px;
+  text-align: center;
+  color: #00B4CE!important;
+  line-height: 1.5em;
+  margin: 1em;
+}
+
+.vp-cta{
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border: none;
+  background-color: #FC9946;
+  border-radius: 50px;
+  width: 250px;
+  font-size: 28px;
+  margin: 1em 0;
+  font-family: Outfit;
+  position: relative;
+  cursor: pointer;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+
+.vp-cta:hover{
+  width: 300px;
+}
+
+.vp-cta a{
+  color: white;
+  margin: 5px;
+  font-family: Outfit;
+}

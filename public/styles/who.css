@@ -1,0 +1,15 @@
+.who-section{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    width: 100%!important;
+    background-color: rgba(0,180,206,0.4)!important;
+  }
+
+  .who-section p{
+    margin: 5%;
+    color: #585BA5!important;
+    font-weight: 500;
+    line-height: 2em;
+    text-align: center;
+  }

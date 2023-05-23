@@ -1,0 +1,30 @@
+.showcase-section{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    padding:5%;
+}
+
+.showcase-section p{
+    text-align: left;
+}
+
+.showcase-container-left{
+    width:50%;
+}
+.showcase-container-right{
+    width:50%;
+}
+.showcase-video {
+    position: relative;
+    width: 90%;
+    object-fit: cover;
+}
+.showcase-container-right-title{
+    font-size: 39px;
+    font-weight: 800;
+    color: #585BA5!important;
+}
+.showcase-container-right-text{
+    color: #00b4ce;
+}
