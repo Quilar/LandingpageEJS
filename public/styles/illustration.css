@@ -1,5 +1,5 @@
 
-.illustration-section{
+.illustration-image{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,10 +11,14 @@
     transform: rotate(90deg);
 }
 
+.illustration-text p{ 
+    color: #00B4CE!important;
+    text-align: center;
+}
 
 /* Desktop screens */
 @media only screen and (min-width: 992px){
-    .illustration-section{
+    .illustration-image{
         flex-direction: row;
     }
     .illustration-arrow{transform: rotate(0);}
