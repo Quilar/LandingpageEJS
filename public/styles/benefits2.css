@@ -7,7 +7,7 @@
 
 .benefit-group{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: stretch;
 }
@@ -33,7 +33,6 @@
 
 }
 
-
 .benefit-text{
   display:flex;
   flex-direction: row;
@@ -42,24 +41,15 @@
 .benefit-text img{
   margin: 10px;
   width: 20%;
-  max-height: 50px;
-  border:none;
-  outline: none;
+  height: 0;
 }
-.benefit-text p{
-  width: 80%;
-  height: 100%;
-  margin: 10px;
-  font-family: Outfit;
-  color: white;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 18px;
-}
+
+
+.benefit-text ul{width:80%;}
+
 
 .tool h2{
     color: #425DA7!important;
-    word-break: break-all;
 }
 .tool li{
     color: #425DA7!important;
@@ -79,3 +69,12 @@
     color: #585BA5!important;
 }
 
+/* Desktop screens */
+@media only screen and (min-width: 992px){
+  .benefit-group{
+    flex-direction: row;
+  }
+
+  .benefit h1{font-size:20px;}
+  .benefit p{font-size: 20px;}
+}
