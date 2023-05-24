@@ -1,0 +1,46 @@
+
+.team-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.team-section h1 {color: #425DA7!important;}
+.profiles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.profile li{color: #666;}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10%;
+}
+
+.profile img{
+    width: 100%;
+}
+
+.momo h2{color: #425DA7!important;}
+.andy h2{color:#00B4CE!important;}
+.max h2{color: #585BA5!important;}
+
+
+
+
+/* Desktop screens */
+@media only screen and (min-width: 992px){
+
+    .profiles{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .profile{
+        margin: 1%;
+        width: 33%;
+    }
+}
