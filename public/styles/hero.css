@@ -47,15 +47,10 @@
 @media only screen and (min-width: 992px){
   
   .hero-section {
-      position: relative;
-      min-width: 100%!important;
-      display: flex;
-      max-height: 100%;
-      background-color: #1A1919;
+      height: 100vh;
     }
     
     .hero-section video {
-      position: relative;
       margin-left: 25%;
       width: 75%;
       right: 0;
@@ -64,69 +59,17 @@
       pointer-events: none;  
     }
 
-    .gradient-overlay {
-      position: absolute;
-      width: 100%!important;
-      height: 100%;
-      background: rgb(0,180,206);
-      background: linear-gradient(0deg, rgba(0,180,206,0.5862068965517242) 0%, rgba(66,93,167,0.3236074270557029) 100%);
-      z-index: 2;
-    }
      
     .hero-content {
       position: absolute;
-      display: flex;
-      flex-direction: column;
       align-items: flex-start;
-      justify-content: space-evenly;
-      height: 80vh;
-      width: 50%;
-      padding-left: 2%;
-      text-align: left;
-      color: #fff;
-      z-index:3;
+      justify-content:start;
+      max-height: 80vh;
+      max-width: 60%;
+      padding-left: 5%;
     }
-    
-    .title {
-      font-size: 34px;
-      text-align: start;
-      margin: 1em 0;
-      font-family: Outfit;
-    }
-    
-    .paragraph {
-      font-size: 20px;
-      margin: 1em 0;
-      text-align: start;
-      font-family:Outfit;
-      line-height: 1.5em;
-    }
-  
-    .call2action{
-      justify-content: center;
-      align-items: center;
-      padding: 10px 0;
-      border: none;
-      background-color: #FC9946;
-      border-radius: 50px;
-      width: 250px;
-      font-size: 28px;
-      margin: 1em 0;
-      font-family: Outfit;
-      position: relative;
-      cursor: pointer;
-      transition: width 0.3s;
-      overflow: hidden;
-    }
-  
-    .call2action:hover{
-      width: 300px;
-    }
-  
-    .call2action a{
-      color: white;
-      margin: 5px;
-      font-family: Outfit;
-    }
+
+    .title{text-align: start; margin-top: 1vh;}
+    .paragraph{text-align: start;}
 
 }

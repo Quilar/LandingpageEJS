@@ -6,7 +6,7 @@ header{
     z-index:9999;
 }
 
-nav{
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +24,6 @@ nav{
 
 .burger{
     margin:20px;
-    
     display: block;
 }
 
@@ -38,7 +37,6 @@ nav{
     background: #585BA1;
     margin:0;
     height: 0vh;
-    opacity: 0;
     transition: height 0.3s ease-in-out;
 }
 
@@ -51,9 +49,12 @@ body.open .navbar-links{
 
 
 .nav-item{
+    display: none;
     list-style: none;
     margin:10px;
 }
+
+body.open .nav-item{display:unset}
 
 .nav-link{
     text-decoration: none;
@@ -75,13 +76,16 @@ body.open .navbar-links{
     border-color: #FC9946;
     border-style: solid;
     background: none;
-    width: fit-content;
+    min-width: unset;
+    min-height: unset;
+    margin: unset;
 }
 
 
 @media only screen and (min-width: 992px){
 
     .burger {display:none;}
+    .nav-item{display: unset;}
     .menu-icon{
         opacity: 0;
     }
