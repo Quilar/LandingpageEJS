@@ -84,6 +84,9 @@ body.open .nav-item{display:unset}
 
 @media only screen and (min-width: 992px){
 
+    header{
+        height: 100px;
+    }
     .burger {display:none;}
     .nav-item{display: unset;}
     .menu-icon{

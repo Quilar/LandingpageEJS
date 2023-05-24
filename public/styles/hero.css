@@ -1,7 +1,7 @@
 .hero-section {
   position: relative;
   min-width: 100%!important;
-  height: calc(100vh-150px);
+  min-height: calc(100vh-150px);
   display: flex;
   flex-direction: column;
   background-color: #1A1919;
