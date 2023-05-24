@@ -1,19 +1,14 @@
 .showcase-section{
     position: relative;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     padding:5%;
 }
 
-.showcase-section p{
-    text-align: left;
-}
-
 .showcase-container-left{
-    width:50%;
-}
-.showcase-container-right{
-    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .showcase-video {
     position: relative;
@@ -21,10 +16,25 @@
     object-fit: cover;
 }
 .showcase-container-right-title{
-    font-size: 39px;
-    font-weight: 800;
     color: #585BA5!important;
 }
 .showcase-container-right-text{
     color: #00b4ce;
+}
+
+/* Desktop screens */
+@media only screen and (min-width: 992px){
+
+    .showcase-section{
+        flex-direction: row;
+        padding: unset;
+    }
+        
+    .showcase-container-left{
+        width:50%;
+    }
+    .showcase-container-right{
+        width:50%;
+    }
+
 }
