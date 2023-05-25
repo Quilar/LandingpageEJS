@@ -37,6 +37,12 @@ h2{
     font-family: Outfit;
     font-weight: 400;
 }
+h3{
+    font-size: 50px;
+    margin: 1em 0;
+    font-family: Outfit;
+    font-weight: 400;
+}
 
 a{
     font-family: Outfit;
@@ -48,6 +54,8 @@ p, li{
     margin: 1em 0;
     font-family:Outfit;
     line-height: 1.5em;
+    width: 90%;
+    word-break: break-word;
   }
   
 
@@ -79,6 +87,9 @@ p, li{
     }
     h2{
         font-size: 40px;
+    }
+    h3{
+        font-size: 30px;
     }
     p, li{
         font-size: 30px;

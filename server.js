@@ -1,4 +1,5 @@
 var express = require('express');
+const fs = require('fs');
 var app = express();
 
 // set the view engine to ejs
@@ -8,9 +9,18 @@ app.use(express.static('public'));
 // use res.render to load up an ejs view file
 
 // index page
-app.get('/', function(req, res) {
+app.get('/', async(req, res) => {
   console.log("request incoming");
-  res.render('pages/index');
+try{
+  const news = await fs.promises.readFile(`${__dirname}/public/content/news/news.json`);
+  
+  if(news) res.render('pages/index', {news: JSON.parse(news)});
+  else throw Error("Ein Server Error ist aufgetreten");
+}
+catch(err){
+  res.status(404).render(404);
+}
+  
 });
 
 // about page
