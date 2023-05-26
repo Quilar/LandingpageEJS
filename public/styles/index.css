@@ -58,6 +58,10 @@ p, li{
     word-break: break-word;
   }
   
+span{
+    font-family: Outfit;
+    font-size: 30px;
+}
 
 @media only screen and (min-width:992px) {
     main{
@@ -94,6 +98,7 @@ p, li{
     p, li{
         font-size: 30px;
     }
+    span{ font-size: 20px;}
 
 
 
