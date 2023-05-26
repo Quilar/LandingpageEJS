@@ -1,4 +1,4 @@
-function initializeCarousel() {
+function initializeNewsCarousel() {
     var carousel = $('.carousel');
     var carouselWrapper = $('.carousel-items');
     var carouselItems = $('.carousel-item');
@@ -91,4 +91,4 @@ function initializeCarousel() {
     }
 };
 
-$(document).ready(()=>initializeCarousel());
+$(document).ready(()=>initializeNewsCarousel());

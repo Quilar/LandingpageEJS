@@ -1,12 +1,11 @@
-function initializeCarousel() 
+function initializeTestimonialsCarousel() 
 {
     var carousel = $('.testimonials');
     var carouselWrapper = $('.testimonial-items');
     var carouselItems = $('.testimonial-item');
-    var prevButton = $('.handle-left');
-    var nextButton = $('.handle-right');
+    var prevButton = $('.testimonials-handle-left');
+    var nextButton = $('.testimonials-handle-right');
     var dots = $('.testimonial-dot');
-    const mobile = window.screen.width < 992 ? true : false;
     
     var currentItem = 0;
 
@@ -95,4 +94,4 @@ function initializeCarousel()
     updateCarousel();
 };
 
-$(document).ready(()=>initializeCarousel());
+$(document).ready(()=>initializeTestimonialsCarousel());

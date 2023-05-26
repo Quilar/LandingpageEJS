@@ -16,6 +16,12 @@
     transform: rotate(90deg);
 }
 
+.illustration-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .illustration-text p{ 
     color: #00B4CE!important;
     text-align: center;

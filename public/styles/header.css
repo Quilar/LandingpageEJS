@@ -31,7 +31,7 @@ header{
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    width: 100%!important;
+    width: 100%;
     top: 150px;
     left: 0;
     background: #585BA1;
@@ -51,6 +51,7 @@ body.open .navbar-links{
 .nav-item{
     display: none;
     list-style: none;
+    line-height: unset;
     margin:10px;
 }
 
@@ -58,7 +59,6 @@ body.open .nav-item{display:unset}
 
 .nav-link{
     text-decoration: none;
-    font-family: 'Outfit',Helvetica,Arial,Lucida,sans-serif;
     font-weight: 600;
     font-size: 22px;
     text-align: right;
@@ -89,6 +89,7 @@ body.open .nav-item{display:unset}
     }
     .burger {display:none;}
     .nav-item{display: unset;}
+    .nav-item{width:auto;}
     .menu-icon{
         opacity: 0;
     }
@@ -104,11 +105,11 @@ body.open .nav-item{display:unset}
         justify-content: flex-end;
         align-items: center;
         position: unset;
-        width: 90%;
+        width: 80%;
         opacity: 1;
         background-color: none;
         list-style-type: disc;
     }
-    
+
 
 }

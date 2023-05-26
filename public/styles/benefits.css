@@ -103,12 +103,13 @@
     height: 100%;
   }
 
-/* Value Proposition */
-.value-proposition-right{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-}
+  /* Value Proposition */
+  .value-proposition-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
 
+  .vp-text{font-size: 30px;}
 }

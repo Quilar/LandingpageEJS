@@ -63,13 +63,14 @@
     .hero-content {
       position: absolute;
       align-items: flex-start;
-      justify-content:start;
-      max-height: 80vh;
+      justify-content:space-evenly;
+      height: 80vh;
       max-width: 60%;
       padding-left: 5%;
     }
 
     .title{text-align: start; margin-top: 1vh;}
     .paragraph{text-align: start;}
+
 
 }

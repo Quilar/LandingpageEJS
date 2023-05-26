@@ -74,7 +74,12 @@
   .benefit-group{
     flex-direction: row;
   }
-
+  .benefit ul{
+    padding-inline-start: 0;
+  }
+  .benefit{
+    margin: 10px;
+  }
   .benefit h1{font-size:20px;}
   .benefit p{font-size: 20px;}
 }

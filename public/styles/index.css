@@ -16,7 +16,7 @@ main{
 
 button{
     min-height: 100px;
-    min-width: 350px;
+    min-width: 200px;
     margin: 5em;
     cursor: pointer;
     border-radius: 50px;
@@ -29,13 +29,13 @@ h1{
     font-size: 70px;
     margin: 1em 0;
     font-family: Outfit;
-    font-weight: 500;
+    font-weight: 600;
 }
 h2{
     font-size: 60px;
     margin: 1em 0;
     font-family: Outfit;
-    font-weight: 400;
+    font-weight: 500;
 }
 h3{
     font-size: 50px;
@@ -79,21 +79,20 @@ span{
     }
 
     a{
+        font-size: 30px;
         margin: 0 0.5em;
     }
 
-    button:hover{
-        min-width: 350px;
-    }
 
     h1{
-        font-size: 50px;
-    }
-    h2{
         font-size: 40px;
     }
-    h3{
+    h2{
         font-size: 30px;
+
+    }
+    h3{
+        font-size: 24px;
     }
     p, li{
         font-size: 20px;
