@@ -1,0 +1,17 @@
+[
+    {
+        "id":0,
+        "name": "Julia",
+        "testimonie": "Ich habe die App genutzt, um meine neue Wohnung einzurichten und ich bin begeistert von der Genauigkeit des Grundrisses. Ohne die Möglichkeit, die Einrichtungsgegenstände in die Räume zu platzieren, hätten wir nicht gesehen, dass eine Kücheninsel definitiv nicht in die Wohnung passt. Das hat uns vor einer teuren Fehlentscheidung bewahrt. Ich kann die App nur weiterempfehlen."
+    },
+    {
+        "id":1,
+        "name": "Thomas",
+        "testimonie": "Die App hat mir geholfen, meine Wohnungssuche zu vereinfachen. Mit der Augmented Reality-Funktion konnte ich mir die Räume in Echtzeit anschauen und die Einrichtungsgegenstände ausprobieren, bevor ich mich für eine Wohnung entschieden habe. Das hat mir Zeit und Enttäuschung erspart."
+    },
+    {
+        "id":2,
+        "name": "Mari",
+        "testimonie": "Ich bin Immobilienmakler und die App hat meine Arbeit erleichtert. Ich kann meinen Kunden jetzt virtuelle Besichtigungen anbieten und ihnen die Möglichkeit geben, die Immobilie mit verschiedenen Einrichtungsoptionen zu visualisieren. Das hat dazu beigetragen, dass ich schneller verkaufen konnte."
+    }
+]

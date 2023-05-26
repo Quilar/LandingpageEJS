@@ -1,0 +1,34 @@
+<head>
+    <link rel="stylesheet" href="styles/testimonials.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/testimonials-carousel.js"></script>
+</head>
+<section class="testimonials-section">
+    <h1>Testimonials</h1>
+    <div class="testimonials">
+      <span class="handle handle-left">&#8249;</span>
+        <div class="slider">
+          <div class="testimonial-items">
+            <% if (testimonials.length > 0) { %>
+              <% testimonials.forEach( doc => { %>
+                <div class="testimonial-item" id="<%=doc.id%>">
+                  <p>"<%= doc.testimonie %>"</p>
+                  <span><%= doc.name %></span>
+                </div>
+              <% }) %>
+            <% } else{ %>
+              <p>Keine Daten verfügbar</p>
+            <% } %>
+          </div>          
+        </div>
+        <span class="handle handle-right">&#8250;</span>
+        </div>
+    <div class="testimonials-dots">
+      <% if (testimonials.length > 0) { %>
+        <% testimonials.forEach( doc => { %>
+          <img class="testimonial-dot<%= (doc.id === 0) ? ' active-dot' : '' %>"/>
+        <% }) %>
+      <% } %>
+    </div>
+
+</section>

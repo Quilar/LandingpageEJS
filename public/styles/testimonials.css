@@ -1,0 +1,117 @@
+:root{
+    --slider-padding: 5%;
+}
+.testimonials-section{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.testimonials-section h1{
+    text-align: center;
+    color: #425DA7!important;
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;    
+    width: 100%;
+}
+
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-shadow: 0px 2px 20px 0px rgba(110,130,208,0.18);
+    overflow: hidden;
+}
+
+
+
+.testimonial-items{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: stretch;
+    width: 100%;    
+}
+
+.testimonial-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+    min-width: 80%!important;
+    margin: 10%;
+    opacity: 0;
+    
+}
+
+.testimonial-item span{
+    height: 5%;
+    color:#425DA7;
+}
+
+.testimonial-item p{
+    max-width: 100%;
+    height: 50%;
+    word-wrap: break-word;
+    color:#425DA7;
+}
+
+.handle{
+    width: var(--slider-padding);
+    font-size: 100px;
+    color: #425DA7;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.testimonials-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+}
+
+.testimonial-dot {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #00b4ce;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0.5rem;
+    position: relative;  
+}
+
+.active-dot{
+    background-color: #425DA7;
+}
+  
+  
+/* Desktop screens */
+@media only screen and (min-width: 992px){
+    .carousel-item{
+        min-width: 40%!important;
+        margin: 5%;
+    }
+    .testimonial-dot{
+        width: 1rem;
+        height: 1rem;
+    }
+    .testimonials-dots{
+        padding: 2%;
+    }
+}
+
+@media only screen and (min-width: 992px){}
