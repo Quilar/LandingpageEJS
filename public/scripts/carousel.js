@@ -5,15 +5,19 @@ function initializeCarousel() {
     var prevButton = $('.handle-left');
     var nextButton = $('.handle-right');
     var dots = $('.dot');
+    const mobile = window.screen.width < 992 ? true : false;
 
+    
     var currentItem = 0;
 
     prevButton.click(function() {
+        if(!mobile) currentItem = (currentItem === 0) ? (carousel.length)/2 -1 : currentItem-1;
         currentItem = (currentItem === 0) ? carouselItems.length - 1 : currentItem - 1;
         updateCarousel();
     });
 
     nextButton.click(function() {
+        if(!mobile) currentItem = (currentItem === (carousel.length)/2 -1) ? 0 : currentItem +1 ;
         currentItem = (currentItem === carouselItems.length - 1) ? 0 : currentItem + 1;
         updateCarousel();
     });
@@ -24,12 +28,21 @@ function initializeCarousel() {
     });
 
     function updateCarousel() {
-        carouselWrapper.css({
-        'transform': 'translateX(' + (-currentItem * 100) + '%)',
-        'transition': 'transform 0.3s ease'
-    });
-        dots.removeClass('active-dot');
-        dots.eq(currentItem).addClass('active-dot');
+        if(mobile){    
+            carouselWrapper.css({
+            'transform': 'translateX(' + (-currentItem * 100) + '%)',
+            'transition': 'transform 0.3s ease'
+            });
+            dots.removeClass('active-dot');
+            dots.eq(currentItem).addClass('active-dot');
+        }else{
+            carouselWrapper.css({
+                'transform': 'translateX(' + (-currentItem * 50) + '%)',
+                'transition': 'transform 0.3s ease'
+                });
+                dots.removeClass('active-dot');
+                dots.eq(currentItem).addClass('active-dot');
+        }
     }
 
 
