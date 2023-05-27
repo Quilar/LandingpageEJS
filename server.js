@@ -1,6 +1,11 @@
 var express = require('express');
 const fs = require('fs');
 var app = express();
+const bodyParser = require('body-parser');
+
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -27,6 +32,22 @@ catch(err){
 // about page
 app.get('/about', function(req, res) {
   res.render('pages/about');
+});
+
+app.post('/submit-contact-form', async(req, res)=>{
+
+  try{
+
+    const formContent = req.body;
+    const europeanTime = new Date().toLocaleString('de-DE', { timeZone: 'Europe/Berlin' });
+    await fs.promises.writeFile(`${__dirname}/inquiries/${europeanTime}_${formContent.name}.txt`, JSON.stringify(formContent));
+    res.json({error: false, message:"Die Kontaktanfrage ist zugestellt. Wir melden uns zeitnah bei dir!"});
+  }
+  catch(err){
+    console.error(err);
+    res.json({error:true, message:'Ein Error ist beim versenden aufgetreten. Sende uns deine Anfrage gerne an info@quilar.de.'});
+  }
+
 });
 
 app.use((req, res)=>{

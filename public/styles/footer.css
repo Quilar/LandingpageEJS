@@ -1,0 +1,170 @@
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #585BA5!important;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding: 5%;
+}
+
+.footer-content h3{
+    color: white;
+}
+
+.footer-content span{
+    color: white;
+}
+
+.footer-content a{
+    color: white;
+    margin: 0;
+    text-decoration: none;
+}
+
+.sm-logo{
+    margin: 0 25px;
+    max-width: 50px;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+.form-name{margin: 20px 0;}
+.form-email{margin: 20px 0;}
+.form-message{margin: 20px 0;}
+
+#contact-form button{
+    background-color: #FC9946;
+}
+
+#contact-form input{
+    padding: 1em;
+    height: 2em;
+    margin:0;
+    overflow: hidden;
+}
+
+#message{
+    height: 10em;
+    padding: 1em;
+    margin:0;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.footer-links a{
+    color: white;
+    text-decoration: none;
+    margin: 1em;
+    font-size: 40px;
+}
+
+/* Desktop screens */
+@media only screen and (min-width: 992px){
+
+    .footer-content{
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 0;
+        width: 95%;
+    }
+
+    .footer-adress .footer-main .footer-sm {
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-contact{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+
+    .footer-sm-logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .sm-logo{
+        margin-left: 0;
+    }
+
+
+    #contact-form{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 1% 0;
+        width: 100%;
+
+    }
+
+    .form-name {
+        margin: 0;
+        width: 49%;   
+    }
+    .form-email{
+        margin: 0;
+        width: 49%;
+    }
+    .form-message{
+        width: 100%;
+    }
+
+    #contact-form button{
+        background-color: #FC9946;
+    }
+    
+    #contact-form input{
+        padding: 0;
+        height: 3em;
+        margin:0;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #message{
+        height: 7em;
+        padding: 0;
+        width: 100%;
+        margin:0;
+    }
+
+    .footer-links{
+        justify-content: center;
+    }
+    .footer-links a{
+        font-size: unset;
+    }
+
+    #contact-form button{
+        margin: 0;
+        padding: 0 1em;
+    }
+    
+
+
+}

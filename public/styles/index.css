@@ -49,7 +49,7 @@ a{
     font-size: 36px;
 }
 
-p, li{
+p, li, input, textarea{
     font-size: 36px;
     margin: 1em 0;
     font-family:Outfit;
@@ -76,6 +76,7 @@ span{
         min-height: unset;
         min-width: unset;
         margin: unset;
+        cursor: pointer;
     }
 
     a{
@@ -94,7 +95,7 @@ span{
     h3{
         font-size: 24px;
     }
-    p, li{
+    p, li, input, textarea{
         font-size: 20px;
     }
     span{ font-size: 16px;}
