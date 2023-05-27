@@ -1,0 +1,22 @@
+.partners-section h2{
+    color: #425DA7;
+    width: 100%;
+    text-align: center;
+}
+
+.partners-logos{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.partners-logos img{
+    min-width: 200px;
+    max-width: 30%;
+    height: fit-content;
+}
+
+
+@media only screen and (min-width:992px) {}
