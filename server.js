@@ -34,6 +34,10 @@ app.get('/about', function(req, res) {
   res.render('pages/about');
 });
 
+app.get('/datenschutz', (req, res)=> res.render('pages/datenschutz'));
+app.get('/impressum', (req, res)=> res.render('pages/impressum'));
+app.get('/cookies', (req, res)=> res.render('pages/cookies'));
+
 app.post('/submit-contact-form', async(req, res)=>{
 
   try{
