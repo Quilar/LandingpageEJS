@@ -1,5 +1,28 @@
 <head>
     <link rel="stylesheet" href="styles/benefits.css">
+    <script>
+        function isInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+        }
+ 
+        function handleScroll() {
+            var triggerDiv = document.querySelector('.zeit');
+            var divs = document.querySelectorAll('.bulletpoint');
+
+            if (isInViewport(triggerDiv) && !triggerDiv.classList.contains('animate')) {
+                divs.forEach(element => {
+                    element.classList.add('animate');
+                });
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+    </script>
 </head>
 
 <section class="benefits-section">
