@@ -1,10 +1,16 @@
-header{
-    position:fixed;
+header.visible{
+    position:sticky;
     width: 100%!important;
     height: 150px;
-    top: 0;
+    top: 0px;
+    transition: 0.25s linear;
     z-index:9999;
 }
+
+header {
+    top: -150px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
+  }
 
 .navbar{
     display: flex;
@@ -36,6 +42,7 @@ header{
     width: 100%;
     top: 150px;
     left: 0;
+    padding-inline-start: 0;
     background: #585BA1;
     margin:0;
     height: 0vh;
@@ -86,9 +93,10 @@ body.open .nav-item{display:unset}
 
 @media only screen and (min-width: 992px){
 
-    header{
+    header.visible{
         height: 100px;
     }
+    header{top:-100px;}
     .burger {display:none;}
     .nav-item{display: unset;}
     .nav-item{width:auto;}

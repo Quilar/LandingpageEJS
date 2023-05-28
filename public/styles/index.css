@@ -12,9 +12,6 @@ body{
     background-color: white;
 }
 
-main{
-    margin-top: 150px;
-}
 
 button{
     min-height: 100px;
@@ -66,10 +63,6 @@ span{
 }
 
 @media only screen and (min-width:992px) {
-    main{
-        margin-top: 100px;
-    }
-    
     button{
         transition: min-width 0.3s;
     }
