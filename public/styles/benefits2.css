@@ -26,12 +26,15 @@
   align-items: center;
   height: 30%;
 }
-.benefit-title img{
+.benefit-title-image{
   margin: 10px;
   width: 20%;
   max-height: 50px;
-
+  opacity: 0;
+  transition: opacity 2s;
 }
+
+.benefit-title-image.animate{opacity: 1;}
 
 .benefit-text{
   display:flex;

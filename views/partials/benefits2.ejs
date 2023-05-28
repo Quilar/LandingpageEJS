@@ -1,12 +1,32 @@
 <head>
     <link rel="stylesheet" href="styles/benefits2.css">
+    <script>
+        function isInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+        }
+ 
+        function handleScroll() {
+            var divs = document.querySelectorAll('.benefit-title-image');
+            divs.forEach(div => {
+                if (isInViewport(div) && !div.classList.contains('animate'))
+                    div.classList.add('animate');
+            });
+        }
+        window.addEventListener('scroll', handleScroll);
+    </script>
 </head>
 
 <section class="benefits2-section">
     <div class="benefit-group">
         <div class="benefit tool">
             <div class="benefit-title">
-                <img src="content/benefits2/eye.svg"/>
+                <img class="benefit-title-image" src="content/benefits2/eye.svg"/>
                 <h2>Visualisierungstool</h2>
             </div>
             <div class="benefit-text">
@@ -21,7 +41,7 @@
 
         <div class="benefit homestaging">
             <div class="benefit-title">
-                <img src="content/benefits2/house.svg"/>
+                <img class="benefit-title-image" src="content/benefits2/house.svg"/>
                 <h2>Virtuelles Home Staging</h2>
             </div>
             <div class="benefit-text">
@@ -35,7 +55,7 @@
         </div>
         <div class="benefit shop">
             <div class="benefit-title">
-                <img src="content/benefits2/shopping_cart.svg"/>
+                <img class="benefit-title-image" src="content/benefits2/shopping_cart.svg"/>
                 <h2>Integrierter Onlineshop</h2>
             </div>
             <div class="benefit-text">

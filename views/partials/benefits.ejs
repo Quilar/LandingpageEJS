@@ -12,14 +12,11 @@
         }
  
         function handleScroll() {
-            var triggerDiv = document.querySelector('.zeit');
             var divs = document.querySelectorAll('.bulletpoint');
-
-            if (isInViewport(triggerDiv) && !triggerDiv.classList.contains('animate')) {
-                divs.forEach(element => {
-                    element.classList.add('animate');
-                });
-            }
+            divs.forEach(div => {
+                if (isInViewport(div) && !div.classList.contains('animate'))
+                    div.classList.add('animate');
+            });
         }
         window.addEventListener('scroll', handleScroll);
     </script>
