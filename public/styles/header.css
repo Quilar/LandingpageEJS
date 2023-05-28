@@ -19,8 +19,10 @@ header{
 
 .navbar-logo{
     margin:20px;
-    max-height: 70%;
+    height: 70%;
 }
+
+.navbar-logo img{height:100%;}
 
 .burger{
     margin:20px;
