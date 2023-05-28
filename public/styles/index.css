@@ -3,6 +3,8 @@
     src: url(../fonts/Outfit-VariableFont_wght.ttf);
 }
 
+html{scroll-behavior: smooth;}
+
 body{
     margin:0;
     -webkit-font-smoothing: antialiased;
