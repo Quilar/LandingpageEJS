@@ -9,9 +9,16 @@ app.use(bodyParser.json());
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
-
-// use res.render to load up an ejs view file
+app.use(express.static('public', 
+{
+  gzip:true,
+  setHeaders: (res, path) => {
+    if(path.endsWith('.wasm.gz'))
+      res.set('Content-Type', 'application/wasm');
+    if (path.endsWith('.gz'))
+      res.set('Content-Encoding', 'gzip');
+  }
+}));
 
 // index page
 app.get('/', async(req, res) => {
