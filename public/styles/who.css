@@ -13,3 +13,24 @@
     line-height: 2em;
     text-align: center;
   }
+
+  .logo-background{
+    display: none;
+  }
+  
+  @media only screen and (min-width: 992px){
+    .logo-background{
+      display: unset;
+      position: absolute;
+      height: 90%;
+      width: fit-content;
+      left: 0;
+      top:0;
+      transform: translate(-50%, -50%);
+      opacity: 0.5;
+      z-index: -1;
+    }
+    
+  }
+
+
