@@ -1,7 +1,7 @@
 .hero-section {
   position: relative;
   min-width: 100%!important;
-  min-height: calc(100vh-150px);
+  min-height: calc(100vh - 150px);
   display: flex;
   flex-direction: column;
   background-color: #1A1919;
@@ -9,7 +9,7 @@
 
 .hero-section video{
   position: relative;
-  max-height: 50vh;
+  max-height: calc(50vh - 150px/2);
   object-fit:fill;
 }
 
@@ -20,7 +20,7 @@
   width: 100%!important;
   height: 100%;
   background: rgb(0,180,206);
-  background: linear-gradient(0deg, rgba(0,180,206,0.5862068965517242) 0%, rgba(66,93,167,0.3236074270557029) 100%);
+  background: linear-gradient(0deg, rgba(0, 11, 12, 0.586) 0%, rgba(66,93,167,0.3236074270557029) 100%);
   z-index: 2;
 }
  
@@ -29,25 +29,57 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 96%;
+  justify-content: space-evenly;
+  height: calc(50vh - 150px/2);
   text-align: left;
   color: #fff;
   z-index:3;
 }
 
-.title {text-align: center;}
-.paragraph{text-align: center;}
-.call2action{
-  background-color: #FC9946;
-}
-.call2action a{
+.title {
+  text-align: center;
   color: white;
+  font-size: 70px;
 }
+.highlight{color:#FC9946;}
+
+.subtitle{
+  text-align: center;
+  color: #00b4ce;
+  margin: 0;
+}
+.read-more-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+.read-more {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 30px solid #ffffff; /* Adjust color as needed */
+  animation: jump 1s infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* Desktop screens */
 @media only screen and (min-width: 992px){
   
   .hero-section {
-      height: 100vh;
+      min-height: calc(100vh - 100px);
     }
     
     .hero-section video {
@@ -63,13 +95,25 @@
     .hero-content {
       position: absolute;
       align-items: flex-start;
+      justify-self: center;
       justify-content:space-evenly;
       height: 80vh;
       max-width: 60%;
       padding-left: 5%;
     }
 
-    .title{text-align: start; margin-top: 1vh;}
+    .title{
+      text-align: start;
+      font-size: 80px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .subtitle{
+      text-align: start; 
+      font-size: 60px;
+      font-weight: 400;    
+    }
     .paragraph{text-align: start;}
 
 
