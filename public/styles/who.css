@@ -23,7 +23,6 @@
       display: unset;
       position: absolute;
       height: 90%;
-      width: fit-content;
       left: 0;
       top:0;
       transform: translate(-50%, -50%);
