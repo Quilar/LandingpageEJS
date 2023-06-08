@@ -49,9 +49,11 @@
   margin: 0;
 }
 .read-more-container{
-  width: 100%;
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
   z-index: 3;
 }
 .read-more {
@@ -99,20 +101,21 @@
       justify-content:space-evenly;
       height: 80vh;
       max-width: 60%;
-      padding-left: 5%;
     }
 
     .title{
       text-align: start;
       font-size: 80px;
       font-weight: 700;
+      padding-left: 5%;
       margin: 0;
     }
 
     .subtitle{
       text-align: start; 
       font-size: 60px;
-      font-weight: 400;    
+      font-weight: 400; 
+      padding-left: 5%;   
     }
     .paragraph{text-align: start;}
 
