@@ -30,7 +30,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: calc(50vh - 150px/2);
   text-align: left;
   color: #fff;
   z-index:3;
@@ -51,7 +50,6 @@
 .read-more-container{
   display: flex;
   justify-content: center;
-  position: absolute;
   bottom: 0;
   width: 100vw;
   z-index: 3;
