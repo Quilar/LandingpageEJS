@@ -27,7 +27,7 @@ const ArAnimation = ()=>{
         frame.style.top = y - containerTop + 'px';
         frame.style.left = x + 'px';
         var frameRect = frame.getBoundingClientRect();
-        var screenDelta = 10;
+        var screenDelta = 15;
         var topY = frameRect.top - containerTop + screenDelta;
         var bottomY = frameRect.top + frameRect.height - containerTop - screenDelta;
         var leftX = frameRect.left + screenDelta;
