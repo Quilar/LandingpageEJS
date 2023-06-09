@@ -1,38 +1,57 @@
 .tool-section {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 100%!important;
+    background-color: rgb(208, 208, 208);
+  }
+  
+  .tool-container{
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 80vw;
   }
-  
+
   .tool-video{
-    display: flex;
-    align-items: stretch;
-    justify-content: stretch;
-    width:100vw;
-    height: calc(100vw * (315 / 560));
-    
-    
+    margin: 50px 0;
+    width:100%;
+    height: calc(80vw * (315 / 560));
   }
 
   .tool-video iframe{
     width: 100%;
     height: 100%;
   }
-  .tool-title {
-    text-align: center;
-    color: #00b4ce;
-    font-size: 70px;
+  
+  .tool-title{
+    max-width:  100%;
   }
+  
+  .tool-title h2{
+    font-weight: 300;
+    font-size: 40px;
+    max-width: 80vw;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 0;
+  }
+  
   
   /* Desktop screens */
   @media only screen and (min-width: 992px){
 
-    .tool-title{
-      font-size: 80px;
-      font-weight: 700;
-      margin: 0;
+    .tool-title h2{
+      
+      font-size: 40px;
+    }
+    .tool-video{
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
+      
+      
     }
   
   
