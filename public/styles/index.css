@@ -102,7 +102,7 @@ span{
 
 
 /* Landscape screens */
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-width: 992px){
     /* Styles specific to landscape orientation */
 
     h1{
