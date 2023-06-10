@@ -12,6 +12,7 @@ const ArAnimation = ()=>{
 
     const handleMove = (event) => {
         if(isMobileDevice()){
+            event.preventDefault();
             var x = event.touches[0].clientX;
             var y = event.touches[0].clientY;
         }
