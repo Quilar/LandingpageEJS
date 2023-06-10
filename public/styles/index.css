@@ -99,3 +99,13 @@ span{
 
       
 }
+
+
+/* Landscape screens */
+@media only screen and (orientation: landscape) {
+    /* Styles specific to landscape orientation */
+
+    h1{
+        font-size: 20px;
+    }
+}
