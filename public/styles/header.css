@@ -139,3 +139,16 @@ body.open .nav-item{display:unset}
     .placeholder{display: none;}
 
 }
+
+/* Landscape screens */
+@media only screen and (orientation: landscape) and (max-width: 992px) {
+    /* Styles specific to landscape orientation */
+
+    body.open .navbar-links{
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 150px);
+        opacity: 1;
+    }
+    
+}  
