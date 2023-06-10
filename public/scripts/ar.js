@@ -11,7 +11,6 @@ const ArAnimation = ()=>{
 
 
     const handleMove = (event) => {
-        console.log(`isMobile? ${isMobileDevice()}`);
         if(isMobileDevice()){
             var x = event.touches[0].clientX;
             var y = event.touches[0].clientY;
@@ -27,7 +26,7 @@ const ArAnimation = ()=>{
         frame.style.top = y - containerTop + 'px';
         frame.style.left = x + 'px';
         var frameRect = frame.getBoundingClientRect();
-        var screenDelta = 15;
+        var screenDelta = frameRect.width * 0.0745;
         var topY = frameRect.top - containerTop + screenDelta;
         var bottomY = frameRect.top + frameRect.height - containerTop - screenDelta;
         var leftX = frameRect.left + screenDelta;
