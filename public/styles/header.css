@@ -36,6 +36,11 @@ header {
     display: block;
 }
 
+.placeholder{
+    opacity: 0;
+    width: 100px;
+}
+
 .navbar-links{
     align-items: center;
     justify-content: space-around;
@@ -44,11 +49,17 @@ header {
     top: 150px;
     left: 0;
     padding-inline-start: 0;
-    background: #585BA1;
+    background: #585aa1a1;
     margin:0;
     height: 0vh;
     transition: height 0.3s ease-in-out;
 }
+
+.appstore-widget{
+    display: unset;
+}
+
+
 
 body.open .navbar-links{
     display: flex;
@@ -68,9 +79,7 @@ body.open .navbar-links{
 body.open .nav-item{display:unset}
 
 .nav-link{
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 22px;
+    text-decoration: none;   
     text-align: right;
     color: #FFFFFF!important;
     padding: 31px 0;
@@ -122,5 +131,11 @@ body.open .nav-item{display:unset}
         list-style-type: disc;
     }
 
+
+    .appstore-widget{
+        display:none;
+    }
+    
+    .placeholder{display: none;}
 
 }
