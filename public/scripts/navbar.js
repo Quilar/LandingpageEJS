@@ -20,6 +20,14 @@ function InitializeNavbar(){
         { passive: true }
     );
 
+    window.addEventListener("load", ()=>{
+        const appstore = document.querySelector(".appstore-widget");
+        if(!/Mobi|Android/i.test(navigator.userAgent))
+            appstore.style.display = "none";
+        console.log("Set");
+
+    });
+
 }
 
 $(document).ready(()=>InitializeNavbar());
