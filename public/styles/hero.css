@@ -40,7 +40,7 @@
   color: white;
   font-size: 70px;
 }
-.highlight{color:#FC9946;}
+.highlight{color:#FC9946; padding-left: 20px;}
 
 .subtitle{
   text-align: center;
@@ -104,11 +104,13 @@
     .title{
       text-align: start;
       font-size: 80px;
-      font-weight: 700;
       padding-left: 5%;
       margin: 0;
     }
 
+    .highlight{
+      padding-left: 12px;
+    }
     .subtitle{
       text-align: start; 
       font-size: 60px;
@@ -117,5 +119,39 @@
     }
     .paragraph{text-align: start;}
 
+
+}
+
+/* Landscape screens */
+@media only screen and (orientation: landscape) and (max-width: 992px) {
+  /* Styles specific to landscape orientation */
+  .hero-section video{
+    position: relative;
+    max-height: fit-content;
+    object-fit:fill;
+  }
+  
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%!important;
+    height: 100%;
+    background: rgb(0,180,206);
+    background: linear-gradient(0deg, rgba(0, 11, 12, 0.586) 0%, rgba(66,93,167,0.3236074270557029) 100%);
+    z-index: 2;
+  }
+   
+  .hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    color: #fff;
+    z-index:3;
+  }
+  
 
 }
