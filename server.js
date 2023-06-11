@@ -67,6 +67,8 @@ app.get('/about', async (req, res) => {
     
   });
 
+
+app.get('/services', (req, res)=> res.render('pages/services'));
 app.get('/datenschutz', (req, res)=> res.render('pages/datenschutz'));
 app.get('/impressum', (req, res)=> res.render('pages/impressum'));
 app.get('/cookies', (req, res)=> res.render('pages/cookies'));
