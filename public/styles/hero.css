@@ -66,6 +66,7 @@
   justify-content: space-around;
   align-items: center;
   width: 90%;
+  display: none;
 }
 .hero-cta button{
   min-height: 3em;
