@@ -1,7 +1,12 @@
 const ArAnimation = ()=>{
-    var frame = document.getElementById('frame');
-    var container = document.querySelector('.ar-wrapper');
-    var virtualImage = document.querySelector('.virtual-image');
+    var arApps = document.querySelectorAll(".ar-section");
+    arApps.forEach((app)=>{SetupArApps(app)});
+}
+
+const SetupArApps = (app)=>{
+    var frame = app.querySelector('.frame');
+    var container = app.querySelector('.ar-wrapper');
+    var virtualImage = app.querySelector('.virtual-image');
 
     const isMobileDevice = () => {return /Mobi|Android/i.test(navigator.userAgent)};
     
