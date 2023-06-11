@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <%- include('../partials/head'); %>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <header class="visible">
+    <%- include('../partials/header'); %>
+    </header>
+    <main>
+        <%- include('../partials/testimonials', {testimonials}) %>
+        <%- include('../partials/benefits') %>
+        <%- include('../partials/who') %>
+        <%- include('../partials/showcase') %>
+        <%- include('../partials/benefits2') %>
+        <%- include('../partials/illustration') %>
+        <%- include('../partials/team') %>
+        <%- include('../partials/news', {news}) %>
+        <%- include('../partials/prices') %>
+    </main>
+
+    <footer>
+      <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+</html>
