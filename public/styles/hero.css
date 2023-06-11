@@ -75,7 +75,9 @@
   min-width: 50%;
 }
 
-
+.hero-cta.desktop a{
+  color: #1d1d1f; 
+}
 
 
 .read-more-container{

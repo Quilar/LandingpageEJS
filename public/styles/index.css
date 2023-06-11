@@ -47,6 +47,7 @@ a{
     font-family: Outfit;
     font-size: 36px;
     margin: 0 0.5em;
+    text-decoration: none;
 }
 
 p, li, input, textarea{
