@@ -53,9 +53,19 @@ app.get('/backupsites', async (req, res) => {
   
 
 // about page
-app.get('/about', function(req, res) {
-  res.render('pages/about');
-});
+app.get('/about', async (req, res) => {
+  console.log("request incoming");
+  try{
+    const news = await fs.promises.readFile(`${__dirname}/public/content/news/news.json`);
+    
+    if(news) res.render('pages/about', {news: JSON.parse(news)});
+    else throw Error("Ein Server Error ist aufgetreten");
+  }
+  catch(err){
+    res.status(404).render(404);
+  }
+    
+  });
 
 app.get('/datenschutz', (req, res)=> res.render('pages/datenschutz'));
 app.get('/impressum', (req, res)=> res.render('pages/impressum'));
