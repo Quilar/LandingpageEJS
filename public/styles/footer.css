@@ -61,6 +61,14 @@
     margin:0;
 }
 
+.footer-border{
+    width: 90%;
+    margin-top: 1em;
+    border: #d2d2d7;
+    border-style: solid none none none;
+    color: white;
+}
+
 .footer-links{
     display: flex;
     flex-direction: row;
