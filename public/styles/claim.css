@@ -72,6 +72,7 @@
     .claim-left p{
         font-size: 32px;
         line-height: 1.125;
+        width: 100%;
       }
       .claim-right p{
         font-size: 21px;
