@@ -1,0 +1,91 @@
+.claim-section{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    width: 100%!important;
+  }
+
+  .claim-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+  }
+
+  .claim-right{
+    margin-top: 0;
+  }
+
+  .learn-more{
+    max-width: 90%;
+    min-height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .learn-more a{
+    font-size: 14px;
+    line-height: 1.4285914286;
+    font-weight: 600;
+    letter-spacing: -0.016em;
+  }
+
+  .claim-left p{
+    font-weight: 700;
+    letter-spacing: .004em;
+    color:#1d1d1f;
+    margin: 0;
+  }
+  .claim-right p{
+    font-weight: 600;
+    letter-spacing: .011em;
+    color:#86868b;
+    margin: 0;
+  }
+  .claim-right span{
+    width: 90%;
+    color: #86868b;
+  }
+
+  
+  @media only screen and (min-width: 992px){
+
+    .claim-section{
+        flex-direction: row;
+        min-height: 50vh;
+    }
+
+    .claim-part{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+      }
+
+      .claim-left{
+        align-items: center;
+      }
+      .claim-right{
+        margin-top: 10%;
+      }
+
+    .claim-left p{
+        font-size: 32px;
+        line-height: 1.125;
+      }
+      .claim-right p{
+        font-size: 21px;
+        line-height: 1.381002381;
+      }
+
+      .learn-more{
+        max-width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+      }
+    
+  }
+
+
