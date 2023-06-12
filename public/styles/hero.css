@@ -128,7 +128,7 @@
      
     .hero-content {
       position: absolute;
-      align-items: flex-start;
+      align-self: flex-start;
       justify-self: center;
       justify-content:space-evenly;
       height: 80vh;
