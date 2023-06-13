@@ -8,7 +8,7 @@ const SetupArApps = (app)=>{
     var container = app.querySelector('.ar-wrapper');
     var virtualImage = app.querySelector('.virtual-image');
 
-    const isMobileDevice = () => {return /Mobi|Android/i.test(navigator.userAgent)};
+    const isMobileDevice = () => {return navigator.maxTouchPoints > 2};
     
     container.addEventListener('mousemove', (event)=>handleMove(event));
     container.addEventListener('touchmove', (event)=>handleMove(event));

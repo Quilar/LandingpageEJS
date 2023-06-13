@@ -4,7 +4,7 @@ const initializeHero = ()=>{
         const heroMobile = hero.querySelector(".mobile");
         const heroDesktop = hero.querySelector(".desktop");
 
-        if(/Mobi|Android/i.test(navigator.userAgent))
+        if(navigator.maxTouchPoints > 2)
         {
             heroDesktop.style.display = "none";
             heroMobile.style.display = "flex";

@@ -1,7 +1,7 @@
 function InitializeNavbar(){
     const header = document.querySelector("header");
     let lastScrollTop = 0;
-    
+
     window.addEventListener(
     "scroll",
     () => {
@@ -20,13 +20,20 @@ function InitializeNavbar(){
         { passive: true }
     );
 
-    window.addEventListener("load", ()=>{
+    
+    const isMobile = () => {
+        const userAgent = navigator.userAgent;
+        return navigator.maxTouchPoints > 2;
+      };
+      
+      window.addEventListener("load", () => {
         const appstore = document.querySelector(".appstore-widget");
-        if(!/Mobi|Android/i.test(navigator.userAgent))
-            appstore.style.display = "none";
-        console.log("Set");
-
-    });
+        if (!isMobile()) {
+          appstore.style.display = "none";
+          console.log("Not an iPad!");
+        }
+        console.log(navigator.userAgent);
+      });
 
 }
 
