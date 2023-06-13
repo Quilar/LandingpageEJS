@@ -7,10 +7,10 @@
   background-color: #1A1919;
 }
 
-.hero-section video{
+.background-video{
   position: relative;
   max-height: calc(50vh - 150px/2);
-  object-fit:fill;
+  object-fit:cover;
 }
 
 .gradient-overlay {
@@ -116,7 +116,7 @@
       min-height: calc(100vh - 100px);
     }
     
-    .hero-section video {
+    .background-video {
       margin-left: 25%;
       width: 75%;
       right: 0;
@@ -165,9 +165,8 @@
 /* Landscape screens */
 @media only screen and (orientation: landscape) and (max-width: 992px) {
   /* Styles specific to landscape orientation */
-  .hero-section video{
-    position: relative;
-    max-height: fit-content;
+  .background-video{
+    max-height: calc(100vh - 150px/2);
     object-fit:fill;
   }
   
