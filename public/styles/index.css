@@ -13,7 +13,7 @@ body{
 }
 
 
-button{
+button {
     min-height: 100px;
     min-width: 200px;
     margin: 5em;
@@ -22,7 +22,7 @@ button{
     justify-content: center;
     align-items: center;
     border: none;
-    color: #FC9946;
+    background-color: #FC9946;
 }
 
 h1{
@@ -47,9 +47,9 @@ h3{
 a{
     font-family: Outfit;
     font-size: 36px;
-    margin: 0 0.5em;
+    margin: 0.5em;
     text-decoration: none;
-    color: inherit;
+    color: #fff;
 }
 
 p, li, input, textarea{
@@ -79,7 +79,7 @@ span{
     }
 
     a{
-        font-size: 30px;
+        font-size: 24px;
         
     }
 

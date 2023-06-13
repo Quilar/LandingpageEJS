@@ -12,31 +12,34 @@
     margin: 10%;
   }
 
-  .claim-right{
-    margin-top: 0;
+  .claim-left{
+    margin-bottom: 0;
   }
 
+
   .learn-more{
-    max-width: 90%;
-    min-height: 3em;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .learn-more a{
-    font-size: 14px;
     line-height: 1.4285914286;
     font-weight: 600;
     letter-spacing: -0.016em;
   }
 
   .claim-left p{
+    display: block;
+    text-align: justify;
     font-weight: 700;
     letter-spacing: .004em;
     color:#1d1d1f;
     margin: 0;
   }
   .claim-right p{
+    display: inline-block;
+    text-align: justify;
     font-weight: 600;
     letter-spacing: .011em;
     color:#86868b;
@@ -65,9 +68,7 @@
       .claim-left{
         align-items: center;
       }
-      .claim-right{
-        margin-top: 10%;
-      }
+
 
     .claim-left p{
         font-size: 32px;
@@ -80,11 +81,11 @@
       }
 
       .learn-more{
-        max-width: 90%;
+        width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: auto;
+        margin: 5em 0;
       }
     
   }
