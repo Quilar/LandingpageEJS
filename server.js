@@ -9,9 +9,16 @@ app.use(bodyParser.json());
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
-
-// use res.render to load up an ejs view file
+app.use(express.static('public', 
+{
+  gzip:true,
+  setHeaders: (res, path) => {
+    if(path.endsWith('.wasm.gz'))
+      res.set('Content-Type', 'application/wasm');
+    if (path.endsWith('.gz'))
+      res.set('Content-Encoding', 'gzip');
+  }
+}));
 
 // index page
 app.get('/', async(req, res) => {
@@ -37,6 +44,8 @@ app.get('/about', function(req, res) {
 app.get('/datenschutz', (req, res)=> res.render('pages/datenschutz'));
 app.get('/impressum', (req, res)=> res.render('pages/impressum'));
 app.get('/cookies', (req, res)=> res.render('pages/cookies'));
+app.get('/showcases', (req, res)=> res.render('pages/showcases'));
+app.get('/assetbundles/demo', (req, res)=> res.sendFile(`${__dirname}/public/content/assetbundles/demo`));
 
 app.post('/submit-contact-form', async(req, res)=>{
 
