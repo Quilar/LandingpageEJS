@@ -8,6 +8,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "quilar.de/public",
   "dependencies": {
     "body-parser": "^1.20.2",
     "ejs": "^3.1.9",

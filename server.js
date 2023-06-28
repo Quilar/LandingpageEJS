@@ -72,8 +72,6 @@ app.get('/services', (req, res)=> res.render('pages/services'));
 app.get('/datenschutz', (req, res)=> res.render('pages/datenschutz'));
 app.get('/impressum', (req, res)=> res.render('pages/impressum'));
 app.get('/cookies', (req, res)=> res.render('pages/cookies'));
-app.get('/showcases', (req, res)=> res.render('pages/showcases'));
-app.get('/assetbundles/demo', (req, res)=> res.sendFile(`${__dirname}/public/content/assetbundles/demo`));
 
 app.post('/submit-contact-form', async(req, res)=>{
 
