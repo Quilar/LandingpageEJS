@@ -16,13 +16,32 @@ body{
 button {
     min-height: 100px;
     min-width: 200px;
-    margin: 5em;
+    margin: 1em;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 12px;
     justify-content: center;
     align-items: center;
     border: none;
     background-color: #FC9946;
+}
+.primary-cta-btn{
+    width: 300px;
+    height: 90px;
+    background: linear-gradient(90deg, #425DA7 0%, #00B4CE 100%);
+}
+
+.secondary-cta-btn{
+    width: 300px;
+    height: 90px;
+    /* Apply linear gradient border using box-shadow */
+    box-shadow: 0 0 0 2px #00B4CE, 0 0 0 4px #425DA7;
+    /* Apply background-clip to make sure gradient only affects border */
+    background-clip: padding-box;
+    background: transparent;
+}
+.secondary-cta-btn:hover {
+      /* Reverse the gradient colors on hover */
+    box-shadow: 0 0 0 2px #425DA7, 0 0 0 4px #00B4CE;
 }
 
 h1{
@@ -39,7 +58,7 @@ h2{
 }
 h3{
     font-size: 50px;
-    margin: 1em 0;
+    margin: 0.5em 0;
     font-family: Outfit;
     font-weight: 400;
 }
@@ -57,7 +76,6 @@ p, li, input, textarea{
     margin: 1em 0;
     font-family:Outfit;
     line-height: 1.5em;
-    width: 90%;
     word-break: break-word;
   }
   
@@ -74,13 +92,21 @@ span{
     button{
         min-height: unset;
         min-width: unset;
-        margin: unset;
         cursor: pointer;
+    }
+
+    .primary-cta-btn{
+        width: 200px;
+        height: 60px;
+    }
+    
+    .secondary-cta-btn{
+        width: 200px;
+        height: 60px;
     }
 
     a{
         font-size: 24px;
-        
     }
 
 
