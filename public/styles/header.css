@@ -114,13 +114,13 @@ body.open .nav-item{display:unset}
     color: #363636!important;
 }
 
-
+/* Desktop Screen */
 @media only screen and (min-width: 992px){
 
     header.visible{
-        height: 100px;
+        height: 75px;
     }
-    header{height:100px;}
+    header{height:75px;}
     .burger {display:none;}
     .nav-item{display: unset;}
     .nav-item{width:auto;}

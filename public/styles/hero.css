@@ -94,7 +94,7 @@
 @media only screen and (min-width: 992px){
   
   .hero-section {
-      min-height: calc(100vh - 100px);
+      min-height: calc(100vh - 75px);
     }
     
     .background-video {
