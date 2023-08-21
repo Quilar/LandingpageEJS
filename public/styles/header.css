@@ -1,15 +1,16 @@
 header.visible{
     position:sticky;
     width: 100%!important;
-    height: 150px;
+    height: 100px;
     top: 0px;
     transition: top 0.25s linear;
     z-index:9999;
 }
 
 header {
-    top: -150px;
-    height: 150px;
+    top: -100px;
+    height: 100px;
+    background: #f1f1f1;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
   }
 
@@ -20,8 +21,6 @@ header {
     flex-direction: row;
     width: 100%!important;
     height: 100%;
-    background: rgb(37,163,194);
-    background: linear-gradient(90deg, rgba(37,163,194,0.8) 0%, rgba(77,88,155,0.8) 100%);
 }
 
 .navbar-logo{
@@ -46,10 +45,10 @@ header {
     justify-content: space-around;
     position: absolute;
     width: 100%;
-    top: 150px;
+    top: 100px;
     left: 0;
     padding-inline-start: 0;
-    background: #585aa1a1;
+    background: #f1f1f1;
     margin:0;
     height: 0vh;
     transition: height 0.3s ease-in-out;
@@ -92,7 +91,7 @@ body.open .nav-item{display:unset}
 .nav-link{
     text-decoration: none;   
     text-align: right;
-    color: #FFFFFF!important;
+    color: #363636!important;
     padding: 31px 0;
 }
 
@@ -109,6 +108,10 @@ body.open .nav-item{display:unset}
     min-width: unset;
     min-height: unset;
     margin: unset;
+}
+
+.nav-button-cta a{
+    color: #363636!important;
 }
 
 
@@ -158,7 +161,7 @@ body.open .nav-item{display:unset}
     body.open .navbar-links{
         display: flex;
         flex-direction: column;
-        height: calc(100vh - 150px);
+        height: calc(100vh - 100px);
         opacity: 1;
     }
     
