@@ -1,5 +1,4 @@
 .partners-section h2{
-    color: #425DA7;
     width: 100%;
     text-align: center;
 }
@@ -13,8 +12,7 @@
 }
 
 .partners-logos img{
-    min-width: 200px;
-    max-width: 30%;
+    width: 200px;
 }
 
 
