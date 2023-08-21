@@ -101,7 +101,6 @@ body.open .nav-item{display:unset}
 }
 
 .nav-button-cta{
-    border-radius: 50px;
     border-color: #FC9946;
     border-style: solid;
     background: none;
