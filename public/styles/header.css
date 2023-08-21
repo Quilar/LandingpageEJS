@@ -10,7 +10,7 @@ header.visible{
 header {
     top: -100px;
     height: 100px;
-    background: #f1f1f1;
+    background: #00B4CE;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
   }
 
@@ -91,7 +91,7 @@ body.open .nav-item{display:unset}
 .nav-link{
     text-decoration: none;   
     text-align: right;
-    color: #363636!important;
+    color: #f1f1f1!important;
     padding: 31px 0;
 }
 
