@@ -3,7 +3,6 @@
     display:flex;
     flex-direction: row;
     width: 100%!important;
-    background-color: rgba(0,180,206,0.4)!important;
   }
 
   .who-section p{
