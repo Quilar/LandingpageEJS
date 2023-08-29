@@ -1,9 +1,9 @@
-.partners-section h2{
+.customers-section h2{
     width: 100%;
     text-align: center;
 }
 
-.partners-logos{
+.customers-logos{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -11,7 +11,7 @@
     justify-content: space-around;
 }
 
-.partners-logos img{
+.customers-logos img{
     width: 200px;
 }
 
