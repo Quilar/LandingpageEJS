@@ -1,0 +1,8 @@
+.demo-video{
+    height: calc(80vw * (315 / 560));
+}
+
+.demo-video iframe{
+  width: 100%;
+  height: 100%;
+}
