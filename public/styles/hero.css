@@ -105,12 +105,16 @@
       width: 50%;
     }
 
-    .hero-paragraph h3{
+    .hero-paragraph-text{
       width: 90%;
+    }
+
+    .hero-paragraph h3{
+      width: 100%;
     }
     
     .hero-paragraph p{
-      width: 90%;
+      width: 100%;
     }
 
     .subtitle{
