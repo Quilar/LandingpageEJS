@@ -1,6 +1,5 @@
 .hero-section {
   position: relative;
-  min-width: 100%!important;
   min-height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
@@ -17,10 +16,9 @@
 .hero-content {
   position: relative;
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
+  width: 100%;
   align-items: center;
-  justify-content: space-evenly;
   text-align: left;
 }
 
@@ -98,6 +96,7 @@
     .hero-content {
       flex-direction: row;
       align-self: center;
+      justify-content: space-around;
       height: 60vh;
     }
 
