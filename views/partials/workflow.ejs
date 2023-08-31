@@ -1,0 +1,69 @@
+<head>
+    <link rel="stylesheet" href="styles/workflow.css">
+    <script>
+        function isInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+        }
+ 
+        function handleScroll() {
+            var divs = document.querySelectorAll('.bulletpoint');
+            divs.forEach(div => {
+                if (isInViewport(div) && !div.classList.contains('animate'))
+                    div.classList.add('animate');
+            });
+        }
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</head>
+
+<section class="benefits-section">
+    <div class="bulletpoint-header">
+        <h3>Verkaufen Sie nur noch. Überspringen Sie die komplizierten Dinge.</h3>
+        <p>So machen Sie die Planung für Ihre Kunden verständlich.</p>
+    </div>
+    <div class="bulletpoint-group">
+        <div class="bulletpoint">
+            <div class="bulletpoint-thumbnail">
+                <img src="content/benefits/thumbnail_01.png"/>
+            </div>
+            <div class="bulletpoint-content">
+                <h3>Schritt 01:</h3>
+                <p>Legen Sie in Ihrem Management Dashboard ein neues Projekt an und laden Sie Ihre Pläne hoch.
+                    <br>IFC, PDF, DWG, etc.  
+                </p>
+                <a href="https://hometour.quilar.de/admin">Zum Dashboard</a>
+            </div>
+        </div>
+        <div class="bulletpoint shift">
+            <div class="bulletpoint-thumbnail">
+                <img src="content/benefits/thumbnail_02.png"/>
+            </div>
+            <div class="bulletpoint-content">
+                <h3>Schritt 02:</h3>
+                <p>Unsere Technologie erstellt voll-automatisch ein 3D Modell.
+                    Wir überprüfen das Ergebnis und schalten es für den Einsatz frei.
+                    Sobald das Projekt einsatzbereit ist erhalten Sie eine Email von uns.
+                </p>
+            </div>
+        </div>
+        <div class="bulletpoint">
+            <div class="bulletpoint-thumbnail">
+                <img src="content/benefits/thumbnail_03.png"/>
+            </div>
+            <div class="bulletpoint-content">
+                <h3>Schritt 03:</h3>
+                <p>Das Projekt steht in unserer HomeTour App bereit für den Einsatz.
+                    Nutzen Sie die Magie von Augmented Reality, um Ihren Kunden ein Erlebnis zu bieten - an Stelle von Baupläne.
+                </p>
+                <a href="https://apple.co/3qYag25"><img src="content/icons/appstore-black.svg"/></a>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
