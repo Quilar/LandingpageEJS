@@ -18,11 +18,17 @@
   margin-bottom: 50px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.1);
-  position:absolute;
-  transition: position 1s ease-in;
+  position: relative;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20%); /* Initially off-screen */
+  transition: opacity 1s ease-in, transform 1s ease-in;
 }
 
-.bulletpoint.animate{position: relative;}
+.bulletpoint.animate {
+  
+  opacity: 1; /* Fade in when the animate class is added */
+  transform: translateY(0); /* Slide up when the animate class is added */
+}
 
 .bulletpoint-thumbnail{
   display: flex;
