@@ -1,8 +1,35 @@
-.demo-video{
-    height: calc(80vw * (315 / 560));
+.demo-container{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
 }
 
+.demo-video{
+  width: 100%;
+  height: calc(90vw * (315 / 560));
+}
 .demo-video iframe{
   width: 100%;
   height: 100%;
+}
+.demo-right{
+  width: 100%;
+  padding:0;
+}
+
+@media only screen and (min-width: 992px){
+  .demo-container{
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .demo-video{
+    width: 45vw;
+    height: calc(45vw * (315 / 560));
+  }
+
+  .demo-right{
+    width: 45vw;
+    padding-left: 5%;
+  }
 }
