@@ -17,7 +17,7 @@
   border-radius: 20px;
 }
 
-.benefit h3, p{text-align: center;}
+.benefit h3, .benefit p{text-align: center;}
 
 .benefit-title-image{
   height: 70px;

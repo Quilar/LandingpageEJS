@@ -1,0 +1,32 @@
+.cta-download-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.bet{
+    width: 100%;
+}
+.app-cover{
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 992px){
+    .cta-download-section{
+        flex-direction: row;
+    }
+    .bet{
+        width: 50%;
+    }
+    .app-cover{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .bet h3{ font-size: 80px;}
+
+    .app-cover img{
+        max-height: 90vh;
+    }
+}
