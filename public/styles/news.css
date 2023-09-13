@@ -1,6 +1,12 @@
 :root{
     --slider-padding: 5%;
 }
+body{background: unset;}
+section{
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom:100px;
+}
 .news-section{
     display: flex;
     flex-direction: column;
