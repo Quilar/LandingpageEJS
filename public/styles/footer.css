@@ -61,7 +61,7 @@
 }
 
 .footer-border{
-    width: 90%;
+    width: 100%;
     margin: 1em;
     border: #d2d2d7;
     border-style: solid none none none;
@@ -92,7 +92,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 0;
-        width: 90%;
+        width: 100%;
     }
 
     .footer-adress .footer-main .footer-sm {
