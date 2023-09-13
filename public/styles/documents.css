@@ -1,0 +1,157 @@
+@font-face {
+    font-family: Outfit;
+    src: url(../fonts/Outfit-VariableFont_wght.ttf);
+}
+
+html{scroll-behavior: smooth;}
+
+body{
+    margin:0;
+    -webkit-font-smoothing: antialiased;
+    width: 100%!important;
+}
+
+main, footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    width: 90%;
+    margin-bottom:100px;
+}
+
+button {
+    min-height: 100px;
+    min-width: 200px;
+    margin: 1em;
+    cursor: pointer;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #FC9946;
+}
+.primary-cta-btn{
+    width: 300px;
+    height: 90px;
+    background: linear-gradient(90deg, #425DA7 0%, #00B4CE 100%);
+}
+
+.secondary-cta-btn{
+    width: 300px;
+    height: 90px;
+    /* Apply linear gradient border using box-shadow */
+    box-shadow: 0 0 0 2px #00B4CE, 0 0 0 4px #425DA7;
+    /* Apply background-clip to make sure gradient only affects border */
+    background-clip: padding-box;
+    background: transparent;
+}
+.secondary-cta-btn:hover {
+      /* Reverse the gradient colors on hover */
+    box-shadow: 0 0 0 2px #425DA7, 0 0 0 4px #00B4CE;
+}
+
+h1{
+    font-size: 70px;
+    margin: 1em 0;
+    font-family: Outfit;
+    font-weight: 600;
+}
+h2{
+    font-size: 60px;
+    margin: 1em 0;
+    font-family: Outfit;
+    font-weight: 500;
+}
+.h2-bright{
+    color:#00B4CE
+}
+
+h3{
+    font-size: 50px;
+    margin: 0.5em 0;
+    font-family: Outfit;
+    font-weight: 400;
+    color: #FC9946;
+}
+
+a{
+    font-family: Outfit;
+    font-size: 36px;
+    margin: 0.5em;
+    color: #00094f;
+}
+
+p, li, input, textarea{
+    font-size: 36px;
+    margin: 1em 0;
+    font-family:Outfit;
+    line-height: 1.5em;
+    word-break: break-word;
+    color: #3a3a3a;
+  }
+  
+span{
+    font-family: Outfit;
+    font-size: 30px;
+}
+
+@media only screen and (min-width:992px) {
+    
+    
+    button{
+        transition: min-width 0.3s;
+    }
+
+    button{
+        min-height: unset;
+        min-width: unset;
+        cursor: pointer;
+    }
+
+    .primary-cta-btn{
+        width: 200px;
+        height: 60px;
+    }
+    
+    .secondary-cta-btn{
+        width: 200px;
+        height: 60px;
+    }
+
+    a{
+        font-size: 20px;
+    }
+
+
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+
+    }
+    h3{
+        font-size: 24px;
+    }
+    p, li, input, textarea{
+        font-size: 20px;
+    }
+    span{ font-size: 16px;}
+
+
+
+      
+}
+
+
+/* Landscape screens */
+@media only screen and (orientation: landscape) and (max-width: 992px){
+    /* Styles specific to landscape orientation */
+
+    h1{
+        font-size: 20px;
+    }
+}

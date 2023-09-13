@@ -1,393 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <%- include('../partials/head'); %>
-    <link rel="stylesheet" href="styles/index.css">
-    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-    <style type="text/css">
-        body{background: unset;}
-        ol{margin:0;
-        padding:0}table td,table th{padding:0}.c1{-webkit-text-decoration-skip:none;
-        color:#000000;
-        font-weight:700;
-        text-decoration:underline;
-        vertical-align:baseline;
-        text-decoration-skip-ink:none;
-        font-size:12pt;
-        font-family:"Arial";
-        font-style:normal}.c5{margin-left:1pt;
-        padding-top:0.4pt;
-        text-indent:-0.5pt;
-        padding-bottom:0pt;
-        line-height:0.9996017217636108;
-        text-align:left;
-        margin-right:8.3pt}.c16{margin-left:0.8pt;
-        padding-top:12.4pt;
-        text-indent:-0.4pt;
-        padding-bottom:0pt;
-        line-height:1.83260178565979;
-        text-align:left;
-        margin-right:48.8pt}.c0{color:#000000;
-        font-weight:400;
-        text-decoration:none;
-        vertical-align:baseline;
-        font-size:12pt;
-        font-family:"Arial";
-        font-style:normal}.c10{margin-left:0.9pt;
-        padding-top:41.2pt;
-        text-indent:0.3pt;
-        padding-bottom:0pt;
-        line-height:0.9995974898338318;
-        text-align:left;
-        margin-right:55.1pt}.c9{margin-left:0.7pt;
-        padding-top:12.4pt;
-        text-indent:0.5pt;
-        padding-bottom:0pt;
-        line-height:0.9995995759963989;
-        text-align:left;
-        margin-right:23.7pt}.c14{margin-left:0.4pt;
-        padding-top:12.4pt;
-        text-indent:0pt;
-        padding-bottom:0pt;
-        line-height:0.9996006488800049;
-        text-align:left;
-        margin-right:3.1pt}.c22{margin-left:0.5pt;
-        padding-top:12.4pt;
-        text-indent:0.6pt;
-        padding-bottom:0pt;
-        line-height:0.9996001720428467;
-        text-align:left;
-        margin-right:4.3pt}.c8{color:#000000;
-        font-weight:700;
-        text-decoration:none;
-        vertical-align:baseline;
-        font-size:12pt;
-        font-family:"Arial";
-        font-style:normal}.c19{padding-top:12.4pt;
-        text-indent:1.2pt;
-        padding-bottom:0pt;
-        line-height:1.0011146068572998;
-        text-align:left;
-        margin-right:-0.3pt}.c23{margin-left:1pt;
-        padding-top:0.4pt;
-        padding-bottom:0pt;
-        line-height:1.0;
-        text-align:left}.c24{margin-left:1.2pt;
-        padding-top:12.4pt;
-        padding-bottom:0pt;
-        line-height:1.0;
-        text-align:left}.c15{margin-left:1.1pt;
-        padding-top:0pt;
-        padding-bottom:0pt;
-        line-height:1.0;
-        text-align:left}.c21{margin-left:0.5pt;
-        padding-top:12.6pt;
-        padding-bottom:0pt;
-        line-height:1.0;
-        text-align:left}.c13{margin-left:0.4pt;
-        padding-top:12.4pt;
-        padding-bottom:0pt;
-        line-height:1.0;
-        text-align:left}.c11{margin-left:0.4pt;
-        padding-top:41.2pt;
-        padding-bottom:0pt;
-        line-height:1.0;
-        text-align:left}.c12{margin-left:0.4pt;
-        padding-top:26.8pt;
-        padding-bottom:0pt;
-        line-height:1.0;
-        text-align:left}.c20{margin-left:1.1pt;
-        padding-top:12.4pt;
-        padding-bottom:0pt;
-        line-height:1.0;
-        text-align:left}.c4{margin-left:1.1pt;
-        padding-top:41.2pt;
-        padding-bottom:0pt;
-        line-height:1.0;
-        text-align:left}.c3{margin-left:1.1pt;
-        padding-top:26.8pt;
-        padding-bottom:0pt;
-        line-height:1.0;
-        text-align:left}.c17{margin-left:0.7pt;
-        padding-top:26.8pt;
-        padding-bottom:0pt;
-        line-height:1.0;
-        text-align:left}.c2{margin-left:0.3pt;
-        padding-top:12.4pt;
-        padding-bottom:0pt;
-        line-height:1.0;
-        text-align:left}.c7{margin-left:1pt;
-        padding-top:0pt;
-        padding-bottom:0pt;
-        line-height:1.0;
-        text-align:left}.c18{margin-left:0.7pt;
-        padding-top:2.4pt;
-        padding-bottom:0pt;
-        line-height:1.0;
-        text-align:left}.c6{background-color:#ffffff;
-        max-width:454.8pt;
-        padding:70.8pt 69.1pt 86.8pt 71.1pt}.title{padding-top:24pt;
-        color:#000000;
-        font-weight:700;
-        font-size:36pt;
-        padding-bottom:6pt;
-        font-family:"Arial";
-        line-height:1.15;
-        page-break-after:avoid;
-        orphans:2;
-        widows:2;
-        text-align:left}.subtitle{padding-top:18pt;
-        color:#666666;
-        font-size:24pt;
-        padding-bottom:4pt;
-        font-family:"Georgia";
-        line-height:1.15;
-        page-break-after:avoid;
-        font-style:italic;
-        orphans:2;
-        widows:2;
-        text-align:left}li{color:#000000;
-        font-size:11pt;
-        font-family:"Arial"}p{margin:0;
-        color:#000000;
-        font-size:11pt;
-        font-family:"Arial"}h1{padding-top:24pt;
-        color:#000000;
-        font-weight:700;
-        font-size:24pt;
-        padding-bottom:6pt;
-        font-family:"Arial";
-        line-height:1.15;
-        page-break-after:avoid;
-        orphans:2;
-        widows:2;
-        text-align:left}h2{padding-top:18pt;
-        color:#000000;
-        font-weight:700;
-        font-size:18pt;
-        padding-bottom:4pt;
-        font-family:"Arial";
-        line-height:1.15;
-        page-break-after:avoid;
-        orphans:2;
-        widows:2;
-        text-align:left}h3{padding-top:14pt;
-        color:#000000;
-        font-weight:700;
-        font-size:14pt;
-        padding-bottom:4pt;
-        font-family:"Arial";
-        line-height:1.15;
-        page-break-after:avoid;
-        orphans:2;
-        widows:2;
-        text-align:left}h4{padding-top:12pt;
-        color:#000000;
-        font-weight:700;
-        font-size:12pt;
-        padding-bottom:2pt;
-        font-family:"Arial";
-        line-height:1.15;
-        page-break-after:avoid;
-        orphans:2;
-        widows:2;
-        text-align:left}h5{padding-top:11pt;
-        color:#000000;
-        font-weight:700;
-        font-size:11pt;
-        padding-bottom:2pt;
-        font-family:"Arial";
-        line-height:1.15;
-        page-break-after:avoid;
-        orphans:2;
-        widows:2;
-        text-align:left}h6{padding-top:10pt;
-        color:#000000;
-        font-weight:700;
-        font-size:10pt;
-        padding-bottom:2pt;
-        font-family:"Arial";
-        line-height:1.15;
-        page-break-after:avoid;
-        orphans:2;
-        widows:2;
-        text-align:left}
-    </style>
+  <%- include('../partials/head'); %>
+  <link rel="stylesheet" href="styles/documents.css">
 </head>
 
-<body class="doc-content">
+<body>
     <header>
-        <%- include('../partials/header'); %>
+    <%- include('../partials/header'); %>
     </header>
-    
     <main>
-        <p class="c7">
-        <span class="c1">
-        IMPRESSUM</span>
-        <span class="c8">
-        &nbsp;
-        </span>
-        </p>
-        <p class="c4">
-        <span class="c8">
-        Herausgeber </span>
-        </p>
-        <p class="c12">
-        <span class="c0">
-        Aajour, Kwakye-Yeboah, Kreke </span>
-        </p>
-        <p class="c13">
-        <span class="c0">
-        Am Gulloh 106, 44339 Dortmund </span>
-        </p>
-        <p class="c13">
-        <span class="c0">
-        Telefon: 0049 1573 719 80 65 </span>
-        </p>
-        <p class="c24">
-        <span class="c0">
-        E-Mail: info@quilar.de </span>
-        </p>
-        <p class="c21">
-        <span class="c8">
-        Vertretungsberechtigte(r) Gesch&auml;
-        ftsf&uuml;
-        hrer: </span>
-        <span class="c0">
-        Mohamed Aajour </span>
-        </p>
-        <p class="c10">
-        <span class="c0">
-        Die Europ&auml;
-        ische Kommission hat eine Plattform zur Online-Streitbeilegung &nbsp;
-        bereitgestellt. Die OS-Plattform finden Sie unter diesem Link: &nbsp;
-        </span>
-        </p>
-        <p class="c23">
-        <span class="c1">
-        http://ec.europa.eu/consumers/odr</span>
-        <span class="c8">
-        &nbsp;
-        </span>
-        </p>
-        <p class="c11">
-        <span class="c8">
-        Technische Informationen </span>
-        </p>
-        <p class="c14">
-        <span class="c0">
-        Wir weisen Sie darauf hin, dass die Vertraulichkeit im Internet nicht gew&auml;
-        hrleistet ist. &nbsp;
-        Jeder Benutzer ist daher allein verantwortlich, seine Daten und/oder Softwares vor &nbsp;
-        eventuell im Internet zirkulierenden Viren angemessen zu sch&uuml;
-        tzen. </span>
-        </p>
-        <p class="c3">
-        <span class="c8">
-        Hyperlinks </span>
-        </p>
-        <p class="c9">
-        <span class="c0">
-        Die Einrichtung eines Hyperlinks auf der Website https://quilar.de unterliegt der &nbsp;
-        Genehmigung des publizistischen Leiters. Der publizistische Leiter &uuml;
-        bernimmt &nbsp;
-        keinerlei Haftung f&uuml;
-        r auf der Website https://quilar.de eingerichtete Hyperlinks zu &nbsp;
-        anderen Websites. </span>
-        </p>
-        <p class="c20">
-        <span class="c8">
-        Urheberrechte </span>
-        </p>
-        <p class="c22">
-        <span class="c0">
-        Die durch die Seitenbetreiber erstellten Inhalte auf diesen Seiten unterliegen dem &nbsp;
-        deutschen Urheberrecht. Die Vervielf&auml;
-        ltigung, Bearbeitung, Verbreitung und jede Art &nbsp;
-        der Verwertung au&szlig;
-        erhalb der Grenzen des Urheberrechtes bed&uuml;
-        rfen der &nbsp;
-        schriftlichen Zustimmung des Rechtsinhabers bzw. des Erstellers. Jede vollst&auml;
-        ndige &nbsp;
-        oder teilweise Reproduktion oder Darstellung der Webseiten, Daten oder eines &nbsp;
-        Bestandteils der Website https://quilar.de, in welchem Verfahren und auf welchem &nbsp;
-        Datentr&auml;
-        ger auch immer, ist ohne Zustimmung des Herausgebers untersagt und &nbsp;
-        bedeutet eine F&auml;
-        lschung.</span>
-        </p>
-        <p class="c15">
-        <span class="c8">
-        Haftungsausschluss </span>
-        </p>
-        <p class="c19">
-        <span class="c0">
-        Die Inhalte unserer Seiten wurden mit gr&ouml;
-        &szlig;
-        ter Sorgfalt erstellt. F&uuml;
-        r die Richtigkeit, &nbsp;
-        Vollst&auml;
-        ndigkeit und Aktualit&auml;
-        t der Inhalte kann keine Gew&auml;
-        hr &uuml;
-        bernommen werden. &nbsp;
-        Als Diensteanbieter bzw. Herausgeber dieser Website sind wir gem&auml;
-        &szlig;
-        &sect;
-        7 Abs. 1 &nbsp;
-        TMG f&uuml;
-        r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen &nbsp;
-        verantwortlich. Nach &sect;
-        &sect;
-        8 bis 10 TMG sind wir als Diensteanbieter bzw. Herausgeber &nbsp;
-        jedoch nicht verpflichtet, &uuml;
-        bermittelte oder gespeicherte fremde Informationen zu &nbsp;
-        &uuml;
-        berwachen oder nach Umst&auml;
-        nden zu forschen, die auf eine rechtswidrige T&auml;
-        tigkeit &nbsp;
-        hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von &nbsp;
-        Informationen nach den allgemeinen Gesetzen bleiben hiervon unber&uuml;
-        hrt. Eine &nbsp;
-        diesbez&uuml;
-        gliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer &nbsp;
-        konkreten Rechtsverletzung m&ouml;
-        glich. Bei Bekanntwerden von entsprechenden &nbsp;
-        Rechtsverletzungen werden wir diese Inhalte umgehend entfernen. </span>
-        </p>
-        <p class="c17">
-        <span class="c8">
-        Streitbeilegungsverfahren </span>
-        </p>
-        <p class="c13">
-        <span class="c0">
-        Wir sind zur Teilnahme an Streitbeilegungsverfahren vor einer &nbsp;
-        </span>
-        </p>
-        <p class="c5">
-        <span class="c0">
-        Verbraucherschlichtungsstelle bereit. Die zust&auml;
-        ndige Verbraucherschlichtungsstelle &nbsp;
-        ist: </span>
-        </p>
-        <p class="c16">
-        <span class="c0">
-        Allgemeine Verbraucherschlichtungsstelle des Zentrums f&uuml;
-        r Schlichtung e.V. Stra&szlig;
-        burger Str. 8 </span>
-        </p>
-        <p class="c18">
-        <span class="c0">
-        77694 Kehl am Rhein </span>
-        </p>
-        <p class="c2">
-        <span class="c0">
-        www.verbraucher-schlichtung.de</span>
-        </p>
+        <section>
+            <p>IMPRESSUM</p>
+            <p>Herausgeber</p>
+            <p>Aajour, Kwakye-Yeboah, Kreke</p>
+            <p>Am Gulloh 106, 44339 Dortmund</p>
+            <p>Telefon: 0049 1573 719 80 65</p>
+            <p>E-Mail: info@quilar.de</p>
+            <p>Vertretungsberechtigte(r) Geschäftsführer:</p>
+            <p>Mohamed Aajour</p>
+            <p>Die Europäische Kommission hat eine Plattform zur Online-Streitbeilegung bereitgestellt. Die OS-Plattform finden Sie unter diesem Link:</p>
+            <p><a href="http://ec.europa.eu/consumers/odr" target="_blank">http://ec.europa.eu/consumers/odr</a></p>
+            <p>Technische Informationen</p>
+            <p>Wir weisen Sie darauf hin, dass die Vertraulichkeit im Internet nicht gewährleistet ist. Jeder Benutzer ist daher allein verantwortlich, seine Daten und/oder Softwares vor eventuell im Internet zirkulierenden Viren angemessen zu schützen.</p>
+            <p>Hyperlinks</p>
+            <p>Die Einrichtung eines Hyperlinks auf der Website <a href="http://quilar.de" target="_blank">https://quilar.de</a> unterliegt der Genehmigung des publizistischen Leiters. Der publizistische Leiter übernimmt keinerlei Haftung für auf der Website https://quilar.de eingerichtete Hyperlinks zu anderen Websites.</p>
+            <p>Urheberrechte</p>
+            <p>Die durch die Seitenbetreiber erstellten Inhalte auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des Rechtsinhabers bzw. des Erstellers. Jede vollständige oder teilweise Reproduktion oder Darstellung der Webseiten, Daten oder eines Bestandteils der Website <a href="http://quilar.de" target="_blank">https://quilar.de</a>, in welchem Verfahren und auf welchem Datenträger auch immer, ist ohne Zustimmung des Herausgebers untersagt und bedeutet eine Fälschung.</p>
+            <p>Haftungsausschluss</p>
+            <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann keine Gewähr übernommen werden. Als Diensteanbieter bzw. Herausgeber dieser Website sind wir gemäß §7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§8 bis 10 TMG sind wir als Diensteanbieter bzw. Herausgeber jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+            <p>Streitbeilegungsverfahren</p>
+            <p>Wir sind zur Teilnahme an Streitbeilegungsverfahren vor einer</p>
+            <p>Verbraucherschlichtungsstelle bereit. Die zuständige Verbraucherschlichtungsstelle ist:</p>
+            <p>Allgemeine Verbraucherschlichtungsstelle des Zentrums für Schlichtung e.V. Straßburger Str. 8</p>
+            <p>77694 Kehl am Rhein</p>
+            <p>www.verbraucher-schlichtung.de</p>
+
+        </section>
     </main>
 
     <footer>
       <%- include('../partials/footer'); %>
     </footer>
+
 </body>
 </html>
