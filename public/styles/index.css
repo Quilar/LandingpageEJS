@@ -38,6 +38,12 @@ button {
     width: 300px;
     height: 90px;
     background: linear-gradient(90deg, #425DA7 0%, #00B4CE 100%);
+    transition-property: 'background';
+    transition: 0.5s ease-in-out;
+}
+
+.primary-cta-btn:hover{
+    background: #FC9946;
 }
 
 .secondary-cta-btn{
