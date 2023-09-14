@@ -61,10 +61,22 @@ button {
 }
 
 h1{
+    /* INTERAKTIVE VISUALISIERUNG */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 200;
     font-size: 70px;
-    margin: 1em 0;
-    font-family: Outfit;
-    font-weight: 600;
+    line-height: 88px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.13em;
+
+    background: linear-gradient(90deg, #6F7EA8 0%, #00B4CE 53%, #9292AA 99.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 h2{
     font-size: 60px;
@@ -137,9 +149,6 @@ span{
     }
 
 
-    h1{
-        font-size: 40px;
-    }
     h2{
         font-size: 30px;
 
@@ -162,7 +171,4 @@ span{
 @media only screen and (orientation: landscape) and (max-width: 992px){
     /* Styles specific to landscape orientation */
 
-    h1{
-        font-size: 20px;
-    }
 }
