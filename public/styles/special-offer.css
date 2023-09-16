@@ -22,6 +22,9 @@
     width: 95%;
 }
 
+.service-description p{
+    text-align: justify;
+}
 
 /* Desktop screens */
 @media only screen and (min-width: 992px){
