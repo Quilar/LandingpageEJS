@@ -19,6 +19,7 @@ main, footer{
 }
 
 section{
+    min-height: 100vh;
     width: 90%;
     margin-bottom:100px;
 }
