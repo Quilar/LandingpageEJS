@@ -30,9 +30,7 @@ function InitializeNavbar(){
         const appstore = document.querySelector(".appstore-widget");
         if (!isMobile()) {
           appstore.style.display = "none";
-          console.log("Not an iPad!");
         }
-        console.log(navigator.userAgent);
       });
 
 }
