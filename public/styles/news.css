@@ -1,7 +1,6 @@
 :root{
     --slider-padding: 5%;
 }
-body{background: unset;}
 section{
     width: 90%;
     margin-top: 100px;
@@ -35,6 +34,7 @@ section{
     align-items: flex-start;
     justify-content: space-between;
     box-shadow: 0px 2px 20px 0px rgba(110,130,208,0.18);
+    border: solid #FC9946;
     overflow: hidden;
 }
 
@@ -66,8 +66,6 @@ section{
 
 .carousel-item h3{
     height: 15%;
-    color: #425DA7;
-    
 }
 
 .carousel-item span{
@@ -79,13 +77,12 @@ section{
     max-width: 100%;
     height: 50%;
     word-wrap: break-word;
-    color: grey;
 }
 
 .handle{
     width: var(--slider-padding);
     font-size: 100px;
-    color: #425DA7;
+    color: white;
     cursor: pointer;
     z-index: 10;
 }
@@ -101,7 +98,7 @@ section{
     display: inline-flex;
     width: 1.5rem;
     height: 1.5rem;
-    background: #00b4ce;
+    background: white;
     text-decoration: none;
     align-items: center;
     justify-content: center;
@@ -111,7 +108,7 @@ section{
 }
 
 .active-dot{
-    background-color: #425DA7;
+    background-color: #FC9946;
 }
   
   

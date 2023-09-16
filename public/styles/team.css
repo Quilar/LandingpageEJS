@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: space-around;
 }
-.profile li{color: #666;}
+.profile li{color: #E4E4E4;}
 .profile{
     display: flex;
     flex-direction: column;

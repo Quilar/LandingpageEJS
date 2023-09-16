@@ -4,31 +4,31 @@
     <script src="scripts/carousel.js"></script>
 </head>
 <section id="news" class="news-section">
-    <div class="carousel">
-      <span class="handle handle-left">&#8249;</span>
-        <div class="slider">
-          <div class="carousel-items">
-            <% if (news.length > 0) { %>
-              <% news.forEach( doc => { %>
-                <div class="carousel-item" id="<%=doc.id%>">
-                  <img src="<%= `${doc.imagePath}/${doc.id}.png`%>"/>
-                  <h3><%= doc.title %></h3>
-                  <p><%= doc.date %></p>
-                  <p><%= doc.summary %></p>
-                </div>
-              <% }) %>
-            <% } else{ %>
-              <p>Keine News aktuell verfügbar</p>
-            <% } %>
-          </div>          
-        </div>
-        <span class="handle handle-right">&#8250;</span>
-        </div>
-    <div class="dots">
-      <% if (news.length > 0) { %>
-        <% news.forEach( doc => { %>
-          <img class="dot<%= (doc.id === 0) ? ' active-dot' : '' %>"/>
-        <% }) %>
-      <% } %>
-    </div>
+  <div class="carousel">
+    <span class="handle handle-left">&#8249;</span>
+      <div class="slider">
+        <div class="carousel-items">
+          <% if (news.length > 0) { %>
+            <% news.forEach( doc => { %>
+              <div class="carousel-item" id="<%=doc.id%>">
+                <img src="<%= `${doc.imagePath}/${doc.id}.png`%>"/>
+                <h3><%= doc.title %></h3>
+                <p><%= doc.date %></p>
+                <p><%= doc.summary %></p>
+              </div>
+            <% }) %>
+          <% } else{ %>
+            <p>Keine News aktuell verfügbar</p>
+          <% } %>
+        </div>          
+      </div>
+      <span class="handle handle-right">&#8250;</span>
+      </div>
+  <div class="dots">
+    <% if (news.length > 0) { %>
+      <% news.forEach( doc => { %>
+        <img class="dot<%= (doc.id === 0) ? ' active-dot' : '' %>"/>
+      <% }) %>
+    <% } %>
+  </div>
 </section>
