@@ -111,6 +111,7 @@ p, li, input, textarea{
     line-height: 1.5em;
     word-break: break-word;
     color: #E4E4E4;
+    text-align: justify;
   }
   
 span{
@@ -158,6 +159,7 @@ span{
     }
     p, li, input, textarea{
         font-size: 20px;
+        text-align: unset;
     }
     span{ font-size: 16px;}
 

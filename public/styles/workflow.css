@@ -12,7 +12,7 @@
 /* Rectangles */
 .bulletpoint{
   display: flex; 
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   margin-bottom: 50px;
@@ -38,8 +38,8 @@
 .bulletpoint-content{
   display: flex;
   flex-direction: column;
-  width: 75%;
-  padding: 20px; 
+  width: 90%;
+  padding: 5%; 
 }
 
 .bulletpoint-content a{
@@ -56,6 +56,7 @@
 
   .bulletpoint{
     width: 75%;
+    flex-direction: row;
   }
 
   .bulletpoint.shift{left:25%;}
@@ -71,5 +72,8 @@
     object-fit: scale-down;
   }
 
+  .bulletpoint-content{
+    width: 75%;
+  }
   .bulletpoint-content img{height: 40px;}
 }
