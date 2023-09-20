@@ -30,9 +30,9 @@ cc.run({
             transition: "slide"             // zoom, slide
         },
         settings_modal: {
-            layout: "box",                  // box, bar
+            layout: "bar",                  // box, bar
             position: "left",               // right, left (available only if bar layout selected)
-            transition: "slide"             // zoom, slide
+            transition: "zoom"             // zoom, slide
         }
     },
 
@@ -74,8 +74,8 @@ cc.run({
     languages: {
         'de': {
             consent_modal: {
-                title: 'Unsere Cookies verbessern Ihr Besuchererlebnis!',
-                description: 'Sie werden auch für die technische Umsetzung unserer Seite verwendet. Alle Einzelheiten zu unseren Cookies finden Sie in unserer Datenschutzerklärung. Sie haben jederzeit die Option, in den Cookie-Einstellungen optionale Cookies abzulehnen.',
+                // title: 'Unsere Cookies verbessern Ihr Besuchererlebnis!',
+                description: 'Wir verwenden Cookies, um technische Funktionen auf unserer Webseite zu gewährleisten und, um unsere Webseite für Sie zu verbessern. Mit Ihrer Zustimmung erlauben Sie uns die Cookies zu Marketing- und Analysezwecke zu verwenden. Alle Einzelheiten zu unseren Cookies finden Sie in unserer <a href="/datenschutz" target="_blank">Datenschutzerklärung</a>. Sie haben jederzeit die Option, in den Cookie-Einstellungen optionale Cookies abzulehnen.',
                 primary_btn: {
                     text: 'Zustimmen',
                     role: 'accept_all'              // 'accept_selected' or 'accept_all'
@@ -89,7 +89,7 @@ cc.run({
                 title: 'Erweiterte Cookie-Einstellungen',
                 save_settings_btn: 'Auswahl speichern',
                 accept_all_btn: 'Zustimmen',
-                reject_all_btn: 'Alle ablehnen',
+                // reject_all_btn: 'Alle ablehnen',
                 close_btn_label: 'Abbrechen',
                 cookie_table_headers: [
                     {col1: 'Name'},
