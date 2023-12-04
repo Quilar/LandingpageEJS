@@ -12,6 +12,7 @@
             <% if (testimonials.length > 0) { %>
               <% testimonials.forEach( doc => { %>
                 <div class="testimonial-item" id="<%=doc.id%>">
+                  <img src="content/testimonials/<%=doc.image%>"/>
                   <p>"<%= doc.testimonie %>"</p>
                   <span><%= doc.name %></span>
                 </div>
