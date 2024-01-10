@@ -1,0 +1,139 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #aaaaaaac;
+  transition: 0.3s;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  max-height: 50vh;
+  object-fit: cover;
+}
+
+.card a {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 16px;
+  background-color: #FC9946;
+  color: white;
+  text-decoration: none;
+  border-radius: 0 0 5px 5px;
+}
+
+.card a:hover {
+  background-color: #e0873f;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.row{
+  width: 100%;
+}
+
+.blog-banner{
+  width: 100%;
+}
+
+.blog-banner-img{
+  position: relative;
+  max-height: 50vh;
+  width: 98%;
+  
+  border-radius: 10px;
+  margin: 1%;
+}
+
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  height: auto;
+  border: solid #aaa;
+  border-width: 2px;
+}
+
+.leftcolumn, .rightcolumn {   
+  width: 100%;
+  padding: 0;
+}
+
+.card h2{
+  color: #fc9946;
+}
+
+.social-links img {
+  width: 30px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.social-links p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+.social-links a{
+  display: flex;
+  justify-content: flex-start;
+  background: none;
+}
+.social-links a:hover{
+  background: none;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 900px) {
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    height: 100%;
+  }
+  .blog-banner{
+    display: flex;
+    justify-content: center;
+  }
+  .blog-banner img{
+    max-height: 50vh;
+    object-fit: cover;
+    border-width: 5px;
+    border-radius: 20px;
+    margin: 20px;
+  }
+  
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .title-img{
+      width: 100%;
+    }
+
+    .follow-us{
+      position: sticky;
+      top: 0px;
+    }
+    
+  }
