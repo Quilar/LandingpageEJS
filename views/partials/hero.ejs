@@ -1,26 +1,50 @@
 <head>
     <link rel="stylesheet" href="styles/hero.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <script src="/scripts/hero-modal.js"></script>
 </head>
 <section class="hero-section">
-  <div class="hero-title">
-    <h1 class="title">Für die Liebe auf den ersten Blick, gibt es nur eine Chance!</h1>
-  </div>
   <div class="hero-content">
-    <img loading="lazy" class="background-video" src="content/hero/Animation.gif" alt="Animated GIF">
-    <div class="hero-paragraph">
-      <div class="hero-paragraph-text">
-        <h3>Design sollte nicht nur vorgestellt, sondern erlebt werden.</h3>
-        <p>
-          Unsere Mission ist es, Ihren Immobilienvertrieb zu unterstützen. Quilar bringt Ihre Architekturpläne in die Realität, in dem es Ihre Baupläne in interaktive Erlebnisse verwandelt.
-          <br>Damit sich Ihre Kunden sofort in ihr zukünftiges Zuhause verlieben!
+    <div class="hero-text">
+      <!-- <h1 class="hero-title">Besichtigungen, die Emotionen wecken</h1> -->
+      <h1 class="hero-title">Begehbare Grundrisse</h1>
+      <!-- <h1>Emotionen für deine Immobilienangebote</h1> -->
 
-        </p>
+      <!-- <p>Der richtige Vorgeschmack für deine Kunden auf ihr zukünftiges Eigenheim.</p> -->
+      <!-- <p>
+        atemberaubende virtuelle Hausbegehungen in Echtgröße.
+        Deine Kunden verlieben sich sofort in dein Immobilienangebot.
+      </p> -->
+      <p>Mit virtuellen Begehungen in Echtgröße einen höheren Verkaufserfolg erzielen.</p>
+      <div class="hero-btns">
+        <button class="hero-cta-btn meetergo-modal-button" link="https://my.meetergo.com/mohamed-aajour/demositzung"><a>Kontakt aufnehmen</a></button>
+        <!-- Button to Open Modal -->
+        <button id="playVideoBtn" class="hero-cta-btn secondary-hero-btn" link="https://my.meetergo.com/mohamed-aajour/demositzung"><a>Video abspielen</a></button>
+      </div>
+
+      <!-- Modal Structure -->
+      <div id="videoModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <video id="modalVideo" width="100%" controls>
+            <source src="/content/hero/hero-bkg-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
       <div class="hero-cta-btns">
-        <button class="primary-cta-btn meetergo-modal-button" link="https://my.meetergo.com/mohamed-aajour/demositzung"><a>Termin buchen</a></button>
-        <!-- <button class="secondary-cta-btn"><a href="https://hometour.quilar.de/admin" target="_blank">Registrieren</a></button> -->
+
       </div>
     </div>
+    <video playsinline autoplay="autoplay" loop id="vid" muted class="hero-bkg">
+      <source src="/content/hero/hero-bkg-video.mp4" alt="Intro" type="video/mp4">
+    </video>
+    <svg class="mr-2 scroll-indicator" width="45" height="64" viewBox="0 0 45 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect class="dot" x="18" y="11" width="9" height="18" rx="4.5" fill="#D9D9D9"/>
+      <rect x="4.5" y="3.5" width="36" height="59" rx="18" stroke="white"/>
+    </svg>
+  
+  
   </div>
-  </div>
+</div>
 </section>
