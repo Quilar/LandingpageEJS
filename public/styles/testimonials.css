@@ -1,15 +1,25 @@
 :root{
     --slider-padding: 5%;
 }
+
+.testimonial-container{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.testimonial-bkg{
+    opacity: 0.2;
+}
+
 .testimonials-section{
     display: flex;
     flex-direction: column;
     max-width: 100%;
 }
 
-.testimonials-section h1{
+.testimonials-section h2{
     text-align: center;
-    color: #425DA7!important;
+    justify-content: center;
+    color: #E4E4E4;
 }
 
 .testimonials{
@@ -28,7 +38,6 @@
     height: 100%;
     align-items: flex-start;
     justify-content: space-between;
-    box-shadow: 0px 2px 20px 0px rgba(110,130,208,0.18);
     overflow: hidden;
 }
 
