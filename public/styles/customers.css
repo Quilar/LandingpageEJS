@@ -1,13 +1,19 @@
+.customers-container{
+    background:rgb(113, 113, 113);
+}
+
 .customers-section{
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: unset;
+    margin: unset;
 }
 
 .customers-section h2{
     width: 100%;
     text-align: center;
+    font-size: 39px;
 }
 
 .customers-logos{
