@@ -158,6 +158,28 @@
   cursor: pointer;
 }
 
+.appstore-rating{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: baseline;
+  bottom: 20px;
+  left: 10px
+}
+.appstore-rating p{
+  display: flex;
+  align-items: center;
+  color: black;
+  margin: 0;
+}
+.appstore-rating-stars{
+  display: flex;
+}
+.appstore-rating-stars img{
+  width: 40px;
+}
+
 /* Desktop screens */
 @media only screen and (min-width: 992px){
   
@@ -173,6 +195,13 @@
       scale: 0.7;
     }
 
+    .appstore-rating{
+      bottom: 50px;
+      left: 20px;
+    }
+    .appstore-rating-stars img{
+      width: 30px;
+    }
 }
 
 /* Landscape screens */
