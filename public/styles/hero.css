@@ -70,23 +70,8 @@
   display: block;
 }
 
-.hero-title strong{
-  position: relative;
-  font-weight: 400;
-  display: inline-block; /* This is required to size the pseudo-element correctly */
-  padding-bottom: 3px; /* Space for the underline */
-  z-index: 1;
-}
-
 .hero-title strong::before {
-  content: '';
-  position: absolute;
-  bottom: 0px; /* Align with the bottom of the text */
-  left: 0;
-  width: 100%; /* Match the width of the strong element */
   height: 32px; /* Thickness of the underline */
-  background: #00b3cea7; /* Color of the underline */
-  z-index: -1; /* Place it behind the text */
 }
 
 .hero-cta-btn{
