@@ -38,23 +38,21 @@ main, footer{
 
 section{
     width: 90%;
-    margin-bottom:100px;
+    margin-bottom:50px;
 }
 
+/*Default button settings*/
 button {
-    width: 300px;
-    height: 90px;
-    margin: 1em;
+    width: 150px;
+    height: 45px;
+    margin: 0.5em;
     cursor: pointer;
-    border-radius: 12px;
-    justify-content: center;
-    align-items: center;
+    border-radius: 6px;
     border: none;
-    background-color: #FC9946;
 }
 .primary-cta-btn{
-    width: 300px;
-    height: 90px;
+    width: 150px;
+    height: 45px;
     background: linear-gradient(90deg, #425DA7 0%, #00B4CE 100%);
     transition-property: 'background';
     transition: 0.5s ease-in-out;
@@ -65,17 +63,17 @@ button {
 }
 
 .secondary-cta-btn{
-    width: 300px;
-    height: 90px;
+    width: 150px;
+    height: 45px;
     /* Apply linear gradient border using box-shadow */
-    box-shadow: 0 0 0 2px #00B4CE, 0 0 0 4px #425DA7;
+    box-shadow: 0 0 0 1px #00B4CE, 0 0 0 2px #425DA7;
     /* Apply background-clip to make sure gradient only affects border */
     background-clip: padding-box;
     background: transparent;
 }
 .secondary-cta-btn:hover {
       /* Reverse the gradient colors on hover */
-    box-shadow: 0 0 0 2px #425DA7, 0 0 0 4px #00B4CE;
+    box-shadow: 0 0 0 1px #425DA7, 0 0 0 2px #00B4CE;
 }
 
 h1{
@@ -83,12 +81,12 @@ h1{
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 200;
-    font-size: 70px;
-    line-height: 88px;
+    font-size: 30px;
+    line-height: 44px;
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.13em;
+    letter-spacing: 0.12em;
 
     background: linear-gradient(90deg, #6F7EA8 0%, #00B4CE 53%, #9292AA 99.99%);
     -webkit-background-clip: text;
@@ -97,7 +95,7 @@ h1{
     -webkit-text-fill-color: transparent;
 }
 h2{
-    font-size: 60px;
+    font-size: 24px;
     margin: 1em 0;
     font-family: Outfit;
     font-weight: 200;
@@ -107,7 +105,7 @@ h2{
 }
 
 h3{
-    font-size: 50px;
+    font-size: 20px;
     margin: 0.5em 0;
     font-family: Outfit;
     font-weight: 400;
@@ -116,14 +114,14 @@ h3{
 
 a{
     font-family: Outfit;
-    font-size: 36px;
+    font-size: 18px;
     margin: 0.5em;
     text-decoration: none;
     color: #fff;
 }
 
 p, li, input, textarea{
-    font-size: 36px;
+    font-size: 18px;
     margin: 1em 0;
     font-family:Outfit;
     line-height: 1.5em;
@@ -134,7 +132,7 @@ p, li, input, textarea{
   
 span{
     font-family: Outfit;
-    font-size: 30px;
+    font-size: 12px;
 }
 
 /* Central definitio for the strong tag with a background/undeline color */
@@ -142,20 +140,10 @@ strong{
     position: relative;
     font-weight: 400;
     display: inline-block; /* This is required to size the pseudo-element correctly */
-    padding-bottom: 3px; /* Space for the underline */
+    padding-bottom: 1.5px; /* Space for the underline */
     z-index: 1;
   }
   
-strong::before {
-    content: '';
-    position: absolute;
-    bottom: 0px; /* Align with the bottom of the text */
-    left: 0;
-    width: 100%; /* Match the width of the strong element */
-    height: 15px; /* Thickness of the underline */
-    background: #00b3cea7; /* Color of the underline */
-    z-index: -1; /* Place it behind the text */
-  }
 
 @media only screen and (min-width:992px) {
 
