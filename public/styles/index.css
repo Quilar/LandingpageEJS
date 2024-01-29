@@ -101,6 +101,7 @@ h1{
 }
 h2{
     font-size: 24px;
+    color: var(--obscure-green);
     margin: 1em 0;
     margin-top: 0;
     font-family: Outfit;
