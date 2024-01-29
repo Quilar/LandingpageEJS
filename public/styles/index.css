@@ -4,6 +4,7 @@
 }
 
 :root{
+    --off-white: #E1E1E1;
     --obscure-blue: #367D92;
     --obscure-green: #00282E;
 }
@@ -147,6 +148,7 @@ p, li, input, textarea{
 span{
     font-family: Outfit;
     font-size: 12px;
+    color: var(--off-white);
 }
 
 /* Central definitio for the strong tag with a background/undeline color */
