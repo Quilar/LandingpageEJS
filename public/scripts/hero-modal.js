@@ -21,7 +21,8 @@ function ModalOpener(){
     if (event.target == modal) {
       var video = document.getElementById('modalVideo');
       video.pause();
-      modal.style.display = 'none';
+      modal.style.display = 'flex';
+      modal.style.alignItems = 'center';
     }
   };
   
