@@ -3,13 +3,18 @@
     src: url(../fonts/Outfit-VariableFont_wght.ttf);
 }
 
+:root{
+    --obscure-blue: #367D92;
+    --obscure-green: #00282E;
+}
+
 html{scroll-behavior: smooth;}
 
 body{
     margin:0;
     -webkit-font-smoothing: antialiased;
     width: 100%!important;
-    
+    background-color: #eeeeee;
 }
 
 main, footer{
@@ -97,6 +102,7 @@ h1{
 h2{
     font-size: 24px;
     margin: 1em 0;
+    margin-top: 0;
     font-family: Outfit;
     font-weight: 200;
 }

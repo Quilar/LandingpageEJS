@@ -1,30 +1,11 @@
 <head>
     <link rel="stylesheet" href="styles/prob-sol.css">
-    <script>
-        function isInViewport(element) {
-        var rect = element.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-        }
- 
-        function handleScroll() {
-            var divs = document.querySelectorAll('.prob-sol-title-image');
-            divs.forEach(div => {
-                if (isInViewport(div) && !div.classList.contains('animate'))
-                    div.classList.add('animate');
-            });
-        }
-        window.addEventListener('scroll', handleScroll);
-    </script>
+    <script src="/scripts/prob-sol.js"></script>
 </head>
 <section class="section-container">
 <section class="prob-sol-section">
-    <img src="/content/images/floorplans.jpg" alt="floorplan" class="section-bkg"/>
-    <h2>Kunden kaufen was sie <strong>verstehen</strong></h2>
+    <span>IHRE KUNDEN HABEN SICH BEWUSST FÜR SIE ENTSCHIEDEN</span>
+    <h2>Doch warum <strong>entscheiden</strong> sich auch potenzielle Kunden gegen Sie?</h2>
     <div class="prob-sol-group">
         <div class="prob-sol">
             <img class="prob-sol-title-image" src="content/icons/new-product-col.png"/>
@@ -33,14 +14,15 @@
                 wie es am Ende aussehen soll.
                 
             </p>
+            <div class="active-prob-sol"></div>
         </div>
-
         <div class="prob-sol">
             <img class="prob-sol-title-image" src="content/icons/product-service-col.png"/>
             <p>
                 Wir erstellen ein 4D Modell Ihres Immobilienangebotes und stellen es in
                 unserer eigens dafür entwickelten App zur Verfügung.
             </p>
+            <div class="active-prob-sol">   </div>
         </div>
         <div class="prob-sol">
             <img class="prob-sol-title-image" src="content/icons/new-offer-col.png"/>
@@ -48,6 +30,7 @@
                 Ihre Kunden können jetzt in Echtgröße durch Ihr Immobilienangebot laufen
                 und verstehen Ihr Immobilienangebot.
             </p>
+            <div class="active-prob-sol"></div>
         </div>
     </div>
 </section> 

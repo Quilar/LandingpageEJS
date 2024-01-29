@@ -2,43 +2,51 @@
     margin: 50px 0;
   }
 
-.prob-sol-section strong{
-  position: relative;
-  font-weight: 400;
-  display: inline-block; /* This is required to size the pseudo-element correctly */
-  padding-bottom: 3px; /* Space for the underline */
-  z-index: 1;
-}
-
-.prob-sol-section strong::before {
-  content: '';
-  position: absolute;
-  bottom: 0px; /* Align with the bottom of the text */
-  left: 0;
-  width: 100%; /* Match the width of the strong element */
-  height: 32px; /* Thickness of the underline */
-  background: #00b3cea7; /* Color of the underline */
-  z-index: -1; /* Place it behind the text */
-}
+  .prob-sol-section span, h2, p{
+    color: var(--obscure-green);
+  }
+  .prob-sol-section strong{
+    color: var(--obscure-blue);
+  }
   
   .prob-sol-group{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
+    gap: 10px;
   }
   /* Rectangles */
   .prob-sol{
+    position: relative;
     display: flex; 
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     min-height: min-content;
-    width: 100%;
-    
-    border-radius: 20px;
+    background-color: white;
+    width: calc(70vw);
+    height: calc(70vw);
+    padding: 10px;
   }
-  
+
+  .prob-sol::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background: #367D92;
+    height: 10px;
+  }
+  .prob-sol.active::after{
+    background: #00B4CE;
+  }
+
+  .prob-sol.active{
+    transform: translateX(10%); /* Slight translation to the right */
+    box-shadow: -12px 11px 24.6px rgba(0, 0, 0, 0.35);
+  }
+
   .prob-sol p{
     color: black
   }
