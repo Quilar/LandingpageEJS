@@ -1,35 +1,34 @@
-.prob-sol-section{
+.target-group-section{
     margin: 50px 0;
   }
 
-  .prob-sol-section span, .prob-sol-section h2, .prob-sol-section p{
+  .target-group-section span, .target-group-section h2, .target-group-section p{
     color: var(--obscure-green);
   }
-  .prob-sol-section strong{
+  .target-group-section strong{
     color: var(--obscure-blue);
   }
   
-  .prob-sol-group{
+  .target-group-group{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
   /* Rectangles */
-  .prob-sol{
+  .target-group{
     position: relative;
     display: flex; 
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     min-height: min-content;
     background-color: white;
-    width: calc(70vw);
-    height: calc(70vw);
+    width: calc(60vw);
+    height: calc(60vw);
     padding: 10px;
   }
 
-  .prob-sol::after{
+  .target-group::after{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -38,45 +37,32 @@
     background: #367D92;
     height: 10px;
   }
-  .prob-sol.active::after{
+  .target-group.active::after{
     background: #00B4CE;
   }
 
-  .prob-sol.active{
+  .target-group.active{
     align-self: center;
     box-shadow: -12px 11px 24.6px rgba(0, 0, 0, 0.35);
   }
-
-  .prob-sol p{
-    color: black
-  }
-  
-  .prob-sol-title-image{
-    height: 100px;
-    opacity: 0;
-    transition: opacity 2s;
-    
-  }
-  
-  .prob-sol-title-image.animate{opacity: 1;}
   
   
   /* Desktop screens */
   @media only screen and (min-width: 992px){
-    .prob-sol-group{
+    .target-group-group{
       flex-direction: row;
     }
-    .prob-sol ul{
+    .target-group ul{
       padding-inline-start: 0;
     }
-    .prob-sol{
+    .target-group{
       width: 30%;
     }
-    .prob-sol h1{font-size:20px;}
-    .prob-sol p{font-size: 20px;}
-    .prob-sol p{text-align: center;}
+    .target-group h1{font-size:20px;}
+    .target-group p{font-size: 20px;}
+    .target-group p{text-align: center;}
 
-    .prob-sol-title-image{
+    .target-group-title-image{
         height: 100px;
       }
   }
