@@ -2,7 +2,7 @@
     margin: 50px 0;
   }
 
-  .prob-sol-section span, h2, p{
+  .prob-sol-section span, .prob-sol-section h2, .prob-sol-section p{
     color: var(--obscure-green);
   }
   .prob-sol-section strong{
