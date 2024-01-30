@@ -61,11 +61,6 @@
 
 
 .hero-title{
-  background: unset;
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: unset;
-  background-clip: unset;
-  -webkit-text-fill-color: unset;
   padding: 0 20px;
   display: block;
 }
