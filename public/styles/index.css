@@ -5,8 +5,11 @@
 
 :root{
     --off-white: #E1E1E1;
+    --cyan: #00B4CE;
+    --purple: #425DA7;
     --obscure-blue: #367D92;
     --obscure-green: #00282E;
+    --linear-gradient: linear-gradient(90deg, #425DA7 0%, #00B4CE 100%);
 }
 
 html{scroll-behavior: smooth;}
