@@ -1,0 +1,90 @@
+.first-steps-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%!important;
+    background-color: var(--obscure-blue);
+    margin-bottom: 0;
+    padding-bottom: 50px;
+  }
+  
+  .first-steps-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+  }
+
+  .first-steps-container h2{
+    color: var(--off-white);
+  }
+  
+  .first-steps-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    }
+    
+    .first-steps{
+        background-image: url("/content/images/granular-bkg.png");
+        background-size: cover;
+        width: 80%;
+        height: 100%;
+        padding: 10px;
+        border: solid white 2px;
+        border-radius: 10px;
+    }
+    
+    .first-steps-header{
+      display: flex;
+      justify-content: center;
+    width: 100%;
+  }
+
+  .first-steps-header img{
+    height: 50px;
+    object-fit: fill;
+  }
+
+  .first-steps-body{
+    margin: 12px;
+  }
+  .first-steps-body a{
+    color: #A1A1A1;
+    text-decoration: underline;
+  }
+
+  .first-steps-demo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-steps-demo button{
+    margin: 1em;
+    width: 90%;
+  }
+  .first-steps-demo p{
+    text-align: center;
+  }
+  
+  /* Desktop screens */
+  @media only screen and (min-width: 992px){
+
+    .first-steps-title h2{
+      
+      font-size: 40px;
+    }
+    .first-steps-video{
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
+      
+      
+    }
+  
+  
+  }

@@ -1,6 +1,8 @@
 .solution-benefits-section{
     width: 100%;
-    background: linear-gradient(180deg, rgba(54, 125, 146, 0) 67%, rgba(54, 125, 146, 0.9) 100%);
+    background: linear-gradient(180deg, rgba(54, 125, 146, 0) 67%, rgba(54, 125, 146, 1) 100%);
+    margin-bottom: 0;
+    padding-bottom: 50px;
 }
 .swiper-wrapper{
     max-width: 80%;
