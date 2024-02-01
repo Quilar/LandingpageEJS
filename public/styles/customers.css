@@ -1,5 +1,6 @@
 .customers-container{
     background: var(--obscure-blue);
+    overflow: hidden;
 }
 .customers-section{
     display: flex;
@@ -34,7 +35,6 @@
 .customers-logos{
     display:flex;
     align-items: center;
-    overflow-x: hidden;
     white-space: nowrap;
 }
 
