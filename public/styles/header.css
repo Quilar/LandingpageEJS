@@ -32,7 +32,8 @@ header {
 
 .burger{
     display: block;
-    height: 80%;
+    max-height: 50%;
+    margin: 10px;
 }
 
 .placeholder{
