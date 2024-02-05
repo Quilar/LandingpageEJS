@@ -15,6 +15,12 @@ function updateElementClasses(){
         if (cc.allowedCategory(category)) {
             // Remove the 'blocked' class
             element.classList.remove('blocked');
+
+            // Assuming the placeholder is a previous sibling of the content and hide it
+            var placeholder = element.previousElementSibling;
+            if (placeholder && placeholder.classList.contains('cookie-placeholder')) {
+                placeholder.style.display = 'none';
+            }
         }
     });
 }

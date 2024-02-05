@@ -13,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background: linear-gradient(180deg, rgba(54, 125, 146, 0.75) 0%, rgba(54, 125, 146, 0.75) 14.5%, rgba(54, 125, 146, 0) 100%);
+  background: linear-gradient(180deg, var(--obscure-blue) 0%, rgba(54, 125, 146, 0) 100%);
   padding-top: 24px;
 }
 
