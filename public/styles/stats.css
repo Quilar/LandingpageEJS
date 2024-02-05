@@ -1,0 +1,105 @@
+.stats-container{
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .stats-container span, 
+  .stats-container p, 
+  .stats-container h3{
+    color: var(--obscure-green);
+  }
+  
+  .stats-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin-top: 50px;
+  }
+  
+  .stats-average-age{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .average-age-header{
+    width: 100%;
+  }
+  .average-age-header img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .average-age-body{
+    width: 100%;
+  }
+
+  .stats-quilar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .stat-quilar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stat-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  .stat-header-number{
+    position: absolute;
+    font-family:'Outfit';
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 1;
+  }
+  .stat-header-circle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stat-header-circle svg{
+    width: 60px;
+    height: 60px;
+    transform: rotate(-90deg);
+  }
+  .stat-header-circle circle{
+    fill: none;
+    stroke-width: 10;
+    stroke: rgba(255, 255, 255, 0);
+    r: 25;
+    cx: 30;
+    cy: 30;
+  }
+  .stat-header-circle svg circle:nth-child(2){
+    stroke-dasharray: 440; /* Approximately 2 * Math.PI * 70 (circle radius) */
+    stroke-dashoffset: 440;
+    stroke: var(--cyan);
+    transition: stroke-dashoffset 1s linear;
+  }
+
+  
+
+  @media only screen and (min-width: 992px){
+    .stats-container{
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .stats-video{
+      width: 45vw;
+      height: calc(45vw * (315 / 560));
+    }
+  
+    .stats-right{
+      width: 45vw;
+      padding-left: 5%;
+    }
+  }

@@ -3,33 +3,16 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="scripts/testimonials-carousel.js"></script>
 </head>
-<section class="testimonials-section">
-    <h1>Das sagen unsere Nutzer</h1>
+<section class="section-container testimonial-container">
+  <section class="testimonials-section">
+    <h2>Das sagen unsere Nutzer</h2>
     <div class="testimonials">
-      <span class="handle testimonials-handle-left">&#8249;</span>
-        <div class="testimonials-slider">
-          <div class="testimonial-items">
-            <% if (testimonials.length > 0) { %>
-              <% testimonials.forEach( doc => { %>
-                <div class="testimonial-item" id="<%=doc.id%>">
-                  <img src="content/testimonials/<%=doc.image%>"/>
-                  <p>"<%= doc.testimonie %>"</p>
-                  <span><%= doc.name %></span>
-                </div>
-              <% }) %>
-            <% } else{ %>
-              <p>Keine Daten verfügbar</p>
-            <% } %>
-          </div>          
-        </div>
-        <span class="handle testimonials-handle-right">&#8250;</span>
-        </div>
-    <div class="testimonials-dots">
-      <% if (testimonials.length > 0) { %>
-        <% testimonials.forEach( doc => { %>
-          <img class="testimonial-dot<%= (doc.id === 0) ? ' active-dot' : '' %>"/>
-        <% }) %>
-      <% } %>
-    </div>
+      <div class="testimonial">
+        <iframe src="https://www.youtube-nocookie.com/embed/dWbCzo56e7Y?si=e87eWSK40gIUMXfG&amp;start=274" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="testimonial">
+        <iframe src="https://www.youtube-nocookie.com/embed/T7AOo3ELoKo?si=gSZuf0hdgwe1sEGU&amp;start=127" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
 
+</section>
 </section>

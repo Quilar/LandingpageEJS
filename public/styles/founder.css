@@ -1,0 +1,44 @@
+.founder-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    margin-top: 50px;
+}
+
+.founder-header span{
+    color: var(--obscure-green);
+}
+
+.founder-body{
+    width: 100%;
+}
+.founder-body iframe{
+    width: 100%;
+}
+
+
+
+    /* Desktop screens */
+    @media only screen and (min-width: 992px){
+
+        .founder-section {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            }
+
+        .founder-wrapper{
+            height: 80%;
+            width: 80%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+      }
+  

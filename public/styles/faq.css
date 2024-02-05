@@ -1,0 +1,51 @@
+.faq-container {
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+
+  .faq-container span,
+  .faq-container p{
+    color: var(--obscure-green);
+  }
+  
+  .faq-item {
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between items */
+    overflow: hidden; /* Ensures the border radius clips the content */
+  }
+  
+  .faq-question {
+    padding: 15px; /* Padding inside question */
+    display: flex;
+    justify-content: space-between; /* Space out text and icon */
+    align-items: center; /* Center items vertically */
+    cursor: pointer; /* Suggests the element is clickable */
+    background-color: #f9f9f9; /* Light background for the question */
+  }
+  
+  .faq-question:hover {
+    background-color: #e9e9e9; /* Slightly darker background on hover */
+  }
+  
+  .faq-icon {
+    transition: transform 0.3s; /* Smooth transform on rotate */
+  }
+  
+  .faq-answer {
+    display: none; /* Initially hide the answer */
+    padding: 15px; /* Padding inside answer */
+    background-color: #fff; /* White background for the answer */
+    border-top: 1px solid #ccc; /* Light grey border at the top of answer */
+  }
+  
+  /* Rotate icon when the answer is shown */
+  .faq-question.active .faq-icon {
+    transform: rotate(-180deg);
+  }
+  
+  /* Show the answer when active */
+  .faq-answer.active {
+    display: block;
+  }
+  

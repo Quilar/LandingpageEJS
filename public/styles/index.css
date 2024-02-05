@@ -3,13 +3,22 @@
     src: url(../fonts/Outfit-VariableFont_wght.ttf);
 }
 
+:root{
+    --off-white: #E1E1E1;
+    --cyan: #00B4CE;
+    --purple: #425DA7;
+    --obscure-blue: #009cb4;
+    --obscure-green: #00282E;
+    --linear-gradient: linear-gradient(90deg, #425DA7 0%, #00B4CE 100%);
+}
+
 html{scroll-behavior: smooth;}
 
 body{
     margin:0;
     -webkit-font-smoothing: antialiased;
     width: 100%!important;
-    background: linear-gradient(180deg, #000000 0%, #000000 45%, #00B4CE 100%);
+    background-color: #eeeeee;
 }
 
 main, footer{
@@ -18,25 +27,47 @@ main, footer{
     align-items: center;
 }
 
-section{
-    width: 90%;
-    margin-bottom:100px;
+.section-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    margin:0;
+}
+.section-bkg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: -1;
 }
 
+section{
+    width: 90%;
+    margin-bottom:50px;
+}
+
+/*Default button settings*/
 button {
-    width: 300px;
-    height: 90px;
-    margin: 1em;
+    width: 150px;
+    height: 45px;
+    margin: 0.5em;
     cursor: pointer;
-    border-radius: 12px;
-    justify-content: center;
-    align-items: center;
+    border-radius: 6px;
     border: none;
-    background-color: #FC9946;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0.5em;
+    text-decoration: none;
+    color: #E0E0E0;
 }
 .primary-cta-btn{
-    width: 300px;
-    height: 90px;
+    width: 150px;
+    height: 45px;
     background: linear-gradient(90deg, #425DA7 0%, #00B4CE 100%);
     transition-property: 'background';
     transition: 0.5s ease-in-out;
@@ -47,17 +78,18 @@ button {
 }
 
 .secondary-cta-btn{
-    width: 300px;
-    height: 90px;
+    width: 150px;
+    height: 45px;
     /* Apply linear gradient border using box-shadow */
-    box-shadow: 0 0 0 2px #00B4CE, 0 0 0 4px #425DA7;
+    border: solid 1px white;
+    box-shadow: 0px 0px 10px 1px #FFFFFF;
     /* Apply background-clip to make sure gradient only affects border */
     background-clip: padding-box;
     background: transparent;
 }
 .secondary-cta-btn:hover {
       /* Reverse the gradient colors on hover */
-    box-shadow: 0 0 0 2px #425DA7, 0 0 0 4px #00B4CE;
+    box-shadow: 0 0 0 1px #425DA7, 0 0 0 2px #00B4CE;
 }
 
 h1{
@@ -65,65 +97,108 @@ h1{
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 200;
-    font-size: 70px;
-    line-height: 88px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.13em;
-
-    background: linear-gradient(90deg, #6F7EA8 0%, #00B4CE 53%, #9292AA 99.99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    line-height: 44px;
+    display: block;
 }
 h2{
-    font-size: 60px;
+    font-size: 24px;
+    color: var(--obscure-green);
     margin: 1em 0;
+    margin-top: 0;
     font-family: Outfit;
-    font-weight: 500;
+    font-weight: 200;
 }
 .h2-bright{
     color:#00B4CE
 }
 
 h3{
-    font-size: 50px;
+    font-size: 18px;
+    margin: 0.5em 0;
+    font-family: Outfit;
+    font-weight: 300;
+    color: var(--off-white);
+}
+
+h4{
+    font-size: 12px;
     margin: 0.5em 0;
     font-family: Outfit;
     font-weight: 400;
-    color: #FC9946;
+    color: var(--off-white);
 }
 
 a{
     font-family: Outfit;
-    font-size: 36px;
+    font-size: 14px;
     margin: 0.5em;
     text-decoration: none;
-    color: #fff;
+    color: #E0E0E0;
 }
 
 p, li, input, textarea{
-    font-size: 36px;
+    font-size: 14px;
     margin: 1em 0;
     font-family:Outfit;
+    font-style: normal;
+    font-weight: 400;
     line-height: 1.5em;
     word-break: break-word;
-    color: #E4E4E4;
-    text-align: justify;
+    color: #E0E0E0;
   }
-  
-span{
-    font-family: Outfit;
-    font-size: 30px;
+
+.p-bold {
+    font-weight: 500;
 }
 
+
+span{
+    font-family: Outfit;
+    font-size: 12px;
+    color: var(--off-white);
+}
+
+/* Central definitio for the strong tag with a background/undeline color */
+strong{
+    position: relative;
+    font-weight: 500;
+    z-index: 1;
+  }
+
+  .cookie-placeholder{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.cookie-placeholder-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.cookie-placeholder-p{
+    width: 80%;
+    text-align: center;
+    color: var(--off-white)!important;
+}
+.cookie-placeholder-button{
+    width: 80%;
+    background: transparent;
+    border: solid var(--off-white) 1px;
+}
+  
+
 @media only screen and (min-width:992px) {
-    
-    body{
-        background: linear-gradient(180deg, #000000 0%, #000000 25%, #00B4CE 100%);
-    }
+
     
     button{
         transition: min-width 0.3s;
@@ -151,8 +226,7 @@ span{
 
 
     h2{
-        font-size: 30px;
-
+        font-size: 60px;
     }
     h3{
         font-size: 24px;

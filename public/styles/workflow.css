@@ -4,53 +4,83 @@
     flex-direction: column;
   }
 
+  .workflow-wrapper{
+    display: flex;
+    justify-content: flex-end;
+  }
 
-.bulletpoint-group{
-  width: 100%;
-}
+  .bulletpoints {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    position: relative;
+    width: 80%;
+  }
 
+  .bulletpoints::before {
+    content: '';
+    position: absolute;
+    top: 0px; /* Adjust this to vertically center the line with your icons */
+    left: -40px;
+    width: 2px; /* Thickness of the line */
+    height: 80%; 
+    background: var(--linear-gradient); /* Color of the line */
+    z-index: -1; /* Below the icons */
+  }
+  
 /* Rectangles */
 .bulletpoint{
   display: flex; 
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  margin-bottom: 50px;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
+  width: 90%;
   position: relative;
   opacity: 0; /* Initially hidden */
   transform: translateY(20%); /* Initially off-screen */
   transition: opacity 1s ease-in, transform 1s ease-in;
 }
 
+.workflow-section span,
+.workflow-section p, 
+.workflow-section h3{
+  color: var(--obscure-green);
+}
+
 .bulletpoint.animate {
-  
   opacity: 1; /* Fade in when the animate class is added */
   transform: translateY(0); /* Slide up when the animate class is added */
 }
 
-.bulletpoint-thumbnail{
-  display: flex;
-  margin: 20px;
+.timeline-icon{
+  height: 20px;
+  width: 20px;
+  background: var(--obscure-blue); /* Use your icon here */
+  border-radius: 50%;
+  margin: 0 auto;
+  position: absolute;
+  left: -50px;
+  top: 12.5%;
+}
+.timeline-icon.first-icon{
+  top: 0%;
 }
 
-.bulletpoint-content{
+.bulletpoint-header{
   display: flex;
   flex-direction: column;
-  width: 90%;
-  padding: 5%; 
+  align-items: center;
 }
 
-.bulletpoint-content a{
-  text-decoration: underline;
-  color: #00B4CE;
-  margin: 0;
+.bulletpoint-header img{
+  width: 50px;
 }
 
-.bulletpoint-content img{
-  height: 80px;
+.bulletpoint-body{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
+
 /* Desktop screens */
 @media only screen and (min-width: 992px){
 

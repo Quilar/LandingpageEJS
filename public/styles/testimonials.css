@@ -1,22 +1,32 @@
 :root{
     --slider-padding: 5%;
 }
+
+
+.testimonial-bkg{
+    opacity: 0.2;
+}
+
+.testimonial{
+    width: calc(80vw);
+    height: auto;
+}
+.testimonial iframe{
+    width: 100%;
+    margin: 1%;
+}
+
 .testimonials-section{
     display: flex;
     flex-direction: column;
     max-width: 100%;
 }
 
-.testimonials-section h1{
-    text-align: center;
-    color: #425DA7!important;
-}
 
 .testimonials{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;    
+    flex-direction: column;
+    align-items: center; 
     width: 100%;
 }
 
@@ -28,7 +38,6 @@
     height: 100%;
     align-items: flex-start;
     justify-content: space-between;
-    box-shadow: 0px 2px 20px 0px rgba(110,130,208,0.18);
     overflow: hidden;
 }
 
