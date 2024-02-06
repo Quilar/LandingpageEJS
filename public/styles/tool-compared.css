@@ -32,13 +32,6 @@
     border-radius: 10px;
   }
 
-  .left-oriented{
-    align-self: flex-start;
-  }
-  .right-oriented{
-    align-self: flex-end;
-  }
-
   .tool-header{
     width: 100%;
   }

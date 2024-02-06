@@ -13,44 +13,22 @@
     <main>
         <div class="row">
             <div class="leftcolumn">
-                <% if(blogs){ %>
-                    <% blogs.forEach(blog => { %>        
-                        <div class="card" id=<%= blog.id %>>
-                            <h2><%= blog.title%></h2>
-                            <span><%= blog.date %></span>
-                            <img src=<%= blog.imagePath %> class="fakeimg"/>
-                            <p><%= blog.summary %></p>
-                            <a href=<%=`/blog/${blog.id}`%> >
-                                Weiter lesen</a>
-                        </div>
-                    <% }); %>
-                <% } %>
-            </div>
-            <div class="rightcolumn follow-us">
-                <div class="card">
-                    <h3>Lösungen für Architekten und Entwickler</h3>
-                    <p>
-                        Entdecken Sie, wie unsere Software Ihr nächstes Projekt revolutionieren kann. 
-                        Von innovativer Planung bis hin zur effizienten Umsetzung – wir haben die Tools, die Sie benötigen.
-                    </p>
-                    <a href="/services" class="cta-button">Unsere Services</a>
-                </div>
-                <div class="card">
-                    <h3>Folge uns auf</h3>
-                    <div class="social-links">
-                        <a href="https://www.youtube.com/@quilar-de" target="_blank">
-                            <img src="/content/footer/youtube.svg" alt="YouTube">
-                            <p>YouTube</p>
-                        </a>
-                        <a href="https://www.linkedin.com/company/quilar/" target="_blank">
-                            <img src="/content/footer/linkedin.svg" alt="YouTube">
-                            <p>LinkedIn</p>
-                        </a>
-                        <a href="https://www.instagram.com/quilar.de/" target="_blank">
-                            <img src="/content/footer/instagram.svg" alt="Instagram">
-                            <p>Instagram</p>
-                        </a>
-                    </div>
+                <div class="cards">
+
+                    <% if(blogs){ %>
+                        <% blogs.forEach(blog => { %>        
+                            <div class="card" id=<%= blog.id %>>
+                                <div class="card-header">
+                                    <img src=<%= `/content/blogs/${blog.id}/banner.png` %> class="fakeimg"/>
+                                </div>
+                                <div class="card-body">
+                                    <h2><%= blog.title%></h2>
+                                    <p><%= blog.summary %></p>
+                                    <a href=<%=`/blog/${blog.id}`%>> Zum Beitrag > </a>
+                                </div>
+                            </div>
+                            <% }); %>
+                            <% } %>
                 </div>
             </div>
           </div>
