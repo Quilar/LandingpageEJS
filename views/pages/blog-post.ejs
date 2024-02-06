@@ -3,7 +3,7 @@
 <head>
     <%- include('../partials/head'); %>
     <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="/styles/blog.css">
+    <link rel="stylesheet" href="/styles/blog-post.css">
     <title><%= blog.title %> | Quilar</title>
     <meta name="description" content="<%= blog.summary %>">
 
@@ -17,47 +17,35 @@
     <header class="visible">
     <%- include('../partials/header'); %>
     </header>
-    <main class="blogs">
-        <div class="row">
-            <div class="leftcolumn">
+    <main>
+    <section class="section-container">
+        <section class="blog-post-section">
+            <div class="blog-post-container">
+                <div class="blog-post">
+                        <div><%- blog.content %></div>
+                </div>
+                <div class="more-posts">
                 <div class="card">
-                    <div><%- blog.content %></div>
+                    <div class="card-header">
+                        <h3>Mehr Beiträge</h3>
+                    </div>
+                    <% if(moreBlogs.length > 0){ %>
+                    <% moreBlogs.forEach(more => { %>
+                        <div>
+                            <div class="card-body">
+                                <h4><%= more.title %></h4>
+                                <img src=<%= `/content/blogs/${more.id}/banner.png` %> alt=<%= more.title %> />
+                                <a href=<%=`/blog/${more.id}`%>> Lesen > </a>
+                            </div>
+                        </div><br>
+                    
+                    <%})%> 
+                    <% } %>
+                </div>
                 </div>
             </div>
-            <div class="rightcolumn">
-              <div class="card">
-                <h3>Mehr Beiträge</h3>
-                <% if(moreBlogs.length > 0){ %>
-                  <% moreBlogs.forEach(more => { %>
-                    <div>
-                      <p><%= more.title %></p>
-                      <img src=<%= more.imagePath %> alt=<%= more.title %> />
-                      <a href=<%=`/blog/${more.id}`%>> Lesen </a>
-                    </div><br>
-                  
-                <%})%> 
-                <% } %>
-              </div>
-
-              <div class="card follow-us">
-                <h3>Folge uns auf</h3>
-                <div class="social-links">
-                    <a href="https://www.youtube.com/@quilar-de" target="_blank">
-                        <img src="/content/footer/youtube.svg" alt="YouTube">
-                        <p>YouTube</p>
-                    </a>
-                    <a href="https://www.linkedin.com/company/quilar/" target="_blank">
-                        <img src="/content/footer/linkedin.svg" alt="YouTube">
-                        <p>LinkedIn</p>
-                    </a>
-                    <a href="https://www.instagram.com/quilar.de/" target="_blank">
-                        <img src="/content/footer/instagram.svg" alt="Instagram">
-                        <p>Instagram</p>
-                    </a>
-                </div>
-            </div>
-            </div>
-        </div>
+        </section>
+    </section>
     </main>
 
     <footer>
