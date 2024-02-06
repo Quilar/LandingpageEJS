@@ -9,7 +9,7 @@
     --purple: #425DA7;
     --obscure-blue: #009cb4;
     --obscure-green: #00282E;
-    --linear-gradient: linear-gradient(90deg, #425DA7 0%, #00B4CE 100%);
+    --linear-gradient: linear-gradient(200deg, #009cb4 0%, #009cb4 35%, #FC9946 100%);
 }
 
 html{scroll-behavior: smooth;}
