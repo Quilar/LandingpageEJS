@@ -1,7 +1,6 @@
 .promise-container{
   width: 100%;
-  background: var(--obscure-blue);
-  opacity: 0.75;
+  background: var(--linear-gradient);
 }
 .promise-section{
     position: relative;
@@ -25,7 +24,11 @@
     margin: 50px 0;
   }  
   .promise-right{
+    position: absolute;
+    top: 0;
+    z-index: -1;
     width: 100%;
+    opacity: 0.1;
   }
   .promise-right img{
     width: 100%;
