@@ -21,20 +21,9 @@ app.use(express.static('public',
 }));
 
 // index page
-app.get('/', async(req, res) => {
-  console.log("request incoming");
-try{
-  const news = await fs.promises.readFile(`${__dirname}/public/content/news/news.json`);
-  const testimonials = await fs.promises.readFile(`${__dirname}/public/content/testimonials/testimonies.json`);
-  
-  if(news && testimonials) res.render('pages/index', {news: JSON.parse(news), testimonials: JSON.parse(testimonials)});
-  else throw Error("Ein Server Error ist aufgetreten");
-}
-catch(err){
-  res.status(404).render(404);
-}
-  
-});
+app.get('/', (req, res)=> res.render('pages/index'));
+
+
 // developer mode show index that lists all partials
 app.get('/developer', async(req, res) => {
   console.log("request incoming");
@@ -88,6 +77,7 @@ app.get('/about', async (req, res) => {
   app.use('/blog', blogRouter);
 
 
+app.get('/hometour', (req, res)=> res.render('pages/hometour'));
 app.get('/services', (req, res)=> res.render('pages/services'));
 app.get('/datenschutz', (req, res)=> res.render('pages/datenschutz'));
 app.get('/impressum', (req, res)=> res.render('pages/impressum'));
