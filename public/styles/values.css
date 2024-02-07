@@ -24,8 +24,13 @@
   object-fit: cover;
 }
 
-.value-body p, .value-body span{
+.values-section p, 
+.values-section span{
   color: var(--obscure-green);
+}
+
+.values-section h3{
+  color: var(--obscure-blue);
 }
 
 .value-body{position: relative;}

@@ -5,7 +5,8 @@
     align-items: center;
     width: 100%;
     background: var(--linear-gradient);
-    padding-top: 50px;
+    padding: 50px 0;
+    margin-bottom: 0;
     z-index: -2;
 }
 .cta-banner-section-bkg{
@@ -42,7 +43,11 @@
     align-items: center;
 }
 .model img{
+    position: absolute;
+    top: 0;
     width: 80%;
+    z-index: -1;
+    opacity: 0.1;
 }
 
 
