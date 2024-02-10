@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     min-height: unset;
+    margin: 20px 0;
 }
 
 .customers-header{
@@ -27,7 +28,7 @@
     margin: 20px 0 ;
 }
 
-.customers-header-sub p{
+.customers-header-sub{
     text-align: center;
     margin: 0;
 }

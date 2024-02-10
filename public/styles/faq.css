@@ -1,6 +1,6 @@
 .faq-container {
     max-width: 600px; /* Adjust as needed */
-    margin: 0 auto;
+    margin-top: var(--margin-sec-v);
   }
 
   .faq-container span,

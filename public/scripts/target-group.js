@@ -9,8 +9,9 @@ window.addEventListener('scroll', () => {
             const boxTop = box.getBoundingClientRect().top;
             const boxCenter = boxTop + box.clientHeight / 2;
             const screenCenter = window.innerHeight / 2;
-            
-            if (boxCenter < screenCenter + 100 && boxCenter > screenCenter - 100) {
+            // Threshold from the center where to make the box active
+            let threshold = 100
+            if (boxCenter < screenCenter + threshold && boxCenter > screenCenter - threshold) {
                 box.classList.add('active');
             } else {
                 box.classList.remove('active');

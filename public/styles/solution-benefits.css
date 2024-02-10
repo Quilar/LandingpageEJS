@@ -28,15 +28,14 @@
     max-width: 80%;
 }
 
-.swiper-container {
+.swiper-container-solution-benefits {
     width: 100%;
     overflow: hidden;
     padding: 50px 0;
   }
   
-  .swiper-slide {
+  .solution-benefit {
     background-color: var(--obscure-blue);
-    border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     
     /* Center slide text vertically and horizontally */
@@ -49,12 +48,12 @@
     max-width: 80%; /* Active slide width */
   }
 
-  .slide-header img{
-      width: 100%;
-      height: 38%;
-      object-fit: cover;
-      border-radius: 10px 10px 0 0;
-  }
   .slide-body{
-    padding: 0 10px ;
+    padding: 10px ;
+    text-align: center;
+  }
+
+  .swipe-btns{
+    height: 100%;
+    opacity: 0;
   }

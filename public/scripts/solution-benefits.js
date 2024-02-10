@@ -1,4 +1,5 @@
-var swiper = new Swiper('.swiper-container', {
+const initializeSwiperSolutionBenefits = () =>{
+  var swiper = new Swiper('.swiper-container-solution-benefits', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -17,5 +18,12 @@ var swiper = new Swiper('.swiper-container', {
     loop: true, // Enables the infinite loop
     pagination: {
       el: '.swiper-pagination',
+      clickable: true
     },
+    autoplay: {delay: 5000}
   });
+}
+
+document.addEventListener('DOMContentLoaded', ()=>{
+  initializeSwiperSolutionBenefits();
+})

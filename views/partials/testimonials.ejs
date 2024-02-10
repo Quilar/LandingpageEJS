@@ -1,18 +1,76 @@
 <head>
     <link rel="stylesheet" href="styles/testimonials.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="scripts/testimonials-carousel.js"></script>
+    
 </head>
-<section class="section-container testimonial-container">
+<section class="section-container testimonials-container">
   <section class="testimonials-section">
-    <h2>Das sagen unsere Nutzer</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <iframe src="https://www.youtube-nocookie.com/embed/dWbCzo56e7Y?si=e87eWSK40gIUMXfG&amp;start=274" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-      <div class="testimonial">
-        <iframe src="https://www.youtube-nocookie.com/embed/T7AOo3ELoKo?si=gSZuf0hdgwe1sEGU&amp;start=127" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- <img src="/content/images/dots-vertical.png" alt="Dots" class="testimonials-section-bkg"> -->
+    <div class="testimonials-header">
+      <span>ERFAHRUNGEN</span>
+      <h2>Das sagen unsere Nutzer</h2>
+    </div>
+    <div class="swiper-container-testimonials">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide testimonial">
+          <div class="testimonial-header">
+            <iframe src="https://www.youtube-nocookie.com/embed/T7AOo3ELoKo?si=gSZuf0hdgwe1sEGU&amp;start=127" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <img class="video-thumbnail" loading="lazy"  src="/content/testimonials/markus.png" alt="Markus"/>
+          </div>
+          <div class="testimonial-quote">
+            <p>
+              "Das wird die zukunft werden."
+              "Das wird die zukunft werden."
+            </p>
+          </div>
+        </div>
+  
+        <div class="swiper-slide testimonial">
+          <div class="testimonial-header">
+            <iframe src="https://www.youtube-nocookie.com/embed/dWbCzo56e7Y?si=e87eWSK40gIUMXfG&amp;start=274" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <img class="video-thumbnail" loading="lazy"  src="/content/testimonials/julia.png" alt="Julia"/>
+          </div>
+          <div class="testimonial-quote">
+            <p>
+              "Habe einen teuren Fehler vermeiden können."
+              "Habe einen teuren Fehler vermeiden können."
+            </p>
+          </div>
+        </div> 
+  
+        <div class="swiper-slide testimonial">
+          <div class="testimonial-header">
+            <iframe src="https://www.youtube-nocookie.com/embed/dWbCzo56e7Y?si=e87eWSK40gIUMXfG&amp;start=274" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <img class="video-thumbnail" loading="lazy"  src="/content/testimonials/simon.png" alt="Simon"/>
+          </div>
+          <div class="testimonial-quote">
+            <p>
+              "Du musst immer einen Schritt voraus bleiben."
+              "Du musst immer einen Schritt voraus bleiben."
+            </p>
+          </div>
+        </div>
+  
+        <div class="swiper-slide testimonial">
+          <div class="testimonial-header">
+            <iframe src="https://www.youtube-nocookie.com/embed/dWbCzo56e7Y?si=e87eWSK40gIUMXfG&amp;start=274" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <img class="video-thumbnail" loading="lazy"  src="/content/testimonials/klee.png" alt="Hans-Werner"/>
+          </div>
+          <div class="testimonial-quote">
+            <p>
+              "Du musst immer einen Schritt voraus bleiben."
+              "Du musst immer einen Schritt voraus bleiben."
+            </p>
+          </div>
+        </div>
       </div>
 
+      <div class="swiper-button-prev swipe-btns"></div>
+    <div class="swiper-button-next swipe-btns"></div>
+    <div class="swiper-pagination"></div>
+    </div>
 </section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="scripts/testimonials-carousel.js"></script>
 </section>

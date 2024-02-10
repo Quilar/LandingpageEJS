@@ -6,7 +6,7 @@
     min-width: 100%!important;
     background-color: var(--obscure-blue);
     margin-bottom: 0;
-    padding-bottom: 50px;
+    padding-bottom: var(--margin-sec-v);
   }
   
   .first-steps-container{
@@ -29,12 +29,11 @@
     }
     
     .first-steps{
-        background-image: url("/content/images/granular-bkg.png");
         background-size: cover;
-        width: 80%;
+        width: 100%;
         height: 100%;
         padding: 10px;
-        border: solid white 2px;
+        border: solid white 1px;
         border-radius: 10px;
     }
     
@@ -51,16 +50,19 @@
 
   .first-steps-body{
     margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .first-steps-body a{
-    color: #A1A1A1;
-    text-decoration: underline;
+  .first-steps-body p{
+    margin: 0;
   }
 
   .first-steps-demo{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: var(--margin-sec-v);
   }
 
   .first-steps-demo button{

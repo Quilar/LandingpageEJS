@@ -2,7 +2,10 @@
     margin: 50px 0;
   }
 
-  .target-group-section span, .target-group-section h2, .target-group-section p{
+  .target-group-section span, 
+  .target-group-section h2,
+  .target-group-section h3,
+  .target-group-section p{
     color: var(--obscure-green);
   }
   .target-group-section strong{
@@ -13,6 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
     gap: 10px;
   }
   /* Rectangles */
@@ -20,12 +24,13 @@
     position: relative;
     display: flex; 
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     min-height: min-content;
     background-color: white;
-    width: calc(60vw);
-    height: calc(60vw);
-    padding: 10px;
+    width: 90%;
+    min-height: calc(30vw);
+    padding: 5%;
   }
 
   .target-group::after{
@@ -42,7 +47,6 @@
   }
 
   .target-group.active{
-    align-self: center;
     box-shadow: -12px 11px 24.6px rgba(0, 0, 0, 0.35);
   }
   
