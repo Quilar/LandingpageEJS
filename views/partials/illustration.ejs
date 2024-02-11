@@ -1,21 +1,56 @@
 <head>
     <link rel="stylesheet" href="styles/illustration.css">
+    <script>
+        function isInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        );
+        }
+ 
+        function handleScroll() {
+            var divs = document.querySelectorAll('.illustration-step');
+            divs.forEach(div => {
+                if (isInViewport(div) && !div.classList.contains('animate'))
+                    div.classList.add('animate');
+            });
+        }
+        window.addEventListener('scroll', handleScroll);
+    </script>
 </head>
 <section class="section-container">
 <section class="illustration-section">
-    <div class="illustration-image">
-        <img src="content/illustration/illustration_step1.svg" class="step1">
-        <img src="content/illustration/arrow.svg" class="illustration-arrow">
-        <img src="content/illustration/illustration_step2.svg" class="step1">
-        <img src="content/illustration/arrow.svg" class="illustration-arrow">
-        <img src="content/illustration/illustration_step3.svg" class="step1">
+    <div class="illustration-header">
+        <span>UNSERE LÖSUNG</span>
+        <h2>Einmal <strong>erlebt</strong>, sofort <strong>verstanden</strong></h2>
     </div>
-    <div class="illustration-text">
-        <p>
-            Quilar-App als einfache All-in-one Lösung bietet dem Immobilienmakler ein 
-            stetig wachsendes Portfolio der Einrichtungsmöglichkeiten mit Möbeln, Bodenbelägen, Wandgestaltungen und 
-            Accessoires und eine stetige Weiterentwicklung unserer App-Anwendung nach den Bedürfnissen der Immobilienmakler.
-        </p>
+    <div class="illustration-steps">
+        <div class="illustration-step">
+            <div class="illustration-circle first-circle"></div>
+            <h3><strong>1. Umgebung scannen</strong></h3>
+            <img src="content/illustration/illustration_step1.png" alt="Umgebung scannen">
+            <p>Scannen Sie die Umgebung mit der App, bis diese die Bodenfläche erkennt. Einfach das Gerät umherbewegen, bis die App grünes
+            Licht gibt.</p>
+        </div>
+
+        <div class="illustration-step">
+            <div class="illustration-circle first-circe"></div>
+            <h3><strong>2. Objekt platzieren und skalieren</strong></h3>
+            <img src="content/illustration/illustration_step2.png" alt="Objekt platzieren">
+            <p>Platzieren Sie das Objekt dort, wo Sie es haben möchten. Anschließend können Sie es auf die tatsächliche Größe (100%)
+                skalieren, damit es genau so aussieht, wie es wirklich sein wird.</p>
+        </div>
+
+        <div class="illustration-step">
+            <div class="illustration-circle first-circe"></div>
+            <h3><strong>3. Virtuelle Begehung starten</strong></h3>
+            <img src="content/illustration/illustration_step3.png" alt="Virtuele Begehung">
+            <p>Jetzt können Sie starten, um das zukünftige Objekt virtuell zu erkunden. Gehen Sie herum und erleben Sie die
+                Immobilie, als ob sie schon gebaut wäre.</p>
+        </div>
+
+        <button class="illustration-more-btn">Mehr zur Anwendung</button>
     </div>
 </section> 
 </section>

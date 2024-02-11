@@ -4,6 +4,7 @@
 }
 
 :root{
+    --page-background-color: #eeeeee;
     --off-white: #E1E1E1;
     --cyan: #00B4CE;
     --orange: #FC9946;
@@ -66,7 +67,7 @@ button {
     border: none;
     font-family: Outfit;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     margin: 0.5em 0;
     text-decoration: none;
     color: #E0E0E0;

@@ -1,31 +1,81 @@
 .illustration-section{
     display: flex;
     flex-direction: column;
-    width: 100%!important;   
+    width: 90%;
+    margin-top: var(--margin-sec-v);
 }
 
-.illustration-image{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;    
-    padding: 5%;
-}
-
-.illustration-arrow{
-    transform: rotate(90deg);
-}
-
-.illustration-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.illustration-text p{ 
-    color: #00B4CE!important;
+.illustration-section h3,
+.illustration-section p{
     text-align: center;
+    background-color: var(--page-background-color);
 }
+
+.illustration-section h3,
+.illustration-section p,
+.illustration-section span{
+    color: var(--obscure-green);
+}
+
+.illustration-steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.illustration-steps::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 10%; /* Adjust this to vertically center the line with your icons */
+    width: 2px; /* Thickness of the line */
+    height: 80%; 
+    background: var(--linear-gradient); /* Color of the line */
+    z-index: -1; /* Below the icons */
+  }
+
+.illustration-step{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20%); /* Initially off-screen */
+    transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.illustration-step.animate{
+    opacity: 1; /* Fade in when the animate class is added */
+    transform: translateY(0); /* Slide up when the animate class is added */
+}
+
+.illustration-step img{
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+.illustration-circle{
+    height: 20px;
+    width: 20px;
+    background: var(--obscure-blue); /* Use your icon here */
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .illustration-circle.first-circle{
+    top: 0%;
+  }
+
+
+.illustration-more-btn{
+    background-color: var(--off-white);
+    color: var(--orange);
+}
+
+
+
 
 /* Desktop screens */
 @media only screen and (min-width: 992px){
