@@ -1,5 +1,5 @@
 .target-group-section{
-    margin: 50px 0;
+    margin: var(--margin-sec-v) 0;
   }
 
   .target-group-section span, 

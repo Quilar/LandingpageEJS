@@ -73,6 +73,9 @@
     background-color: var(--off-white);
     color: var(--orange);
 }
+.illustration-more-btn a{
+    color: var(--orange);
+}
 
 
 
