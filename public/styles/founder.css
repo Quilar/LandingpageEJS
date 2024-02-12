@@ -5,39 +5,100 @@
     justify-content: center;
     align-items: flex-start;
     width: 90%;
+    margin-top: var(--margin-sec-v);
 }
 
-.founder-header span{
+.founder-section h3,
+.founder-section p,
+.founder-section span{
     color: var(--obscure-green);
+}
+.founder-section h4{
+    color: var(--grey);
 }
 
 .founder-body{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.founder-body iframe{
+.founder-body img{
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.p-result{
+    margin: 0;
+}
+
+.linked-in-btn{
+    background-color: #245a94;
+}
+
+.profiles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: calc(var(--margin-sec-v)*0.25);
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.profile h3{
+    color: var(--cyan);
+    font-weight: 600;
+    margin-top: 20px;
+}
+.profile h4{
+    color: var(--grey);
+}
+
+.profile ul{
+    width: 100%;
+}
+
+.profile img{
     width: 100%;
 }
 
 
 
-    /* Desktop screens */
-    @media only screen and (min-width: 992px){
 
-        .founder-section {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            }
 
-        .founder-wrapper{
-            height: 80%;
-            width: 80%;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+
+/* Desktop screens */
+@media only screen and (min-width: 992px){
+
+    .founder-section {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
         }
 
+    .founder-wrapper{
+        height: 80%;
+        width: 80%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-      }
-  
+    .profiles{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .profile{
+        margin: 3%;
+        width: 33%;
+    }
+    
+    }

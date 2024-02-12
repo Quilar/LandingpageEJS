@@ -27,6 +27,10 @@
     opacity: 0;
     animation: fadeIn 2s ease forwards 1s;
   }
+
+  .about-hero-title h1{
+    margin: calc(var(--margin-sec-v)/2) 0;
+  }
   
   @keyframes fadeIn {
     to {
@@ -37,16 +41,22 @@
   .about-hero-container h3,
   .about-hero-container p{
     color: var(--obscure-green);
-    text-align: center;
+    text-align: start;
+    width: 100%;
   }
   
   .about-hero-video{
     width: 100%;
     margin: 25px 0;
   }
-  .about-hero-video iframe{
+
+  .about-hero-section iframe{
     width: 100%;
     height: 100%;
+  }
+  .about-hero-section img{
+    width: 100%;
+    object-fit: scale-down;
   }
 
   
@@ -58,7 +68,15 @@
     padding-top: calc(var(--margin-sec-v)/2);
     background: var(--linear-gradient);
   }
+
+  .cta-container h2{
+    color: var(--off-white);
+  }
   
+  .cta-container button{
+    margin-top: 40px;
+  }
+
   @media only screen and (min-width: 992px){
     .about-hero-container{
       flex-direction: row;

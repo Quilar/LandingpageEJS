@@ -3,45 +3,23 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-}
-.team-section h1 {color: #425DA7!important;}
-.profiles{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-.profile li{color: #E4E4E4;}
-.profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin: 10%;
+    width: 90%;
 }
 
-.profile img{
+.team-section h2,
+.team-section h3,
+.team-section p,
+.team-section span,
+.team-section li{
+    color: var(--obscure-green);
+}
+
+.team-header{
     width: 100%;
-    border-radius: 50px;
+    margin-bottom: calc(var(--margin-sec-v)*0.5);
 }
-
-.momo h2{color: #425DA7!important;}
-.andy h2{color:#00B4CE!important;}
-.max h2{color: #585BA5!important;}
-
-
-
 
 /* Desktop screens */
 @media only screen and (min-width: 992px){
 
-    .profiles{
-        flex-direction: row;
-        align-items: flex-start;
-    }
-    .profile{
-        margin: 3%;
-        width: 33%;
-    }
 }
