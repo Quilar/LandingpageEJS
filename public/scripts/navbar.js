@@ -19,20 +19,6 @@ function InitializeNavbar(){
         },
         { passive: true }
     );
-
-    
-    const isMobile = () => {
-        const userAgent = navigator.userAgent;
-        return navigator.maxTouchPoints > 2;
-      };
-      
-      window.addEventListener("load", () => {
-        const appstore = document.querySelector(".appstore-widget");
-        if (!isMobile()) {
-          appstore.style.display = "none";
-        }
-      });
-
 }
 
 $(document).ready(()=>InitializeNavbar());

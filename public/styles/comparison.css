@@ -1,0 +1,82 @@
+.comparison-section {
+  background: var(--obscure-blue);
+  width: 100%;
+}
+
+.comparison-head h2{
+  color: var(--off-white);
+}
+
+.comparison-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.comparison-benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-bottom: solid 1px var(--off-white);
+}
+
+.comparison-benefit h3 {
+  text-decoration: underline;
+}
+
+.comparison-benefit p {
+  margin-top: 0;
+  text-align: center;
+}
+
+.hometour-icon{
+  background: url("/content/icons/HomeTour.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  border: solid 3px var(--orange);
+  width: 80px;
+  height: 80px;
+  box-shadow: 0px 2px 4px 1px rgba(255, 255, 255, 0.25);
+}
+.vr-icon{
+  background: url("/content/icons/VR.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  border: solid 3px var(--obscure-green);
+  width: 80px;
+  height: 80px;
+  box-shadow: 0px 2px 4px 1px rgba(255, 255, 255, 0.25);
+}
+
+.comparison-hometour h4{
+  text-align: center;
+  color: var(--orange);
+  margin-bottom: 0;
+}
+.comparison-vr h4{
+  text-align: center;
+  color: var(--obscure-green);
+  margin-bottom: 0;
+}
+
+.comparison {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: calc(var(--margin-sec-v)/2) 0;
+}
+
+
+
+/* Landscape screens */
+@media only screen and (orientation: landscape) and (max-width: 992px){
+  /* Styles specific to landscape orientation */
+
+}
+
+
+@media only screen and (min-width: 992px){
+
+}

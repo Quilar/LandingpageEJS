@@ -1,0 +1,113 @@
+.walkthrough-section{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: var(--margin-sec-v);
+}
+
+.walkthrough-section h3,
+.walkthrough-section p{
+    text-align: center;
+    background-color: var(--page-background-color);
+}
+
+.walkthrough-section h3,
+.walkthrough-section p,
+.walkthrough-section span{
+    color: var(--obscure-green);
+}
+
+.walkthrough-header{
+    margin-bottom: calc(var(--margin-sec-v)/2);
+}
+
+.walkthrough-video{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .walkthrough-video iframe{
+    opacity: 0;
+    width: 100%;
+  }
+
+  .walkthrough-video img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit:cover;
+    z-index: 1;
+  }
+
+
+.walkthrough-steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.walkthrough-steps::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px; /* Thickness of the line */
+    height: 80%; 
+    background: var(--linear-gradient); /* Color of the line */
+    z-index: -1; /* Below the icons */
+  }
+
+.walkthrough-step{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20%); /* Initially off-screen */
+    transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.walkthrough-step.animate{
+    opacity: 1; /* Fade in when the animate class is added */
+    transform: translateY(0); /* Slide up when the animate class is added */
+}
+
+.walkthrough-step img{
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+.walkthrough-circle{
+    height: 20px;
+    width: 20px;
+    background: var(--obscure-blue); /* Use your icon here */
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .walkthrough-circle.first-circle{
+    top: 0%;
+  }
+
+
+
+
+
+/* Desktop screens */
+@media only screen and (min-width: 992px){
+    .walkthrough-image{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
+    .walkthrough-image img {width: unset;}
+    .walkthrough-arrow{transform: rotate(0);}
+}
+
