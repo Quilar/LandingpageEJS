@@ -1,18 +1,35 @@
-.promise-container{
+.promise-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   background: var(--linear-gradient);
-  padding-top: var(--margin-sec-v);
+  padding: calc(var(--margin-sec-v)/2) 0;
+  margin-bottom: 0;
+  z-index:-2;
 }
-.promise-section{
+
+.promise-section-bkg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.promise-section h2{
+  color: var(--off-white);
+}
+
+.promise{
     position: relative;
     display:flex;
     flex-direction: column;
     align-items: center;
     width: 90%;
-  }
-
-  .promise-section h2{
-    color: var(--off-white);
   }
 
   .promise-part{

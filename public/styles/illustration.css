@@ -17,6 +17,15 @@
     color: var(--obscure-green);
 }
 
+.illustration-section-bkg{
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    right: 30%;
+    opacity: 0.2;
+    z-index: -1;
+  }
+
 .illustration-steps{
     display: flex;
     flex-direction: column;

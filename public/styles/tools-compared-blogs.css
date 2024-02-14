@@ -5,7 +5,18 @@
     justify-content: center;
     min-width: 100%!important;
     margin-top: var(--margin-sec-v);
+    overflow-x: clip;
   }
+
+  .tool-blog-section-bkg{
+    position: absolute;
+    width: 100%;
+    top: -5%;
+    left: 30%;
+    opacity: 0.2;
+    z-index: -2;
+  }
+
   
   .tool-blog-container{
     display: flex;

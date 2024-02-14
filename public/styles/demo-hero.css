@@ -1,8 +1,7 @@
 .demo-hero-section {
   position: relative;
-  top: -100px;
-  margin-bottom: -100px; /*subtract that top distance at the top so there gets no space created*/
-  height: 70vh;
+  margin-bottom: 0; /*subtract that top distance at the top so there gets no space created*/
+  height: var(--hero-height);
   width: 100vw;
   overflow: hidden;
   display: flex;

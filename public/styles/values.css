@@ -2,6 +2,16 @@
   margin: 50px 0;
 }
 
+.values-section-bkg{
+  position: absolute;
+  width: 50%;
+  top: 50%; 
+  transform: translateY(-50%);
+  transform: rotate(180deg);
+  right: 0;
+  z-index: -1;
+}
+
 .value-group{
   display: flex;
   flex-direction: column;
@@ -36,7 +46,7 @@
 .value-body{position: relative;}
 
 .value-body img{
-  width: 40%;
+  width: 60%;
   object-fit: fill;
   position: absolute;
   z-index: -1;
@@ -45,12 +55,12 @@
 }
 
 .rotate-left{
-  left: 0;
+  left: -20%;
   rotate: -20deg;
 }
 
 .rotate-right{
-  right: 0;
+  right: -20%;
   rotate: 20deg;
 }
 

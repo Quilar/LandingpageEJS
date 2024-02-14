@@ -1,5 +1,6 @@
 .target-group-section{
     margin: var(--margin-sec-v) 0;
+    overflow-x: clip;
   }
 
   .target-group-section span, 
@@ -10,6 +11,15 @@
   }
   .target-group-section strong{
     color: var(--obscure-blue);
+  }
+
+  .target-group-section-bkg{
+    position: absolute;
+    width: 100%;
+    bottom: -20%;
+    left: 30%;
+    opacity: 0.2;
+    z-index: -1;
   }
   
   .target-group-group{

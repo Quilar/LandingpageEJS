@@ -36,6 +36,9 @@
 .linked-in-btn{
     background-color: #245a94;
 }
+.linked-in-btn a{
+    color: white;
+}
 
 .profiles{
     display: flex;

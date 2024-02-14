@@ -5,6 +5,15 @@
     margin-top: var(--margin-sec-v);
   }
 
+  .workflow-section-bkg{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 30%;
+    opacity: 0.2;
+    z-index: -1;
+  }
+
   .workflow-wrapper{
     display: flex;
     justify-content: flex-end;

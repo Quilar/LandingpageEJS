@@ -3,6 +3,14 @@
     margin-top: var(--margin-sec-v);
   }
 
+  .faq-section-bkg{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+  }
+
   .faq-container span,
   .faq-container p{
     color: var(--obscure-green);

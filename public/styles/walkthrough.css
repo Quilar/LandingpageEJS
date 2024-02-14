@@ -17,6 +17,15 @@
     color: var(--obscure-green);
 }
 
+.walkthrough-section-bkg{
+  position: absolute;
+  width: 40%;
+  top: 0%;
+  left: 0;
+  z-index: -1;
+}
+
+
 .walkthrough-header{
     margin-bottom: calc(var(--margin-sec-v)/2);
 }
