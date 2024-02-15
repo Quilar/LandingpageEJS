@@ -22,26 +22,21 @@ const initializeSwiperTestimonial = ()=>{
         },
         autoplay: {delay: 5000}
       });
+
+    // Find all the thumbnails
+    var thumbnails = document.querySelectorAll('.video-thumbnail');
+    
+    thumbnails.forEach(function(thumbnail) 
+    {
+        thumbnail.addEventListener('click', function() {
+          // Stop the autoplay when a thumbnail is clicked
+          swiperTestimonial.autoplay.stop();
+        
+        });
+    });
 }
 
-// controlling the thumbnail of the video
+
 document.addEventListener('DOMContentLoaded', function() {
-// Find all the thumbnails
-var thumbnails = document.querySelectorAll('.video-thumbnail');
-
-thumbnails.forEach(function(thumbnail) {
-    thumbnail.addEventListener('click', function() {
-    // The iframe is the previous sibling of the thumbnail image
-    var iframe = thumbnail.previousElementSibling;
-    
-    // Modify the iframe src to auto-play the video
-    iframe.src += "&autoplay=1";
-
-    // Show the iframe and hide the thumbnail
-    iframe.style.opacity = '1'
-    thumbnail.style.display = 'none';
-    });
-});
-
-initializeSwiperTestimonial();
+  initializeSwiperTestimonial();
 });

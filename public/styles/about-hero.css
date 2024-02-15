@@ -59,19 +59,27 @@
   }
   
   .about-hero-video{
-    width: 100%;
+    position: relative;
+    width: 90vw;
+    height: calc(90vw/16*9);
     margin: 25px 0;
   }
 
+  
   .cta-container iframe{
     width: 100%;
     height: 100%;
   }
+  
   .cta-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    object-fit: scale-down;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
   }
-
   
   .cta-container{
     display: flex;
