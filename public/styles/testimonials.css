@@ -78,3 +78,58 @@
     height: 100%;
     opacity: 0;
   }
+
+/* Landscape screens */
+@media only screen and (orientation: landscape) and (max-width: 992px){
+  /* Styles specific to landscape orientation */
+
+  .testimonials-section-bkg{
+    top: 0;
+    width: 20%;
+  }
+
+  .swiper-container-testimonials {
+    padding-top: 0;
+  }
+
+  .testimonial{   
+    /* Size of the slides */
+    max-width: 40%; /* Active slide width */
+}
+
+
+}
+
+@media only screen and (min-width:992px) {
+
+  .testimonials-section-bkg{
+    top: 0;
+    width: 20%;
+  }
+
+  .swiper-container-testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .swiper-wrapper{
+    width: 90%;
+    height: unset;
+    display: flex;
+    flex-wrap: wrap;
+    height: unset;
+    align-content: center;
+    justify-content: space-around;
+    overflow: unset;
+    gap: 20px;
+
+  }
+
+  .testimonial{   
+    /* Size of the slides */
+    max-width: 25%; /* Active slide width */
+    height: unset !important;
+}
+}

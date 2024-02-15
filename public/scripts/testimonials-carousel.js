@@ -1,42 +1,64 @@
-const initializeSwiperTestimonial = ()=>{
-    var swiperTestimonial = new Swiper('.swiper-container-testimonials', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflowEffect: {
-          rotate: 50, // Degree of rotation between cards
-          stretch: 0, // Space between cards
-          depth: 100, // Depth effect size
-          modifier: 1, // Effect multiplier
-          slideShadows: true, // Enables the shadow effect
-        },
-        loop: true, // Enables the infinite loop
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        },
-        autoplay: {delay: 5000}
+var swiperTestimonial = null; // Holds the Swiper instance
+
+const initializeSwiperTestimonial = () => {
+  console.log("Initialize Swiper");
+  swiperTestimonial = new Swiper('.swiper-container-testimonials', {
+    // Swiper configuration
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    autoplay: { delay: 5000 }
+  });
+
+  // Code for thumbnail click event handling
+  // Find all the thumbnails
+  var thumbnails = document.querySelectorAll('.video-thumbnail');
+
+  thumbnails.forEach(function(thumbnail) 
+  {
+      thumbnail.addEventListener('click', function() {
+        // Stop the autoplay when a thumbnail is clicked
+        swiperTestimonial.autoplay.stop();
+      
       });
+  });
+};
 
-    // Find all the thumbnails
-    var thumbnails = document.querySelectorAll('.video-thumbnail');
-    
-    thumbnails.forEach(function(thumbnail) 
-    {
-        thumbnail.addEventListener('click', function() {
-          // Stop the autoplay when a thumbnail is clicked
-          swiperTestimonial.autoplay.stop();
-        
-        });
-    });
-}
+const destroySwiperTestimonial = () => {
+  if (swiperTestimonial !== null) {
+    swiperTestimonial.destroy();
+    swiperTestimonial = null;
+    console.log("Swiper Destroyed");
+  }
+};
 
+const checkSwiperInitialization = () => {
+  if (window.innerWidth <= 992 && swiperTestimonial === null) {
+    initializeSwiperTestimonial();
+  } else if (window.innerWidth > 992 && swiperTestimonial !== null) {
+    destroySwiperTestimonial();
+  }
+};
 
-document.addEventListener('DOMContentLoaded', function() {
-  initializeSwiperTestimonial();
+document.addEventListener('DOMContentLoaded', () => {
+  checkSwiperInitialization(); // Check on initial load
+  window.addEventListener('resize', checkSwiperInitialization); // Check on resize
 });
+
