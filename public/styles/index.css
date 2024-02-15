@@ -203,8 +203,17 @@ strong{
 }
   
 
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:765px) {
 
+    :root{
+        --margin-sec-v: 80px;
+        --font-size-h1: 48px;
+        --font-size-h2: 44px;
+        --font-size-h3: 24px;
+        --font-size-p: 20px;
+        --font-size-a: 18px;
+        --hero-height: 70vh;
+    }
     
     button{
         transition: min-width 0.3s;
@@ -227,22 +236,48 @@ strong{
     }
 
     a{
-        font-size: 20px;
+        font-size: var(--font-size-a);
     }
 
+    h1{
+        font-size: var(--font-size-h1);
+    }
 
     h2{
-        font-size: 60px;
+        font-size: var(--font-size-h2);
     }
     h3{
-        font-size: 24px;
+        font-size: var(--font-size-h3);
     }
     p, li, input, textarea{
-        font-size: 20px;
+        font-size: var(--font-size-p);
         text-align: unset;
     }
-    span{ font-size: 16px;}
+    span{ font-size: 18px;}
 
+    strong{
+        position: relative;
+        font-weight: 500;
+        z-index: 1;
+      }
+
+    .colored-underline{
+        position: relative;
+        font-weight: 400;
+        display: inline-block; /* This is required to size the pseudo-element correctly */
+        padding-bottom: 3px; /* Space for the underline */
+        z-index: 1;
+    }
+    .colored-underline::before {
+        content: '';
+        position: absolute;
+        bottom: 5px; /* Align with the bottom of the text */
+        left: 0;
+        width: 100%; /* Match the width of the strong element */
+        height: 10px; /* Thickness of the underline */
+        background: #00b3cea7; /* Color of the underline */
+        z-index: -1; /* Place it behind the text */
+    }
 
 
       
@@ -253,4 +288,22 @@ strong{
 @media only screen and (orientation: landscape) and (max-width: 992px){
     /* Styles specific to landscape orientation */
 
+    :root{
+        --page-background-color: #eeeeee;
+        --off-white: #E1E1E1;
+        --grey: rgb(120, 120, 120);
+        --cyan: #00B4CE;
+        --orange: #FC9946;
+        --purple: #425DA7;
+        --obscure-blue: #009cb4;
+        --obscure-green: #00282E;
+        --linear-gradient: linear-gradient(200deg, #009cb4 0%, #009cb4 35%, #FC9946 100%);
+        --margin-sec-v: 80px;
+        --font-size-h1: 22px;
+        --font-size-h2: 22px;
+        --font-size-h3: 18px;
+        --font-size-p: 16px;
+        --font-size-a: 14px;
+        --hero-height: 70vh;
+    }
 }
