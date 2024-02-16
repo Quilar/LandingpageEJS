@@ -37,6 +37,8 @@
     display:flex;
     align-items: center;
     white-space: nowrap;
+    animation: scroll-logos 20s linear infinite;
+    box-shadow: 0px 5px 10px 0px #00000017;
 }
 
 .logo{
@@ -62,13 +64,19 @@
     }
 }
 
-.customers-logos{
-    animation: scroll-logos 20s linear infinite;
-}
 
 
-@media only screen and (min-width:992px) {
-    .customers-section h2{
-        font-size: 30px;
+/* Landscape screens */
+@media only screen and (orientation: landscape) and (max-width: 992px){
+    /* Styles specific to landscape orientation */
+    .customers-logos{
+        margin-top: calc(var(--margin-sec-v)/2);
     }
 }
+
+@media only screen and (min-width:992px) {
+    
+    .customers-logos{
+        margin-top: calc(var(--margin-sec-v)/2);
+    }
+  }
