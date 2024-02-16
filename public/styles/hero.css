@@ -212,6 +212,10 @@
       margin-bottom: -75px; /*subtract that top distance at the top so there gets no space created*/
     }
 
+    .hero-title{
+      text-align: start;
+    }
+
     .hero-text{
       align-items: flex-start;
     }
@@ -254,6 +258,10 @@
 
     .hero-text{
       align-items: flex-start;
+    }
+
+    .hero-title{
+      text-align: start;
     }
     
     .hero-foot{
