@@ -17,6 +17,7 @@
     --font-size-h1: 22px;
     --font-size-h2: 22px;
     --font-size-h3: 18px;
+    --font-size-h4: 16px;
     --font-size-p: 16px;
     --font-size-a: 14px;
     --hero-height: 70vh;
@@ -203,7 +204,7 @@ strong{
 }
   
 
-@media only screen and (min-width:765px) {
+@media only screen and (min-width:992px) {
 
     :root{
         --margin-sec-v: 80px;
@@ -217,12 +218,6 @@ strong{
     }
     
     button{
-        transition: min-width 0.3s;
-    }
-
-    button{
-        width: 200px;
-        height: 60px;
         cursor: pointer;
     }
 
@@ -303,6 +298,7 @@ strong{
         --font-size-h1: 22px;
         --font-size-h2: 22px;
         --font-size-h3: 18px;
+        --font-size-h4: 16px;
         --font-size-p: 16px;
         --font-size-a: 14px;
         --hero-height: 70vh;
