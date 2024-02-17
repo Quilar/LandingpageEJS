@@ -8,7 +8,7 @@ function ModalOpener(){
     // Set the video URL as the src of the iframe and add autoplay
     video.src = videoUrl + "&autoplay=1";
 
-    modal.style.display = 'block';
+    modal.style.display = 'flex';
   });
   
   document.getElementsByClassName('close')[0].addEventListener('click', function() {
@@ -26,8 +26,7 @@ function ModalOpener(){
     if (event.target == modal) {
       var video = document.getElementById('modalVideo');
       video.src = ''; 
-      modal.style.display = 'flex';
-      modal.style.alignItems = 'center';
+      modal.style.display = 'none';
     }
   };
   

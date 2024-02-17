@@ -25,9 +25,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   height: 100%;
   width: 100%;
-  margin: none;
 }
 
 .demo-hero-header {
@@ -36,7 +36,9 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 100%;
+  top: 45%;
+  transform: translateY(-40%);
+  width: 90%;
   height: 100%;
   color: white;
   text-align: center;
@@ -59,6 +61,7 @@
 
 
 .demo-hero-title{
+  margin-top: 0;
   padding: 0 20px;
   display: block;
   color: white;
@@ -71,14 +74,13 @@
 }
 
 .demo-hero-cta-btn{
-  /* background-color: #00b3ce51; */
-  background: linear-gradient(90deg, #425da7c3 0%, #00b3ced3 100%);
   width: unset;
   min-width: 300px;
 }
 
 .secondary-demo-hero-btn{
-  background: rgba(255, 255, 255, 0.216);
+  background: linear-gradient(90deg, #425da7c3 0%, #00b3ced3 100%);
+  /* background: rgba(255, 255, 255, 0.216); */
 }
 
 @keyframes slide {
@@ -103,13 +105,15 @@
 /* Modal Styles */
 .modal {
   display: none; /* Hidden by default */
-  position: fixed;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
   z-index: 1000; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  overflow: hidden; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
@@ -118,15 +122,20 @@
 .modal-content {
   position: relative;
   background-color: #fefefe;
-  margin: 10% auto;
-  padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  padding: 5%;
 }
 
+.modal-content iframe{
+  width: 80vw;
+  height: calc(80vw*0.5625); /*16:9 resolution*/
+}
 /* Close Button */
 .close {
-  color: #aaa;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #aaa !important;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -139,67 +148,137 @@
   cursor: pointer;
 }
 
+.demo-hero-foot{
+  position: relative;
+  width: 90%;
+  height: 10vh;
+}
+
 .appstore-rating{
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: baseline;
-  bottom: 20px;
-  left: 10px;
+  height: 100%;
+  max-width: 50%;
 }
 .appstore-rating p{
   display: flex;
   align-items: center;
   color: black;
   margin: 0;
+  word-break: normal;
 }
 
 .appstore-rating-header{
   display: flex;
+
 }
 .appstore-rating-header img{
   max-width: 25vw;
+  margin-left: 5px;
 }
 
 .appstore-rating-stars{
-  display: flex;
-  width: 10%;
+  max-height: 50%;
 }
 
 .scroll-indicator{
+  left: 50%;
+  transform: translateX(-71%); /* translate 71% because you've scaled the indicator by 0.7. => 50/71 ~ 0.7*/
   scale: 0.7;
 }
 
 @media only screen and (min-width: 992px){
 
-  
-  .demo-hero-video{
-    width: 45vw;
-    height: calc(45vw * (315 / 560));
-  }
-
-  .demo-hero-right{
-    width: 45vw;
-    padding-left: 5%;
-  }
-
   .demo-hero-section {
     height: 100vh;
-    top: -75px;
-    margin-bottom: -75px; /*subtract that top distance at the top so there gets no space created*/
   }
 
-  .scroll-indicator{
-    bottom: 50px;
-    scale: 0.7;
+  .demo-hero-header{
+    align-items: flex-start;
+  }
+  .demo-hero-title{
+    text-align: start;
+    padding: 0;
+  }
+
+  .demo-hero-text{
+    text-align: start;
+  }
+
+  .demo-hero-btns{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .modal-content iframe{
+    width: 50vw;
+    height: calc(50vw*0.5625); /*16:9 resolution*/
+  }
+
+  .demo-hero-cta-btn{
+    width: unset;
   }
 
   .appstore-rating{
-    bottom: 50px;
+    bottom: 0;
     left: 20px;
   }
+
+  .appstore-rating-header img{
+    height: 50px;
+  }
+
   .appstore-rating-stars img{
     width: 30px;
   }
+
+  .hero-btns{
+    flex-direction: row;
+  }
+
+  .hero-cta-btn{
+    width: unset;
+  }
 }
+  
+  /* Landscape screens */
+  @media only screen and (orientation: landscape) and (max-width: 992px) {
+    
+    .demo-hero-section{
+      height: 100vh;
+    }
+
+
+    .demo-hero-text{
+      align-items: flex-start;
+    }
+
+    .demo-hero-title{
+      text-align: start;
+    }
+    
+    .demo-hero-foot{
+      height: 10vw;
+    }
+    
+    .demo-hero-btns{
+      flex-direction: row-reverse;
+      justify-content: center;
+      width: 100%;
+      gap: 10px;
+    }
+
+    .demo-hero-cta-btn{
+      width: unset;
+    }
+
+    .modal-content iframe{
+      width: 50vw;
+      height: calc(50vw*0.5625); /*16:9 resolution*/
+    }
+    
+  }
