@@ -49,11 +49,11 @@
     left: 0;
     right: 0;
     content: "";
-    background: #367D92;
+    background: var(--obscure-blue);
     height: 10px;
   }
   .target-group.active::after{
-    background: #00B4CE;
+    background: var(--cyan);
   }
 
   .target-group.active{
@@ -110,7 +110,11 @@
 .target-group:hover{
   cursor: pointer;
   transform: scale(1.1);
+  z-index: 1;
   box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+.target-group:hover::after{
+  background: var(--cyan);
 }
   
 }

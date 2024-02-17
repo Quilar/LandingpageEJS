@@ -18,23 +18,5 @@ window.addEventListener('scroll', () => {
             }
         });
     }
-    
-    // handles the fadeIn animation of the icons
-    function isInViewport(element) {
-        var rect = element.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-        
-        function handleScroll() {
-            var divs = document.querySelectorAll('.prob-sol-title-image');
-            divs.forEach(div => {
-                if (isInViewport(div) && !div.classList.contains('animate'))
-                div.classList.add('animate');
-        });
-    }
+
 });
