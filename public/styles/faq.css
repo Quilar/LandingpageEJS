@@ -14,6 +14,7 @@
   .faq-container span,
   .faq-container p{
     color: var(--obscure-green);
+    margin: 0;
   }
 
   .faq-wrapper{
