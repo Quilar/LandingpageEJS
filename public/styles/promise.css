@@ -56,34 +56,18 @@
   
   
   
+  /* Desktop */
   @media only screen and (min-width: 992px){
-
-    .promise-section{
-      flex-direction: row;
+    .promise button{
+      width: unset;
+      align-self: center;
     }
-
-
-    .promise-part{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width:50%;
-      }
-
-      .promise-left{
-        align-items: flex-start;
-        padding-right: 5%;
-        margin-bottom: unset;
-      }
-
-      .learn-more{
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 5em 0;
-      }
-    
   }
+    
+    /* Landscape screens */
+    @media only screen and (orientation: landscape) and (max-width: 992px) {
+      
+      
+    }
 
 
