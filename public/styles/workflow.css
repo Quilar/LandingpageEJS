@@ -91,26 +91,53 @@
   text-align: center;
 }
 
-/* Desktop screens */
-@media only screen and (min-width: 992px){
+/* Landscape screens */
+@media only screen and (orientation: landscape) and (max-width: 992px){
+  /* Styles specific to landscape orientation */
 
-  .bulletpoint{
-    width: 75%;
+
+
+}
+
+/*Desktop*/
+@media only screen and (min-width:992px) {
+
+  .workflow-section-bkg{
+    width: 100%;
+    left: 50%;
+  }
+
+  .bulletpoints{
+    width: 100%;
+    height: unset;
+    display: flex;
+    height: unset;
     flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+  }
+ 
+  .bulletpoints::before {
+    width: 100%;
+    height: 2px; 
+    left: 0;
+    z-index: -1; /* Below the icons */
   }
 
-  .bulletpoint.shift{left:25%;}
+  .bulletpoint{   
+    /* Size of the slides */
+    top: -10px;
+    max-width: 20%; /* Active slide width */
+    min-width: 300px;
+    margin: 0;
+    height: unset !important;
+    
+  }
 
-  .bulletpoint-thumbnail{
-    max-height: 80%;
+  .timeline-icon{
+    position: relative;
+    top: 0;
+    left: 0;
   }
-  .bulletpoint-thumbnail img{
-    height:150px;
-    object-fit: scale-down;
-  }
-
-  .bulletpoint-content{
-    width: 75%;
-  }
-  .bulletpoint-content img{height: 40px;}
+  
 }
