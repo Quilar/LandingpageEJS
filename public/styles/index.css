@@ -223,12 +223,6 @@ strong{
         cursor: pointer;
     }
 
-    .primary-cta-btn{
-    }
-    
-    .secondary-cta-btn{
-    }
-
     a{
         font-size: var(--font-size-a);
     }

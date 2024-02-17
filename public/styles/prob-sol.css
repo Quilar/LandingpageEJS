@@ -49,9 +49,8 @@
   
   .prob-sol-title-image{
     height: 50px;
-    opacity: 0;
+    opacity: 0.2;
     transition: opacity 2s;
-    
   }
   
   .prob-sol-title-image.animate{opacity: 1;}

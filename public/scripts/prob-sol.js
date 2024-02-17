@@ -5,16 +5,21 @@ window.addEventListener('scroll', () => {
     
     // Handles the horizontal translation of the rect when the box gets into the center.
     function handleBoxes(){
-        const boxes = document.querySelectorAll('.prob-sol');
-        boxes.forEach(box => {
+        const probBoxes = document.querySelectorAll('.prob-sol');
+        probBoxes.forEach(box => {
             const boxTop = box.getBoundingClientRect().top;
-            const boxCenter = boxTop + box.clientHeight / 2;
-            const screenCenter = window.innerHeight / 2;
+            const titleImage = box.firstElementChild;
             
-            if (boxCenter < screenCenter + 100 && boxCenter > screenCenter - 100) {
-                box.classList.add('active');
+            if (boxTop < window.innerHeight * 0.6 && boxTop > window.innerHeight * 0.3) {
+                if(!box.classList.contains('active'))
+                    box.classList.add('active');
+                if(!titleImage.classList.contains('animate'))
+                    titleImage.classList.add('animate');
             } else {
-                box.classList.remove('active');
+                if(box.classList.contains('active'))
+                    box.classList.remove('active');
+                if(titleImage.classList.contains('animate'))
+                    titleImage.classList.remove('animate');
             }
         });
     }
