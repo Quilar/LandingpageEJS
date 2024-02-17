@@ -78,27 +78,135 @@
   }
 
 
+  .illustration-foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
 .illustration-more-btn{
     background-color: var(--off-white);
-    color: var(--orange);
 }
 .illustration-more-btn a{
-    color: var(--orange);
+    color: var(--cyan);
 }
 
 
 
-
-/* Desktop screens */
-@media only screen and (min-width: 992px){
-    .illustration-image{
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        
+/* Landscape screens */
+@media only screen and (orientation: landscape) and (max-width: 992px){
+    /* Styles specific to landscape orientation */
+    .illustration-section-bkg{
+        top: 0;
+        left: unset;
+        left: -20%;
+        width: 50%;
     }
 
-    .illustration-image img {width: unset;}
-    .illustration-arrow{transform: rotate(0);}
-}
+    .illustration-steps {
+        position: relative;
+      flex-direction: row; /* Align steps horizontally */
+      justify-content: center; /* Center steps in the container */
+      align-items: flex-start;
+    }
+  
+    .illustration-steps::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px; /* Adjust to vertically center the line with the icons */
+      width: 100%; /* Horizontal line width */
+      height: 2px; /* Thickness of the line */
+      background: var(--linear-gradient); /* Color of the line */
+      z-index: -1;
+    }
+  
+    .illustration-step {
+      justify-content: flex-start; /* Distribute space between items in step */
+      align-items: center; /* Vertically center items in step */
+      max-width: 30%; /* Adjust the width of each step */
+      margin: 0 10px; /* Add some margin between steps */
+      opacity: 0; /* Show steps by default */
+      transform: translateX(20%); /* Reset any transforms */
+    }
+  
+    .illustration-step.animate {
+      opacity: 1; /* Ensures step is visible during animation */
+      transform: translateX(0); /* Ensures step is in its final state */
+    }
+
+
+    .illustration-step img{
+        max-height: 30%;
+    }
+  
+    
+  
+    .illustration-more-btn {
+      width: auto;
+      margin-top: 20px; /* Add some space above the button */
+    }
+
+  
+  }
+  
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+
+    .illustration-section-bkg{
+        top: 0;
+        left: unset;
+        left: -20%;
+        width: 50%;
+    }
+
+    .illustration-steps {
+        position: relative;
+      flex-direction: row; /* Align steps horizontally */
+      justify-content: center; /* Center steps in the container */
+      align-items: stretch;
+    }
+  
+    .illustration-steps::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px; /* Adjust to vertically center the line with the icons */
+      width: 100%; /* Horizontal line width */
+      height: 2px; /* Thickness of the line */
+      background: var(--linear-gradient); /* Color of the line */
+      z-index: -1;
+    }
+  
+    .illustration-step {
+      justify-content: space-between; /* Distribute space between items in step */
+      align-items: center; /* Vertically center items in step */
+      width: 30%; /* Adjust the width of each step */
+      margin: 0 10px; /* Add some margin between steps */
+      opacity: 0; /* Show steps by default */
+      transform: translateX(20%); /* Reset any transforms */
+    }
+  
+    .illustration-step.animate {
+      opacity: 1; /* Ensures step is visible during animation */
+      transform: translateX(0); /* Ensures step is in its final state */
+    }
+
+
+    .illustration-step img{
+        max-width: 300px;
+    }
+  
+    .illustration-circle {
+      
+    }
+  
+    .illustration-more-btn {
+      width: auto;
+      margin-top: 20px; /* Add some space above the button */
+    }
+  }
+  
 

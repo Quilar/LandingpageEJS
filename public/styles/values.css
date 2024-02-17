@@ -71,6 +71,11 @@
 @media only screen and (orientation: landscape) and (max-width: 992px){
   /* Styles specific to landscape orientation */
 
+  .values-section-bkg{
+    top: 0;
+    width: 20%;
+  }
+
   .values-section h3{
     margin-top: 0;
   }
@@ -109,6 +114,12 @@
 
 /* Desktop screens */
 @media only screen and (min-width:992px){
+
+  .values-section-bkg{
+    top: 0;
+    width: 20%;
+  }
+
   .values-section h3{
     margin-top: 0;
   }

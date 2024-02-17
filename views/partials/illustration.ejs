@@ -1,22 +1,21 @@
 <head>
     <link rel="stylesheet" href="styles/illustration.css">
     <script>
-        function isInViewport(element) {
-        var rect = element.getBoundingClientRect();
+        function isIllustrationInViewport(element) {
+        var illustrationRect = element.getBoundingClientRect();
         return (
-            rect.top >= 0 &&
-            rect.bottom <= (window.innerHeight*1.5 || document.documentElement.clientHeight)
+            illustrationRect.top <= window.innerHeight * 0.7
         );
         }
  
-        function handleScroll() {
+        function handleIllustrationScroll() {
             var divs = document.querySelectorAll('.illustration-step');
             divs.forEach(div => {
-                if (isInViewport(div) && !div.classList.contains('animate'))
+                if (isIllustrationInViewport(div) && !div.classList.contains('animate'))
                     div.classList.add('animate');
             });
         }
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleIllustrationScroll);
     </script>
 </head>
 <section class="section-container">
@@ -51,7 +50,9 @@
                 Immobilie, als ob sie schon gebaut wäre.</p>
         </div>
 
-        <button class="illustration-more-btn"><a href="/hometour">Mehr zur Anwendung</a></button>
+    </div>
+    <div class="illustration-foot">
+        <button class="illustration-more-btn"><a href="/hometour">Mehr zu unserer Anwendung</a></button>
     </div>
 </section> 
 </section>
