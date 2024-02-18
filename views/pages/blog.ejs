@@ -3,7 +3,6 @@
 <head>
     <%- include('../partials/head'); %>
     <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="/styles/blog.css">
     <title>Blog | Quilar</title>
     </head>
 <body>
@@ -11,29 +10,8 @@
     <%- include('../partials/header'); %>
     </header>
     <main>
-        <div class="row">
-            <div class="leftcolumn">
-                <div class="cards">
-
-                    <% if(blogs){ %>
-                        <% blogs.forEach(blog => { %>        
-                            <div class="card" id=<%= blog.id %>>
-                                <div class="card-header">
-                                    <img src=<%= `/content/blogs/${blog.id}/banner.png` %> class="fakeimg"/>
-                                </div>
-                                <div class="card-body">
-                                    <h2><%= blog.title%></h2>
-                                    <p><%= blog.summary %></p>
-                                    <a href=<%=`/blog/${blog.id}`%>> Zum Beitrag > </a>
-                                </div>
-                            </div>
-                            <% }); %>
-                            <% } %>
-                </div>
-            </div>
-          </div>
+        <%- include('../partials/blogs-list', {blogs}) %>
     </main>
-
     <footer>
         <%- include('../partials/footer'); %>
     </footer>

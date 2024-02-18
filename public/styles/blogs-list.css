@@ -1,0 +1,156 @@
+.blogs-list-section{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: calc(var(--margin-sec-v)/2) 0;
+  gap: calc(var(--margin-sec-v)/2);
+}
+
+.leftcolumn, 
+.rightcolumn{
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--margin-sec-v)/2);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: var(--obscure-blue);
+  transition: 0.3s;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.01);
+}
+
+.card img {
+  width: 100%;
+  max-height: 50vh;
+  object-fit: cover;
+}
+
+
+.card h3,
+.card h4{
+  text-decoration: underline;
+}
+
+.card-header img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body{
+  padding: 5%;
+}
+
+.rightcolumn .card{
+  padding: 5%;
+}
+
+.rightcolumn button{
+  background-color: var(--orange);
+}
+
+.social-links img {
+  width: 30px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.social-links p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+.social-links a{
+  display: flex;
+  justify-content: flex-start;
+  background: none;
+}
+.social-links a:hover{
+  background: none;
+}
+
+  /* Landscape screens */
+@media only screen and (orientation: landscape) and (max-width: 992px){
+  /* Styles specific to landscape orientation */
+  .blogs-list-section{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  .blog-banner{
+    display: flex;
+    justify-content: center;
+  }
+  .blog-banner img{
+    max-height: 50vh;
+    object-fit: cover;
+    border-width: 5px;
+    border-radius: 20px;
+    margin: 20px;
+  }
+  
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .title-img{
+      width: 100%;
+    }
+
+    .follow-us{
+      position: sticky;
+      top: 0px;
+    }
+
+
+}
+
+/*Desktop*/
+@media only screen and (min-width:992px) {
+  .blogs-list-section{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  .blog-banner{
+    display: flex;
+    justify-content: center;
+  }
+  .blog-banner img{
+    max-height: 50vh;
+    object-fit: cover;
+    border-width: 5px;
+    border-radius: 20px;
+    margin: 20px;
+  }
+  
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .title-img{
+      width: 100%;
+    }
+
+    .follow-us{
+      position: sticky;
+      top: 0px;
+    }
+}

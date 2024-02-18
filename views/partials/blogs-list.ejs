@@ -1,0 +1,57 @@
+<head>
+    <link rel="stylesheet" href="styles/blogs-list.css">
+</head>
+<section class="section-container">
+    <div class="blogs-list-section">
+        <div class="leftcolumn cards">
+                <% if(blogs){ %>
+                    <% blogs.forEach(blog => { %>        
+                        <div class="card" id=<%= blog.id %>>
+                            <div class="card-header">
+                                <img alt=<%= blog.title %> src=<%= `/content/blogs/${blog.id}/banner.png` %> />
+                            </div>
+                            <div class="card-body">
+                                <h3><%= blog.title%></h3>
+                                <p><%= blog.summary %></p>
+                                <button class="secondary-cta-btn">
+                                    <a href=<%=`/blog/${blog.id}`%>> Zum Beitrag > </a>
+                                </button>
+                            </div>
+                        </div>
+                        <% }); %>
+                        <% } %>
+        </div>
+        <div class="rightcolumn follow-us">
+            <div class="card">
+                <h4>Lösungen für Architekten und Entwickler</h4>
+                <p>
+                    Entdecken Sie, wie unsere Software Ihr nächstes Projekt revolutionieren kann. 
+                    Von innovativer Planung bis hin zur effizienten Umsetzung – wir haben die Tools, die Sie benötigen.
+                </p>
+                <button class="secondary-cta-btn">
+                    <a href="/hometour" class="cta-button">Unser Angebot</a>
+                </button>
+            </div>
+            <div class="card">
+                <h4>Folge uns auf</h4>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@quilar-de" target="_blank">
+                        <img loading="lazy" class="footer-icon" src="/content/icons/youtube.svg" alt="Youtube icon"/>
+                        <p>YouTube</p>
+                    </a>
+                    <a href="https://www.linkedin.com/company/quilar/" target="_blank">
+                        <img loading="lazy" class="footer-icon" src="/content/icons/linkedin.svg" alt="LinkeIn icon"/>
+                        <p>LinkedIn</p>
+                    </a>
+                    <a href="https://www.instagram.com/quilar.de/" target="_blank">
+                        <img loading="lazy" class="footer-icon" src="/content/icons/instagram.svg" alt="Instagram icon"/>
+                        <p>Instagram</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>

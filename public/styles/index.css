@@ -82,6 +82,17 @@ button {
     transition: 0.5s ease-in-out;
 }
 
+.primary-cta-btn a{
+    display: flex; /* Make the link fill the container */
+    align-items: center; /* Center the text */
+    justify-content: center;
+    margin:0;
+    height: 100%;
+    width: 100%;
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
 .primary-cta-btn:hover{
     background: #FC9946;
 }
@@ -94,6 +105,19 @@ button {
     background-clip: padding-box;
     background: transparent;
 }
+
+.secondary-cta-btn a{
+    display: flex; /* Make the link fill the container */
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center; /* Center the text */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
 .secondary-cta-btn:hover {
       /* Reverse the gradient colors on hover */
     box-shadow: 0 0 0 1px #425DA7, 0 0 0 2px #00B4CE;
