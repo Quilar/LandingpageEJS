@@ -42,6 +42,17 @@
   margin-bottom: 0;
 }
 
+.blog-post .promise-container{
+  margin-top: var(--margin-sec-v);
+}
+.blog-post .promise-container p{
+  color: var(--off-white);
+}
+.blog-post .promise-container img{
+  max-height: unset;
+  height: 100%;
+}
+
 .card{
   width: 90%;
   padding: 0 5%;
@@ -79,41 +90,62 @@
 }
 
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (min-width: 900px) {
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .blog-post {   
-    float: left;
-    width: 75%;
-  }
-  
-  /* Right column */
-  .more-posts {
-    float: left;
-    width: 25%;
-    height: 100%;
-  }
-  .blog-banner{
-    display: flex;
-    justify-content: center;
-  }
-  .blog-banner img{
-    max-height: 50vh;
-    object-fit: cover;
-    border-width: 5px;
-    border-radius: 20px;
-    margin: 20px;
-  }
-  
 
-    .title-img{
-      width: 100%;
-    }
-
-    .follow-us{
-      position: sticky;
-      top: 0px;
+  /* Landscape screens */
+  @media only screen and (orientation: landscape) and (max-width: 992px){
+    /* Styles specific to landscape orientation */
+    .blog-post-section img{
+      max-height: unset;
     }
     
+    .blog-post-container{
+      flex-direction: row;
+      align-items: stretch;
+    }
+
+    .blog-post{
+      width: 250%;
+      padding: 0 calc(var(--margin-sec-v)/2);
+    }
+
+    .more-posts{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .card{
+      height: 100%;
+      border: none;
+    }
+
   }
+  
+  /*Desktop*/
+  @media only screen and (min-width:992px) {
+    .blog-post-section img{
+      max-height: unset;
+    }
+    
+    .blog-post-container{
+      flex-direction: row;
+      align-items: stretch;
+    }
+
+    .blog-post{
+      width: 300%;
+      padding: 0 calc(var(--margin-sec-v)/2);
+    }
+
+    .more-posts{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .card{
+      height: 100%;
+      border: none;
+    }
+  }
+  

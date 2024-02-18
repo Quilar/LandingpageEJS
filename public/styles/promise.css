@@ -7,7 +7,7 @@
   background: var(--linear-gradient);
   padding: calc(var(--margin-sec-v)/2) 0;
   margin-bottom: 0;
-  z-index:-2;
+  z-index:0;
 }
 
 .promise-section-bkg{
