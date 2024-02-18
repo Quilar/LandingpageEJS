@@ -1,4 +1,4 @@
-.cta-banner-section{
+.cta-banner-container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -6,9 +6,13 @@
     width: 100%;
     background: var(--linear-gradient);
     padding-bottom: var(--margin-sec-v);
-    margin-bottom: 0;
     z-index: -2;
 }
+
+.cta-banner-section{
+    margin-bottom: 0;
+}
+
 .cta-banner-section-bkg{
     position: absolute;
     width: 100%;
@@ -19,9 +23,8 @@
     z-index: -1;
 }
 
-
 .cta-banner{
-    width: 90%;
+    width: 100%;
     z-index: 1;
 }
 
@@ -46,26 +49,27 @@
     position: absolute;
     top: 0;
     width: 80%;
+    right: 0;
     z-index: -1;
     opacity: 0.1;
 }
 
 
-@media only screen and (min-width: 992px){
+/* Landscape screens */
+@media only screen and (orientation: landscape) and (max-width: 992px){
     .cta-banner-section{
-        flex-direction: row;
+        margin-bottom: 0;
     }
-    .bet{
-        width: 50%;
-    }
-    .app-cover{
-        width: 50%;
-        display: flex;
-        justify-content: center;
-    }
-    .bet h3{ font-size: 80px;}
+  
+  }
+  
 
-    .app-cover img{
-        max-height: 90vh;
+/* Desktop */
+@media only screen and (min-width: 992px) {
+
+    .model img{
+        right: 0;
+        width: 50%;
     }
-}
+  }
+  
