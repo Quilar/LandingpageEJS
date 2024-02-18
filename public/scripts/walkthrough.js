@@ -1,18 +1,16 @@
 // Controlling the 3 steps animation
-function isInViewport(element) {
-    var rect = element.getBoundingClientRect();
+function iswalkthroughInViewport(element) {
+    var walkthroughRect = element.getBoundingClientRect();
     return (
-        rect.top >= 0 &&
-        rect.bottom <= (window.innerHeight*1.5 || document.documentElement.clientHeight)
+        walkthroughRect.top <= window.innerHeight * 0.7
     );
     }
 
-    function handleScroll() {
+    function handlewalkthroughScroll() {
         var divs = document.querySelectorAll('.walkthrough-step');
         divs.forEach(div => {
-            if (isInViewport(div) && !div.classList.contains('animate'))
+            if (iswalkthroughInViewport(div) && !div.classList.contains('animate'))
                 div.classList.add('animate');
         });
     }
-
-window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handlewalkthroughScroll);

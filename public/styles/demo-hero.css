@@ -79,8 +79,7 @@
 }
 
 .secondary-demo-hero-btn{
-  background: linear-gradient(90deg, #425da7c3 0%, #00b3ced3 100%);
-  /* background: rgba(255, 255, 255, 0.216); */
+  background: rgba(255, 255, 255, 0.216);
 }
 
 @keyframes slide {

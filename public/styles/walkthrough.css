@@ -27,6 +27,8 @@
 
 
 .walkthrough-header{
+    display: flex;  
+    flex-direction: column;
     margin-bottom: calc(var(--margin-sec-v)/2);
 }
 
@@ -111,16 +113,114 @@
 
 
 
-/* Desktop screens */
-@media only screen and (min-width: 992px){
-    .walkthrough-image{
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        
+  @media only screen and (min-width: 992px){
+    .walkthrough-section-bkg{
+      top: 0;
+      width: 20%;
     }
 
-    .walkthrough-image img {width: unset;}
-    .walkthrough-arrow{transform: rotate(0);}
-}
+    .walkthrough-steps {
+      position: relative;
+    flex-direction: row; /* Align steps horizontally */
+    justify-content: center; /* Center steps in the container */
+    align-items: flex-start;
+  }
 
+  .walkthrough-steps::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px; /* Adjust to vertically center the line with the icons */
+    width: 100%; /* Horizontal line width */
+    height: 2px; /* Thickness of the line */
+    background: var(--linear-gradient); /* Color of the line */
+    z-index: -1;
+  }
+
+  .walkthrough-step {
+    justify-content: flex-start; /* Distribute space between items in step */
+    align-items: center; /* Vertically center items in step */
+    max-width: 30%; /* Adjust the width of each step */
+    margin: 0 10px; /* Add some margin between steps */
+    opacity: 0; /* Show steps by default */
+    transform: translateX(20%); /* Reset any transforms */
+  }
+
+  .walkthrough-step.animate {
+    opacity: 1; /* Ensures step is visible during animation */
+    transform: translateX(0); /* Ensures step is in its final state */
+  }
+
+
+  .walkthrough-step img{
+      max-height: 30%;
+  }
+
+  
+
+  .walkthrough-more-btn {
+    width: auto;
+    margin-top: 20px; /* Add some space above the button */
+  }
+
+  }
+  
+  /* Landscape screens */
+  @media only screen and (orientation: landscape) and (max-width: 992px) {
+    .walkthrough-section-bkg{
+      top: 0;
+      width: 20%;
+    }
+
+    .walkthrough-video{
+      align-self: center;
+      height: 90vh;
+      width: calc(90vh/9*16);
+    }
+
+    .walkthrough-steps {
+      position: relative;
+    flex-direction: row; /* Align steps horizontally */
+    justify-content: center; /* Center steps in the container */
+    align-items: flex-start;
+  }
+
+  .walkthrough-steps::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px; /* Adjust to vertically center the line with the icons */
+    width: 100%; /* Horizontal line width */
+    height: 2px; /* Thickness of the line */
+    background: var(--linear-gradient); /* Color of the line */
+    z-index: -1;
+  }
+
+  .walkthrough-step {
+    justify-content: flex-start; /* Distribute space between items in step */
+    align-items: center; /* Vertically center items in step */
+    max-width: 30%; /* Adjust the width of each step */
+    margin: 0 10px; /* Add some margin between steps */
+    opacity: 0; /* Show steps by default */
+    transform: translateX(20%); /* Reset any transforms */
+  }
+
+  .walkthrough-step.animate {
+    opacity: 1; /* Ensures step is visible during animation */
+    transform: translateX(0); /* Ensures step is in its final state */
+  }
+
+
+  .walkthrough-step img{
+      max-height: 30%;
+  }
+
+  
+
+  .walkthrough-more-btn {
+    width: auto;
+    margin-top: 20px; /* Add some space above the button */
+  }
+
+    
+    }
