@@ -52,6 +52,18 @@
     color: var(--off-white);
 }
 
+  /* Landscape screens */
+  @media only screen and (orientation: landscape) and (max-width: 992px) {
+      .footer-content{
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          padding: 0;
+          width: 100%;
+      }
+  
+}
+
 /* Desktop screens */
 @media only screen and (min-width: 992px){
 
@@ -62,7 +74,4 @@
         padding: 0;
         width: 100%;
     }
-
-
-
 }

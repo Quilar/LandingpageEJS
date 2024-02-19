@@ -1,5 +1,6 @@
 header.visible{
-    position:sticky;
+    display: block;
+    position:relative;
     width: 100%!important;
     height: 50px;
     top: 0px;
@@ -8,9 +9,8 @@ header.visible{
 }
 
 header {
-    top: -50px;
+    display: none;
     background: var(--obscure-blue);
-    height: 50px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.14);
   }
 
@@ -109,7 +109,10 @@ body.open .nav-item{display:unset}
     header.visible{
         height: 75px;
     }
-    header{height:75px;}
+    header{
+        display: block;
+        height:75px;
+    }
     .burger {display:none;}
     .nav-item{display: unset;}
     .nav-item{width:auto;}

@@ -198,6 +198,25 @@ strong{
     z-index: 1;
   }
 
+
+  .colored-underline{
+    position: relative;
+    font-weight: 400;
+    display: inline-block; /* This is required to size the pseudo-element correctly */
+    padding-bottom: 3px; /* Space for the underline */
+    z-index: 1;
+}
+.colored-underline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%; /* Match the width of the strong element */
+    height: 5px; /* Thickness of the underline */
+    bottom: 5px; /* Align with the bottom of the text */
+    background: #00b3cea7; /* Color of the underline */
+    z-index: -1; /* Place it behind the text */
+}
+
   .cookie-placeholder{
     position: relative;
     display: flex;
@@ -273,22 +292,9 @@ strong{
         z-index: 1;
       }
 
-    .colored-underline{
-        position: relative;
-        font-weight: 400;
-        display: inline-block; /* This is required to size the pseudo-element correctly */
-        padding-bottom: 3px; /* Space for the underline */
-        z-index: 1;
-    }
     .colored-underline::before {
-        content: '';
-        position: absolute;
-        bottom: 5px; /* Align with the bottom of the text */
-        left: 0;
-        width: 100%; /* Match the width of the strong element */
+        bottom: 2px; /* Align with the bottom of the text */
         height: 10px; /* Thickness of the underline */
-        background: #00b3cea7; /* Color of the underline */
-        z-index: -1; /* Place it behind the text */
     }
 
 
