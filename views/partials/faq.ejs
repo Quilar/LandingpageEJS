@@ -6,45 +6,29 @@
 <section class="faq-container">
   <img src="/content/images/dots-vertical.png" alt="Dots" class="faq-section-bkg">
     <div class="faq-header">
-        <span>FAQ</span>
-        <h2>Weil wir gerne erklären</h2>
+        <span>WEIL WIR GERNE ERKLÄREN</span>
+        <h2>Häufig gestellte Fragen</h2>
     </div>
     <div class="faq-wrapper">
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          <p>Häufig gestellte Frage</p>
-          <div class="faq-icon">&#9662;</div>
+      <% if(!faqs){ %> 
+        <div class="faq-error">
+          <p> Dieser Abschnitt ist zur Zeit in Bearbeitung </p>
         </div>
-        <div class="faq-answer">
-          <p>
-              Lorem Ipsum Antwort auf deine Frage
-          </p>
+        
+      <% } else if(faqs.length > 0) { faqs.forEach((faq) => {%>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)"> 
+            <p><%= faq.question %></p>
+            <div class="faq-icon">&#9662;</div>
+          </div>
+          <div class="faq-answer">
+            <p>
+              <%- faq.answer %>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          <p>Häufig gestellte Frage</p>
-          <div class="faq-icon">&#9662;</div>
-        </div>
-        <div class="faq-answer">
-          <p>
-              Lorem Ipsum Antwort auf deine Frage
-          </p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          <p>Häufig gestellte Frage</p>
-          <div class="faq-icon">&#9662;</div>
-        </div>
-        <div class="faq-answer">
-          <p>
-              Lorem Ipsum Antwort auf deine Frage
-          </p>
-        </div>
-      </div>
+        <% }) } %>
     </div>
-
     
 </section>
 </section>

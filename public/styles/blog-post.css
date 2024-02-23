@@ -9,8 +9,8 @@
 
 
 .blog-post-section h2,
-.blog-post-section h3,
 .blog-post-section li,
+.blog-post-section h3,
 .blog-post-section p{
   color: var(--obscure-green);
 }
@@ -87,6 +87,10 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+.more-posts h3{
+  color: var(--off-white);
 }
 
 

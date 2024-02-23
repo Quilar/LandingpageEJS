@@ -49,12 +49,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 56.25%
   }
 
 
   .testimonial-header iframe{
     opacity: 0;
-    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
   }
 
   .testimonial-header img{
@@ -67,9 +70,10 @@
   }
 
   .testimonial-quote{
-    padding: 0 10px;
+    padding: 10px;
   }
   .testimonial-quote p{
+    text-align: center;
     color: var(--obscure-green);
   }
   .swipe-btns{

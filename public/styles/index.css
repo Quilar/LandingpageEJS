@@ -13,6 +13,7 @@
     --obscure-blue: #009cb4;
     --obscure-green: #00282E;
     --linear-gradient: linear-gradient(200deg, #009cb4 0%, #009cb4 35%, #FC9946 100%);
+    --linear-gradient-v: linear-gradient(180deg, #009cb4 0%, #009cb4 35%, #FC9946 100%);
     --margin-sec-v: 80px;
     --font-size-h1: 22px;
     --font-size-h2: 22px;
@@ -37,6 +38,10 @@ main, footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+main{
+    min-height: 80vh;
 }
 
 .section-container{
@@ -323,7 +328,7 @@ strong{
         --font-size-h4: 16px;
         --font-size-p: 16px;
         --font-size-a: 14px;
-        --font-size-span: 12px;
+        --font-size-span: 10px;
         --hero-height: 70vh;
     }
 }

@@ -5,13 +5,12 @@
     margin-top: var(--margin-sec-v);
 }
 
-.walkthrough-section h3,
+.walkthrough-section h4,
 .walkthrough-section p{
     text-align: center;
-    background-color: var(--page-background-color);
 }
 
-.walkthrough-section h3,
+.walkthrough-section h4,
 .walkthrough-section p,
 .walkthrough-section span{
     color: var(--obscure-green);
@@ -37,14 +36,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90vw;
-    height: calc(90vw/16*9);
+    width: 100%;
+    padding-top: 56.25%;
   }
 
 
   .walkthrough-video iframe{
     opacity: 0;
-    width: 100%;
+    position: absolute;
+    top: 0;
     height: 100%;
   }
 
@@ -63,25 +63,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     gap: 20px;
 }
 
 .walkthrough-steps::before {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 0%;
     width: 2px; /* Thickness of the line */
-    height: 80%; 
+    height: 100%; 
     background: var(--linear-gradient); /* Color of the line */
     z-index: -1; /* Below the icons */
   }
 
 .walkthrough-step{
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    position: relative;
     opacity: 0; /* Initially hidden */
     transform: translateY(20%); /* Initially off-screen */
     transition: opacity 1s ease-in, transform 1s ease-in;
@@ -93,12 +89,15 @@
 }
 
 .walkthrough-step img{
-    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
     margin: 10px 0;
 }
 
 
 .walkthrough-circle{
+  position: absolute;
+  left: -10px;
     height: 20px;
     width: 20px;
     background: var(--obscure-blue); /* Use your icon here */
@@ -106,10 +105,28 @@
     margin: 0 auto;
   }
   .walkthrough-circle.first-circle{
-    top: 0%;
+    margin-top: 0%;
   }
 
+.walkthrough-content{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding-left: 20%;
+    position: relative;
+}
 
+.walkthrough-foot{
+  display: flex;
+  justify-content: center;
+  margin: calc(var(--margin-sec-v)/2) 0;
+}
+
+.walkthrough-foot button{
+  background: var(--linear-gradient);
+  padding: 1em;
+}
 
 
 
@@ -151,9 +168,24 @@
     transform: translateX(0); /* Ensures step is in its final state */
   }
 
+  .walkthrough-circle{
+    position: relative;
+  }
+
+  .walkthrough-circle.first-circle{
+    margin-top: 0;
+  }
+
+  .walkthrough-content{
+    width: 100%;
+    padding-left: 0;
+  }
+
 
   .walkthrough-step img{
-      max-height: 30%;
+      height: 150px;
+      width: unset;
+      max-width: unset;
   }
 
   
@@ -174,8 +206,6 @@
 
     .walkthrough-video{
       align-self: center;
-      height: 90vh;
-      width: calc(90vh/9*16);
     }
 
     .walkthrough-steps {
@@ -211,11 +241,24 @@
   }
 
 
-  .walkthrough-step img{
-      max-height: 30%;
+  .walkthrough-circle{
+    position: relative;
   }
 
-  
+  .walkthrough-circle.first-circle{
+    margin-top: 0;
+  }
+
+  .walkthrough-content{
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .walkthrough-step img{
+      height: 200px;
+      width: unset;
+      max-width: unset;
+  }
 
   .walkthrough-more-btn {
     width: auto;

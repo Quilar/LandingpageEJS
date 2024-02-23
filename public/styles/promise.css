@@ -20,8 +20,15 @@
   z-index: -1;
 }
 
-.promise-section h2{
-  color: var(--off-white);
+.promise-section span,
+.promise-section h2,
+.promise-section p
+{
+  color: white;
+}
+
+.promise h2{
+  margin-top: 0;
 }
 
 .promise{
@@ -30,6 +37,10 @@
     flex-direction: column;
     align-items: center;
     width: 90%;
+  }
+
+  .promise button{
+    margin: calc(var(--margin-sec-v)/2) 0;
   }
 
   .promise-part{

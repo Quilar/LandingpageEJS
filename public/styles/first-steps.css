@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: var(--margin-sec-v);
     width: 90%;
   }
 
@@ -115,6 +116,7 @@
 
   .first-steps-footer button{
     width: 100%;
+    margin: calc(var(--margin-sec-v)/2) 0;
   }
 
   /* Landscape screens */

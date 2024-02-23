@@ -9,11 +9,12 @@
 }
 
 .founder-section h3,
+.founder-section h4,
 .founder-section p,
 .founder-section span{
     color: var(--obscure-green);
 }
-.founder-section h4{
+.founder-image p{
     color: var(--grey);
 }
 
@@ -35,10 +36,10 @@
     object-fit: scale-down;
 }
 
-.founder-image h3{
+.founder-image h4{
     margin-bottom: 0;
 }
-.founder-image h4{
+.founder-image p{
     margin-top: 0;
 }
 
@@ -55,10 +56,18 @@
 }
 
 .linked-in-btn{
-    background-color: #245a94;
+    width: unset;
+    background-color: #0b66c2;
+    display: flex;
+    align-items: center;
 }
 .linked-in-btn a{
     color: white;
+}
+.linked-in-btn img{
+    width: unset;
+    max-height: 80%;
+    margin-left: 10px;
 }
 
 .profiles{

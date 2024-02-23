@@ -162,7 +162,7 @@
   height: 100%;
   max-width: 50%;
 }
-.appstore-rating p{
+.appstore-rating span{
   display: flex;
   align-items: center;
   color: black;
@@ -172,10 +172,11 @@
 
 .appstore-rating-header{
   display: flex;
+  align-items: center;
 
 }
 .appstore-rating-header img{
-  max-width: 25vw;
+  height: 1em;
   margin-left: 5px;
 }
 
@@ -189,10 +190,11 @@
   scale: 0.7;
 }
 
+/*Desktop*/
 @media only screen and (min-width: 992px){
 
   .demo-hero-section {
-    height: 100vh;
+    height: var(--hero-height);
   }
 
   .demo-hero-header{
@@ -227,13 +229,6 @@
     left: 20px;
   }
 
-  .appstore-rating-header img{
-    height: 50px;
-  }
-
-  .appstore-rating-stars img{
-    width: 30px;
-  }
 
   .hero-btns{
     flex-direction: row;

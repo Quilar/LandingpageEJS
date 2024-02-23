@@ -1,11 +1,11 @@
-.workflow-section{
+.production-section{
     position: relative;
     display:flex;
     flex-direction: column;
     margin-top: var(--margin-sec-v);
   }
 
-  .workflow-section-bkg{
+  .production-section-bkg{
     position: absolute;
     width: 100%;
     top: 0;
@@ -14,7 +14,7 @@
     z-index: -1;
   }
 
-  .workflow-wrapper{
+  .production-wrapper{
     display: flex;
     justify-content: flex-end;
   }
@@ -50,9 +50,9 @@
   transition: opacity 1s ease-in, transform 1s ease-in;
 }
 
-.workflow-section span,
-.workflow-section p, 
-.workflow-section h3{
+.production-section span,
+.production-section p, 
+.production-section h3{
   color: var(--obscure-green);
 }
 
@@ -102,7 +102,7 @@
 /*Desktop*/
 @media only screen and (min-width:992px) {
 
-  .workflow-section-bkg{
+  .production-section-bkg{
     width: 100%;
     left: 50%;
   }

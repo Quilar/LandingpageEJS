@@ -38,7 +38,15 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-self: center;
+    background: var(--linear-gradient);
+    padding: calc(var(--margin-sec-v)/2) 5%;
   }
+
+  .stats-quilar p{
+    color: white;
+  }
+
   .stat-quilar{
     width: 100%;
     display: flex;
@@ -54,7 +62,8 @@
   .stat-header-number{
     position: absolute;
     font-family:'Outfit';
-    font-size: 18px;
+    font-size: var(--font-size-h3);
+    color: white;
     font-weight: 500;
     z-index: 1;
   }
@@ -81,6 +90,10 @@
     transition: stroke-dashoffset 1s linear;
   }
   
+  .stats-footer{
+    margin-top: var(--margin-sec-v);
+  }
+
   .stats-footer h3{
     text-align: center;
   }
@@ -117,7 +130,6 @@
   }
 
   .stats-footer{
-    margin-top: calc(var(--margin-sec-v)/2);
     align-self: center;
     width: 50%;
   }
@@ -155,7 +167,6 @@
     }
   
     .stats-footer{
-      margin-top: calc(var(--margin-sec-v)/2);
       align-self: center;
       width: 50%;
     }

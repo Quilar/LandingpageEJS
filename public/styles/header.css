@@ -5,13 +5,14 @@ header.visible{
     height: 50px;
     top: 0px;
     transition: top 0.25s linear;
-    z-index:9999;
+    
 }
 
 header {
     display: none;
     background: var(--obscure-blue);
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.14);
+    z-index:9999;
   }
 
 .navbar{
@@ -95,6 +96,7 @@ body.open .nav-item{display:unset}
     text-decoration: none;   
     text-align: right;
     padding: 15px 0;
+    color: var(--off-white);
 }
 
 .nav-link:hover{

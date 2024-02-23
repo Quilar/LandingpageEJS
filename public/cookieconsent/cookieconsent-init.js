@@ -101,14 +101,30 @@ cc.run({
                     {
                         title: 'Cookie-Nutzung 📢',
                         description: 'Wir verwenden Cookies, um die Grundfunktionen der Website sicherzustellen und Ihr Online-Erlebnis zu verbessern. Sie können für jede Kategorie festlegen, ob Sie sich jederzeit anmelden oder abmelden möchten. Weitere Einzelheiten zu Cookies und anderen sensiblen Daten finden Sie in der vollständigen <a href="/datenschutz" class="cc-link">Datenschutzerklärung</a>.'
-                    }, {
+                    }, 
+                    {
                         title: 'Notwendige Cookies',
                         description: 'Diese Cookies sind für das ordnungsgemäße Funktionieren meiner Website unerlässlich. Ohne diese Cookies würde die Website nicht ordnungsgemäß funktionieren.',
                         toggle: {
                             value: 'necessary',
                             enabled: true,
                             readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
-                        }
+                        },
+                        cookie_table: [
+                            {
+                                col1: '_cfuvid',
+                                col2: 'hubspot.com',
+                                col3: 'Einmalig',
+                                col4: 'Zuordnung des Quilar Accounts bei Hubspot',
+                            },
+                            {
+                                col1: '__cf_bm',
+                                col2: 'hubspot.com',
+                                col3: '30 Minuten',
+                                col4: 'Bot Filterung'
+                            },
+
+                        ]
                     }, {
                         title: 'Leistungs- und Analytics-Cookies',
                         description: 'Diese Cookies ermöglichen es der Website, sich an die von Ihnen in der Vergangenheit getroffenen Entscheidungen zu erinnern.',
@@ -125,6 +141,34 @@ cc.run({
                                 // col4: 'description ...',
                                 is_regex: true
                             },
+                            {
+                                col1: 'hubspotutk',       // match all cookies starting with "_ga"
+                                col2: 'hubspot.com',
+                                col3: '6 Monate',
+                                col4: 'Legt eine eindeutige ID für die Sitzung fest. Dadurch kann die Webseite Daten über Besucherverhalten für statistische Zwecke erhalten.',
+                                is_regex: true
+                            },
+                            {
+                                col1: '__hstc',       // match all cookies starting with "_ga"
+                                col2: 'hubspot.com',
+                                col3: '6 Monate',
+                                col4: 'Legt eine eindeutige ID für die Sitzung fest. Dadurch kann die Webseite Daten über Besucherverhalten für statistische Zwecke erhalten.',
+                                is_regex: true
+                            },
+                            {
+                                col1: '__hssc',       // match all cookies starting with "_ga"
+                                col2: 'hubspot.com',
+                                col3: '1 Tag',
+                                col4: 'Gibt an, ob die Cookie-Daten im Browser des Besuchers aktualisiert werden müssen.',
+                                is_regex: true
+                            },
+                            {
+                                col1: '__hssrc',       // match all cookies starting with "_ga"
+                                col2: 'hubspot.com',
+                                col3: 'Session',
+                                col4: 'Wird verwendet, um den Browser des Besuchers bei Rückkehr auf der Website zu erkennen.',
+                                is_regex: true
+                            },
                             // {
                             //     col1: '_gid',
                             //     col2: 'google.com',
@@ -132,15 +176,25 @@ cc.run({
                             //     col4: 'description ...',
                             // }
                         ]
-                    }, {
+                    }, 
+                    {
                         title: 'Werbe- und Targeting-Cookies',
                         description: 'Diese Cookies sammeln Informationen darüber, wie Sie die Website nutzen, welche Seiten Sie besucht und welche Links Sie angeklickt haben. Sämtliche Daten werden anonymisiert und lassen keinen Rückschluss auf Ihre Person zu.',
                         toggle: {
                             value: 'targeting',
                             enabled: false,
                             readonly: false
-                        }
-                    }, {
+                        },
+                        cookie_table:
+                        [
+                            {
+                                col1: '_fbp',
+                                col2: 'meta.com',
+                                col3: '2 Monate',
+                            }
+                        ]
+                    }, 
+                    {
                         title: 'Mehr Informationen',
                         description: 'Bei Fragen zu unserer Richtlinie zu Cookies und Ihren Auswahlmöglichkeiten kontaktieren Sie uns bitte. <a class="cc-link" href="mailto:info@quilar.de">Kontakt</a>.',
                     }

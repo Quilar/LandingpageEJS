@@ -21,7 +21,18 @@ app.use(express.static('public',
 }));
 
 // index page
-app.get('/', (req, res)=> res.render('pages/index'));
+app.get('/', async (req, res)=> {
+  try{
+    const file = await fs.promises.readFile(`${__dirname}/public/content/faq/faq.json`);
+    if(!file) throw Error();
+    else
+      res.render('pages/index', {faqs: JSON.parse(file).faqs});
+  }
+  catch(err){
+    res.status(404).render(404);
+  }
+    
+  });
 
 
 // developer mode show index that lists all partials
@@ -79,6 +90,7 @@ app.get('/about', async (req, res) => {
 
 app.get('/hometour', (req, res)=> res.render('pages/hometour'));
 app.get('/services', (req, res)=> res.render('pages/services'));
+app.get('/contact', (req, res)=> res.render('pages/contact'));
 app.get('/datenschutz', (req, res)=> res.render('pages/datenschutz'));
 app.get('/impressum', (req, res)=> res.render('pages/impressum'));
 app.get('/nutzungsbedingungen', (req, res)=> res.render('pages/AGB'));

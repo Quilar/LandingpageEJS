@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="de">
+  
+<head>
+  <%- include('../partials/head'); %>
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <header>
+        <%- include('../partials/header'); %>
+        <title>Visualisierung für Immobilien | Quilar</title>
+    </header>
+    <main>
+        <section class="section-container">
+            <section class="contact-section">
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+                        <script>
+                        hbspt.forms.create({
+                            region: "eu1",
+                            portalId: "26707227",
+                            formId: "a1447747-6754-46de-9b14-ab742519ea8f",
+                            onFormReady: function($form, ctx) {
+                                
+                                
+                                $form.find('hs-form__virality-link').css('display', 'none')
+                            }
+                        });
+                        </script>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+      <%- include('../partials/footer'); %>
+      <script defer src="/scripts/contact.js">
+      </script>
+    </footer>
+
+</body>
+</html>

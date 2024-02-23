@@ -12,17 +12,20 @@
   flex-direction: column;
 }
 
-.comparison-benefit {
+.comparison-benefit{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px;
+  width: 100%;
   border-bottom: solid 1px var(--off-white);
 }
 
-.comparison-benefit h3 {
-  text-decoration: underline;
+.comparison-benefit-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .comparison-benefit p {
   margin-top: 0;
@@ -74,9 +77,27 @@
 @media only screen and (orientation: landscape) and (max-width: 992px){
   /* Styles specific to landscape orientation */
 
+  .comparison-benefit{
+    align-items: flex-start;
+  }
+
+  .comparison-benefit-body{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
-
+/*Desktop*/
 @media only screen and (min-width: 992px){
+  .comparison-benefit{
+    align-items: flex-start;
+  }
+  
+  .comparison-benefit-body{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
 }

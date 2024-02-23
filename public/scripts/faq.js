@@ -8,10 +8,8 @@ function toggleFaq(element) {
     var icon = element.querySelector('.faq-icon');
     if (answer.style.display === "block") {
       answer.style.display = "none";
-      icon.innerHTML = '&#9656;'; // Right-pointing triangle
     } else {
       answer.style.display = "block";
-      icon.innerHTML = '&#9662;'; // Down-pointing triangle
     }
   }
   
