@@ -33,84 +33,19 @@ app.get('/', async (req, res)=> {
   }
     
   });
-
-
-// developer mode show index that lists all partials
-app.get('/developer', async(req, res) => {
-  console.log("request incoming");
-try{
-  const news = await fs.promises.readFile(`${__dirname}/public/content/news/news.json`);
-  const testimonials = await fs.promises.readFile(`${__dirname}/public/content/testimonials/testimonies.json`);
   
-  if(news && testimonials) res.render('pages/all_partials', {news: JSON.parse(news), testimonials: JSON.parse(testimonials)});
-  else throw Error("Ein Server Error ist aufgetreten");
-}
-catch(err){
-  res.status(404).render(404);
-}
-  
-});
-
-app.get('/backupsites', async (req, res) => {
-  console.log("request incoming");
-  try{
-    const news = await fs.promises.readFile(`${__dirname}/public/content/news/news.json`);
-    const testimonials = await fs.promises.readFile(`${__dirname}/public/content/testimonials/testimonies.json`);
-    
-    if(news && testimonials) res.render('pages/index-bak', {news: JSON.parse(news), testimonials: JSON.parse(testimonials)});
-    else throw Error("Ein Server Error ist aufgetreten");
-  }
-  catch(err){
-    res.status(404).render(404);
-  }
-    
-  });
-  
-
-// about page
-app.get('/about', async (req, res) => {
-  console.log("request incoming");
-  try{
-    const news = await fs.promises.readFile(`${__dirname}/public/content/news/news.json`);
-    
-    if(news) res.render('pages/about', {news: JSON.parse(news)});
-    else throw Error("Ein Server Error ist aufgetreten");
-  }
-  catch(err){
-    res.status(404).render(404);
-  }
-    
-  });
-
+  app.get('/about', (req, res)=>res.render('pages/about'));
+  app.get('/hometour', (req, res)=> res.render('pages/hometour'));
+  app.get('/services', (req, res)=> res.render('pages/services'));
+  app.get('/contact', (req, res)=> res.render('pages/contact'));
+  app.get('/datenschutz', (req, res)=> res.render('pages/datenschutz'));
+  app.get('/impressum', (req, res)=> res.render('pages/impressum'));
+  app.get('/nutzungsbedingungen', (req, res)=> res.render('pages/AGB'));
+  app.get('/cookies', (req, res)=> res.render('pages/cookies'));
   // blog page
   const blogRouter = require('./routes/blog-router.js');
-
   app.use('/blog', blogRouter);
-
-
-app.get('/hometour', (req, res)=> res.render('pages/hometour'));
-app.get('/services', (req, res)=> res.render('pages/services'));
-app.get('/contact', (req, res)=> res.render('pages/contact'));
-app.get('/datenschutz', (req, res)=> res.render('pages/datenschutz'));
-app.get('/impressum', (req, res)=> res.render('pages/impressum'));
-app.get('/nutzungsbedingungen', (req, res)=> res.render('pages/AGB'));
-app.get('/cookies', (req, res)=> res.render('pages/cookies'));
-
-app.post('/submit-contact-form', async(req, res)=>{
-
-  try{
-
-    const formContent = req.body;
-    const europeanTime = new Date().toLocaleString('de-DE', { timeZone: 'Europe/Berlin' });
-    await fs.promises.writeFile(`${__dirname}/inquiries/${europeanTime}_${formContent.name}.txt`, JSON.stringify(formContent));
-    res.json({error: false, message:"Die Kontaktanfrage ist zugestellt. Wir melden uns zeitnah bei dir!"});
-  }
-  catch(err){
-    console.error(err);
-    res.json({error:true, message:'Ein Error ist beim versenden aufgetreten. Sende uns deine Anfrage gerne an info@quilar.de.'});
-  }
-
-});
+  
 
 app.use((req, res)=>{
     res.status(404).render('pages/404');
