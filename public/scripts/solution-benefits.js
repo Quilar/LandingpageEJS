@@ -1,7 +1,6 @@
 var swiperSolutionBenefit = null; // Holds the Swiper instance
 
 const initializeSwiperSolutionBenefit = () => {
-  console.log("Initialize Swiper");
   swiperSolutionBenefit = new Swiper('.swiper-container-solution-benefits', {
     // Swiper configuration
     navigation: {
@@ -45,7 +44,6 @@ const destroySwiperSolutionBenefit = () => {
   if (swiperSolutionBenefit !== null) {
     swiperSolutionBenefit.destroy();
     swiperSolutionBenefit = null;
-    console.log("Swiper Destroyed");
   }
 };
 

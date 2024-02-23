@@ -1,7 +1,6 @@
 var swiperTestimonial = null; // Holds the Swiper instance
 
 const initializeSwiperTestimonial = () => {
-  console.log("Initialize Swiper");
   swiperTestimonial = new Swiper('.swiper-container-testimonials', {
     // Swiper configuration
     navigation: {
@@ -45,7 +44,6 @@ const destroySwiperTestimonial = () => {
   if (swiperTestimonial !== null) {
     swiperTestimonial.destroy();
     swiperTestimonial = null;
-    console.log("Swiper Destroyed");
   }
 };
 

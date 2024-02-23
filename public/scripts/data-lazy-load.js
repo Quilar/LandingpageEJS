@@ -2,14 +2,11 @@
 
 document.addEventListener('DOMContentLoaded', function() 
 {
-    console.log('Lets goo');
     // Find all the thumbnails
     var thumbnails = document.querySelectorAll('.video-thumbnail');
     thumbnails.forEach(function(thumbnail) 
     {
-        console.log("come on");
         thumbnail.addEventListener('click', function() {
-            console.log("EVENT");
         // The iframe is the previous sibling of the thumbnail image
         var iframe = thumbnail.previousElementSibling;
         // Get the video URL from the data-lazy-load attribute of the thumbnail
