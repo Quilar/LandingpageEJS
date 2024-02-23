@@ -2,7 +2,7 @@
     "faqs": [
        {
               "question": "Welche Informationen benötigen wir zum Erstellen einer 4D Visualisierung?",
-              "answer": "Je mehr Informationen Sie uns zur Verfügung stellen desto besser! \n Für eine detallierte virtuellen Begehung Ihres Entwurfes benötigen wir im Besten Fall Ihre aktuelle CAD-Planung exportiert im IFC-Format. Dieses 3D Format wird von allen gängigen CAD Programmen unterstützt und enthält alle notwendingen Informationen. Wenn Sie keinen Zugang zu der CAD-Planung haben, dann erarbeiten wir das 3D Modell anhand der vorliegenden PDF-Pläne. Wichtig erforderliche Unterlagen sind Außenansichten, Schnitte, Baubeschreibung und falls vorhanden ein Ausstattungskatalog. Dabei gilt, je mehr Informationen wir zur Innenausstattung wir haben, desto genauer können wir Ihre Vision abbilden."
+              "answer": "Je mehr Informationen Sie uns zur Verfügung stellen desto besser! \n Für eine detallierte virtuellen Begehung Ihres Entwurfes benötigen wir Ihre aktuelle CAD-Planung, exportiert im IFC-Format. Dieses 3D Format wird von allen gängigen CAD Programmen unterstützt und enthält alle notwendingen Informationen. Wenn Sie keinen Zugang zu der CAD-Planung haben, erarbeiten wir das 3D Modell anhand der vorliegenden PDF-Pläne. Erforderliche Unterlagen sind Außenansichten, Schnitte, Baubeschreibung und falls vorhanden ein Ausstattungskatalog. Dabei gilt, je mehr Informationen wir zur Innenausstattung haben, desto genauer können wir Ihre Vision abbilden."
        },
        {
               "question": "Wie lange dauert die Erstellung einer Visualisierung nach Datenlieferung?",
@@ -14,39 +14,39 @@
        },
        {
               "question": "Was ist, wenn ich für ein Entwurfskonzept nur eine Skizze habe?",
-              "answer": "Bevor Sie Zeit und Geld in die Planung einer Entwurfsidee investieren, möchten Sie es zum Überzeugen mit der HomeTour App präsentieren? Diesen Fall haben wir auch bereits gehabt. Dann erstellen wir ein 3D Modell anhand der Skizze, das ersteinmal für den ersten Eindruck und ein grobes Raumgefühl dient."
+              "answer": "Bevor Sie Zeit und Geld in die Planung einer Entwurfsidee investieren, möchten Sie es zum Überzeugen mit der HomeTour App präsentieren? Diesen Fall haben wir bereits gehabt. Dann erstellen wir ein 3D Modell anhand der Skizze, das perfekt dazu dient den Entwurf zu verstehen und ein erstes Raumgefühl zu erhalten."
        },
        {
               "question": "Können nachträgliche Anpassungen an der Visualisierung vorgenommen werden?",
-              "answer": "Ja, Anpassungen sind grundsätzlich möglich. Änderungen von Geometrien bzw. Bauelementen sind nach der Feedbackschleife ausgenommen, da nach der Texturierung Anpassungen and Bauelementen mit einem Zusatzaufwand verbunden sind. Bevor das 3D Modell texturiert wird erhalten Sie eine Vorversion zur Durchsicht der Geometrien und Bauelemente mit der Bitte Ihr Feedback so ausführlich wie möglich zu äußern."
+              "answer": "Ja, Anpassungen sind grundsätzlich möglich. Änderungen von Geometrien bzw. Bauelementen sind nach der Feedbackschleife ausgenommen, da nach der Texturierung Anpassungen an Bauelementen mit einem Zusatzaufwand verbunden sind. Bevor das 3D Modell texturiert wird erhalten Sie eine Vorversion zur Durchsicht der Geometrien und Bauelemente mit der Bitte Ihr Feedback so ausführlich wie möglich zu äußern."
        },
        {
-              "question": "Welche Vorteile hat HomeTour im Vergleich zu anderen Immobilienvisualisierungen?",
-              "answer": "HomeTour bietet ein einzigartiges, immersives Erlebnis, das Nutzern ermöglicht, Immobilienprojekte in ihrem realen Kontext und Maßstab zu erleben, was die Entscheidungsfindung beschleunigt und das Engagement erhöht."
+              "question": "Welche Vorteile hat die 4D Visualisierung mit HomeTour by Quilar im Vergleich zu anderen Immobilienvisualisierungen?",
+              "answer": "HomeTour bietet ein einzigartiges und immersives Erlebnis, das Nutzern ermöglicht Immobilienprojekte in ihrem realen Kontext und Maßstab zu erleben, was die Entscheidungsfindung beschleunigt und das Engagement erhöht."
        },
        {
-              "question": "Für welche Immobilientypen ist HomeTour besonders geeignet?",
-              "answer": "HomeTour eignet sich für eine Vielzahl von Immobilientypen. Unser Fokus liegt auf Neubau-Wohnimmobilien. Die Flexibilität unserer AR-Technologie ermöglicht uns aber eine umfassende Visualisierung unabhängig vom Immobilientyp."
+              "question": "Für welche Immobilientypen ist die 4D Visualisierung besonders geeignet?",
+              "answer": "HomeTour eignet sich für eine Vielzahl von Immobilientypen. Unser Fokus liegt auf Neubau-Wohnimmobilien."
        },
         {
               "question": "Was genau ist eigentlich Augmented Reality?",
-              "answer": "Augmented Reality (AR) ist eine Technologie, die digitale Informationen – wie Bilder oder 3D-Modelle – über die reale Welt legt, die durch das Kameraobjektiv eines Smartphones oder Tablets betrachtet werden können. In unserem <a href='/blog' target='_blank'>Blog</a> gehen wir genauer auf die Augemented Reality Technologie ein."
+              "answer": "Augmented Reality (AR) ist eine Technologie, die digitale Informationen – wie Bilder oder 3D-Modelle – über die reale Welt legt, die von der Kamera eines Smartphones oder Tablets erfasst wird. In unserem <a href='/blog' target='_blank'>Blog</a> gehen wir genauer auf die Augemented Reality Technologie ein."
         },
         {
               "question": "Welche Geräte benötigen Nutzer, um die HomeTour-App zu verwenden?",
-              "answer": "HomeTour ist den meisten modernen Smartphones und Tablets von Apple verfügbar, die über eine Kamera und ausreichende Verarbeitungsleistung verfügen. Es sind keine speziellen Geräte außer einem kompatiblen iOS-Gerät erforderlich."
+              "answer": "HomeTour ist für Smartphones und Tablets von Apple ab iOS 11 verfügbar, die über eine Kamera und ausreichende Verarbeitungsleistung verfügen."
         },
         {
-              "question": "Wie werden die Kosten für eine HomeTour-Visualisierung berechnet?",
-              "answer": "Die Kosten variieren je nach Umfang und Komplexität des Projekts. Wir bieten maßgeschneiderte Lösungen, die auf Ihre spezifischen Bedürfnisse und Anforderungen abgestimmt sind. Gerne erstellen wir Ihnen ein individuelles Angebot."
+              "question": "Wie werden die Kosten für eine 4D Visualisierung berechnet?",
+              "answer": "Die Kosten variieren je nach Umfang und Komplexität des Projekts. Wir bieten maßgeschneiderte Lösungen, die auf Ihre spezifischen Bedürfnisse und Anforderungen abgestimmt sind. Gerne erstellen wir Ihnen ein individuelles Angebot. Nehme Sie gerne <a href='/contact'>Kontakt</a> zu uns auf."
         },
         {
-              "question": "Handelt es sich bei HomeTour um eine webbasierte Lösung oder eine mobile App?",
+              "question": "Handelt es sich bei HomeTour um einer webbasierten oder mobilen App?",
               "answer": "HomeTour ist eine mobile App, die für iOS verfügbar ist, um die bestmögliche Performance und Benutzererfahrung im Bereich Augmented Reality zu gewährleisten."
         },
         {
               "question": "Kann HomeTour auch für die Renovierung bestehender Immobilien eingesetzt werden?",
-              "answer": "Ja, HomeTour eignet sich hervorragend zur Visualisierung von Renovierungsprojekten, indem es Nutzern ermöglicht, die potenziellen Ergebnisse direkt im bestehenden Raum zu sehen."
+              "answer": "Ja, HomeTour eignet sich auch hervorragend zur Visualisierung von Renovierungsprojekten. Projekte für Sanierungsobjekte nehmen wir jedoch nur sehr selektiv an. Sprechen Sie uns gerne auf Ihr Sanierungsprojekt an. <a href='/contact'>Kontakt</a>"
         }
     ]
 }
