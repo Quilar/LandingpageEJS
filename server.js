@@ -2,6 +2,7 @@ var express = require('express');
 const fs = require('fs');
 var app = express();
 const bodyParser = require('body-parser');
+const thirtyDays = 24 * 60 * 60 * 1000 * 30;
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -11,6 +12,7 @@ app.use(bodyParser.json());
 app.set('view engine', 'ejs');
 app.use(express.static('public', 
 {
+  maxAge: thirtyDays,
   gzip:true,
   setHeaders: (res, path) => {
     if(path.endsWith('.wasm.gz'))
@@ -36,8 +38,8 @@ app.get('/', async (req, res)=> {
   
   app.get('/about', (req, res)=>res.render('pages/about'));
   app.get('/hometour', (req, res)=> res.render('pages/hometour'));
-  app.get('/services', (req, res)=> res.render('pages/services'));
   app.get('/contact', (req, res)=> res.render('pages/contact'));
+  app.get('/danke', (req, res)=> res.render('pages/thankyou'));
   app.get('/datenschutz', (req, res)=> res.render('pages/datenschutz'));
   app.get('/impressum', (req, res)=> res.render('pages/impressum'));
   app.get('/nutzungsbedingungen', (req, res)=> res.render('pages/AGB'));
