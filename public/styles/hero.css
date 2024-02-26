@@ -89,8 +89,7 @@
 }
 
 .hero-cta-btn{
-  /* background-color: #00b3ce51; */
-  background: linear-gradient(90deg, #425da7c3 0%, #00b3ced3 100%);
+  background: var(--linear-gradient);
   min-width: 300px;
 }
 

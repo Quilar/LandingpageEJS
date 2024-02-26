@@ -195,6 +195,10 @@
     margin-top: 20px; /* Add some space above the button */
   }
 
+  .walkthrough-foot button{
+    width: 30%;
+  }
+
   }
   
   /* Landscape screens */
@@ -263,6 +267,10 @@
   .walkthrough-more-btn {
     width: auto;
     margin-top: 20px; /* Add some space above the button */
+  }
+
+  .walkthrough-foot button{
+    width: 30%;
   }
 
     
