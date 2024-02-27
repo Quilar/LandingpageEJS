@@ -5,15 +5,19 @@
     margin-top: var(--margin-sec-v);
 }
 
-.illustration-section h4,
+.illustration-section h3,
 .illustration-section p{
     text-align: center;
 }
 
-.illustration-section h4,
+.illustration-section h3,
 .illustration-section p,
 .illustration-section span{
     color: var(--obscure-green);
+}
+
+.illustration-section h3{
+  font-size: var(--font-size-h4);
 }
 
 .illustration-section-bkg{
