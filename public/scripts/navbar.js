@@ -22,4 +22,4 @@ function InitializeNavbar(){
     );
 }
 
-$(document).ready(()=>InitializeNavbar()); 
+document.addEventListener('DOMContentLoaded', ()=>InitializeNavbar());

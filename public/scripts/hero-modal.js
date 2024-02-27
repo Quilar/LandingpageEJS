@@ -42,5 +42,5 @@ function ModalOpener(){
   }
 }
 
-  $(document).ready(()=> ModalOpener());
+  document.addEventListener('DOMContentLoaded', ()=>ModalOpener());
   
