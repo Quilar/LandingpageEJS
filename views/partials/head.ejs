@@ -8,30 +8,39 @@
 
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<link rel="stylesheet" href="/cookieconsent/cookieconsent.css">
-<script defer src="/cookieconsent/cookieconsent.js"></script>
-<script defer src="/cookieconsent/cookieconsent-init.js"></script>
-<script defer data-cookiecategory="targeting" src="/cookieconsent/thirdpartycookies.js"></script>
-<!-- Google tag (gtag.js) -->
-<script defer type="text/plain" data-cookiecategory="analytics" async src="https://www.googletagmanager.com/gtag/js?id=G-2RR5XRNY1R"></script>
-<!-- Meta Pixel Code -->
-<script defer async data-cookiecategory="targeting">
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '938916708062121');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=938916708062121&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
 
-<!-- Start of HubSpot Embed Code -->
-<script data-cookiecategory="analytics" type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/26707227.js"></script>
-<!-- End of HubSpot Embed Code -->
+<!-- Cookie Consent Management -->
+<link rel="stylesheet" href="/cookieconsent/cookieconsent-v3.css">
+<script defer src="/cookieconsent/cookiePlaceholders.js"></script>
+<script defer src="/cookieconsent/cookieconsent-v3.umd.js"></script>
+<script defer src="/cookieconsent/cookieconsent-init-v3.js"></script>
+
+<!-- Initialize Default Consent Mode -->
+
+<script>
+    // Define dataLayer and the gtag function.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    if(localStorage.getItem('consentMode') === null){
+        gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_personalization': 'denied',
+        'ad_user_data': 'denied'
+        });
+    } else{
+        gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')));
+    }   
+</script>
+
+<!-- Initialize Default Consent Mode -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NCB7JBW3');</script>
+    <!-- End Google Tag Manager -->
+
+<!-- Cookie Consent Management -->
