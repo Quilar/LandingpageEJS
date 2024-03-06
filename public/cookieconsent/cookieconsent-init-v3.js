@@ -147,7 +147,12 @@ CookieConsent.run({
                                     {
                                         name: '_ga',
                                         domain: 'google.com',
-                                        // desc: 'description ...',
+                                        desc: 'Wird verwendet, um Webseitenbesucher zu identifizieren',
+                                    },
+                                    {
+                                        name: '_gid',
+                                        domain: 'google.com',
+                                        desc: 'Ähnlich wie _ga wird dieser Cookie zur Identifizierung jedes Webseitenbesuchs genutzt und zum Verständnis, wie unsere Webseite genutzt wird.',
                                     },
                                     {
                                         name: 'hubspotutk',
@@ -169,11 +174,53 @@ CookieConsent.run({
                                         domain: 'hubspot.com',
                                         desc: 'Wird verwendet, um den Browser des Besuchers bei Rückkehr auf der Website zu erkennen.',
                                     },
+                                    {
+                                        name: '_clck',
+                                        domain: 'microsoft.com',
+                                        desc: 'Behält die Clarity-Benutzer-ID und die Einstellungen bei, die eindeutig für diese Site sind und derselben Benutzer-ID zugeordnet sind.',
+                                    },
+                                    {
+
+                                        name: '_clsk',
+                                        domain: 'microsoft.com',
+                                        desc: 'Verbindet mehrere Seitenaufrufe eines Benutzers zu einer einzigen Clarity-Sitzungsaufzeichnung.',
+                                    },
+                                    {
+
+                                        name: 'CLID',
+                                        domain: 'microsoft.com',
+                                        desc: 'Identifiziert den Benutzer, den Clarity zum ersten Mal auf einer Website gesehen hat, die Clarity verwendet.',
+                                    },
+                                    {
+
+                                        name: 'ANONCHK',
+                                        domain: 'microsoft.com',
+                                        desc: 'Gibt an, ob MUID an ANID übertragen wird, ein Cookie, das für Werbung verwendet wird. Clarity verwendet kein ANID und ist daher immer auf 0 gesetzt.',
+                                    },
+                                    {
+
+                                        name: 'HERR',
+                                        domain: 'microsoft.com',
+                                        desc: 'Gibt an, ob MUID aktualisiert werden soll.',
+                                    },
+                                    {
+
+                                        name: 'MUID',
+                                        domain: 'microsoft.com',
+                                        desc: '	Identifiziert eindeutige Webbrowser, die Microsoft-Websites besuchen. Diese Cookies werden für Werbung, Website-Analysen und andere betriebliche Zwecke verwendet.',
+                                    },
+                                    {
+
+                                        name: 'SM',
+                                        domain: 'microsoft.com',
+                                        desc: 'Wird zur Synchronisierung der MUID zwischen Microsoft-Domänen verwendet.',
+                                    },
+
                                 ]
                             }
                         }, {
                             title: 'Werbe- und Targetingcookies',
-                            description: 'Diese Cookies sammeln Informationen darüber, wie Sie die Website nutzen, welche Seiten Sie besucht und welche Links Sie angeklickt haben. Sämtliche Daten werden anonymisiert und lassen keinen Rückschluss auf Ihre Person zu.',
+                            description: 'Marketing-Cookies werden verwendet, um Besuchern auf Webseiten zu folgen. Die Absicht ist, Anzeigen zu zeigen, die relevant und ansprechend für den einzelnen Benutzer sind und daher wertvoller für Publisher und werbetreibende Drittparteien sind.',
                             linkedCategory: 'ads',
                             cookieTable:{
                                 caption: 'Cookie table',
@@ -186,7 +233,17 @@ CookieConsent.run({
                                     {
                                         name: '_fbp',
                                         domain: 'meta.com',
-                                        // desc: 'Zuordnung des Quilar Accounts bei Hubspot',
+                                        desc: 'Wird dazu verwendet, um individuelle Besucher der Webseite durch eine eindeutige Kennung(ID) zu identifizieren. Es ermöglicht Meta, Werbeanzeigen auf Facebook oder digitalen Plattformen, die Facebook-Werbung nutzen, gezielt an Personen zu richten., die bereits unsere Webseite besucht haben. Es dient zur Analyse und Optimierung der Wirksamkeit von Facebook-Werbekampagnen.',
+                                    },
+                                    {
+                                        name: 'fr',
+                                        domain: 'meta.com',
+                                        desc: 'Wird dazu verwendet, um die Relevanz von Werbung für Nutzer zu erhöhen. Es hilft dabei, die richtigen Anzeigen basierend auf dem Verhalten des Nutzers zu schalten und betrügerische Aktivitäten zu verhindern.',
+                                    },
+                                    {
+                                        name: '_fbc',
+                                        domain: 'meta.com',
+                                        desc: 'Wird dazu verwendet, um die Konversion unserer Werbeanzeige zu verfolgen und ist nützlich für die Zuschreibung und Analysezwecke unserer Werbeanzeigen auf Facebook.',
                                     }
         
                                 ]
