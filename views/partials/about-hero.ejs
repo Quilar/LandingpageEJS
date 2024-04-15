@@ -1,30 +1,39 @@
 <head>
     <link rel="stylesheet" href="/styles/about-hero.css">
+    <script src="/scripts/hero-modal.js"></script>
 </head>
 <section class="section-container">
 <section class="about-hero-section">
+
     <div class="about-hero-container">
         <div class="about-hero-header">
-            <h1>Wir fordern den <strong>Status Quo</strong> heraus</h1>
-            <img class="about-hero-bkg-img
-            " src="/content/team/about-hero.jpg" alt="Geschäftsführer" loading="lazy">
-        </div>
-    </div>
-    <div class="cta-container">
-        <div class="cta-container-header">
-            <span>"ES SIEHT NICHT AUS WIE AUF DEN <strong>BILDERN</strong>"...</span>
-            <h2>Damit begann unsere Reise</h2> 
-        </div>
-        <div class="about-hero-video">
-            <iframe data-lazy-load="https://www.youtube-nocookie.com/embed/atXenG9W1vc?si=6kbsNe6uvyh1pbNg&amp;start=18" src=""
+            <h1 class="about-hero-title">Wir fordern den <strong>Status Quo</strong> heraus</h1>
+            <div class="about-hero-btns">
+                <!-- Button to Open Modal -->
+                <button id="playVideoBtn" class="about-hero-cta-btn secondary-about-hero-btn">Video abspielen</button>
+            </div>
+            
+            <!-- Modal Structure -->
+            <div id="videoModal" class="modal">
+                <div class="modal-content">
+                <span class="close">&times;</span>
+                <iframe id="modalVideo" data-lazy-load="https://www.youtube-nocookie.com/embed/0SHEHWsbvSU?si=Hp7SlHViOrgj1YvE"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-            </iframe>
-            <img class="video-thumbnail" src="/content/images/founder-thumbnail.png" alt="Unsere Reise" loading="lazy"> 
+                    allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="about-hero-cta-btns">
+
+            </div>
+            
         </div>
-        
-    </div>        
+
+        <video playsinline autoplay="autoplay" loop id="vid" muted class="about-hero-bkg">
+            <source src="/content/videos/about-hero-video.mp4" alt="Intro" type="video/mp4">
+        </video>
+    </div>
+   
 
 </section>
 </section>
