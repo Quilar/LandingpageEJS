@@ -16,12 +16,12 @@
     --linear-gradient: linear-gradient(200deg, #009cb4 0%, #009cb4 35%, #FC9946 100%);
     --linear-gradient-v: linear-gradient(180deg, #009cb4 0%, #009cb4 35%, #FC9946 100%);
     --margin-sec-v: 80px;
-    --font-size-h1: 22px;
+    --font-size-h1: 30px;
     --font-size-h2: 22px;
     --font-size-h3: 18px;
     --font-size-h4: 16px;
     --font-size-p: 16px;
-    --font-size-a: 14px;
+    --font-size-a: 12px;
     --font-size-span: 12px;
     --hero-height: 70vh;
 }
@@ -76,7 +76,7 @@ button {
     border-radius: 6px;
     border: none;
     font-family: Outfit;
-    font-size: 16px;
+    font-size: var(--font-size-a);
     font-weight: 600;
     margin: 0.5em 0;
     text-decoration: none;
@@ -133,7 +133,7 @@ h1{
     /* INTERAKTIVE VISUALISIERUNG */
     font-family: 'Outfit';
     font-style: normal;
-    font-weight: 200;
+    font-weight: 500;
     font-size: var(--font-size-h1);
     line-height: 1.25em;
     display: block;
@@ -201,6 +201,7 @@ span{
 strong{
     position: relative;
     font-weight: 500;
+    color: var(--orange);
     z-index: 1;
   }
 
@@ -292,18 +293,10 @@ strong{
     }
     span{ font-size: var(--font-size-span);}
 
-    strong{
-        position: relative;
-        font-weight: 500;
-        z-index: 1;
-      }
-
     .colored-underline::before {
         bottom: 2px; /* Align with the bottom of the text */
         height: 10px; /* Thickness of the underline */
     }
-
-
       
 }
 
