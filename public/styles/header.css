@@ -1,27 +1,29 @@
 header.visible{
-    display: block;
-    position:relative;
-    width: 100%!important;
-    height: 50px;
-    top: 0px;
-    transition: top 0.25s linear;
-    
+    transform: translateY(0%);
+    background-color: #ffffff4d;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
-
 header {
-    display: none;
-    background: var(--obscure-blue);
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.14);
+    display: flex;
+    position:sticky;
+    justify-content: center;
+    width: 100%!important;
+    top: 0px;
     z-index:9999;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
   }
+
+.navbar.init{display:none;}
 
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 100%!important;
-    height: 100%;
+    width: 90%!important;
+    height: 50px;
 }
 
 .navbar-logo{
@@ -50,7 +52,9 @@ header {
     top: 50px;
     left: 0;
     padding-inline-start: 0;
-    background: var(--obscure-blue);
+    background-color: #ffffff4d;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     margin:0;
     height: 0vh;
     transition: height 0.3s ease-in-out;
@@ -96,7 +100,7 @@ body.open .nav-item{display:unset}
     text-decoration: none;   
     text-align: right;
     padding: 15px 0;
-    color: var(--off-white);
+    color: var(--obscure-green);
 }
 
 .nav-link:hover{
@@ -108,12 +112,10 @@ body.open .nav-item{display:unset}
 /* Desktop Screen */
 @media only screen and (min-width: 992px){
 
-    header.visible{
+    
+    .navbar{
+        justify-content: center;
         height: 75px;
-    }
-    header{
-        display: block;
-        height:75px;
     }
     .burger {display:none;}
     .nav-item{display: unset;}
@@ -133,10 +135,14 @@ body.open .nav-item{display:unset}
         justify-content: flex-end;
         align-items: center;
         position: unset;
-        width: 80%;
+        width: unset;
         opacity: 1;
         background-color: none;
         list-style-type: disc;
+    }
+    .nav-link{
+        font-size: 16px;
+        font-weight: 500;
     }
 
 
@@ -151,12 +157,15 @@ body.open .nav-item{display:unset}
 /* Landscape screens */
 @media only screen and (orientation: landscape) and (max-width: 992px) {
     /* Styles specific to landscape orientation */
-
     body.open .navbar-links{
         display: flex;
         flex-direction: column;
         height: calc(100vh - 100px);
         opacity: 1;
+    }
+    .nav-link{
+        font-size: 16px;
+        font-weight: 500;
     }
     
 }  
