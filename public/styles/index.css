@@ -201,8 +201,12 @@ span{
 strong{
     position: relative;
     font-weight: 500;
-    color: var(--orange);
     z-index: 1;
+}
+
+.cta-color{
+    color: var(--orange);
+    
   }
 
 
