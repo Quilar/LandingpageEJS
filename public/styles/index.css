@@ -206,8 +206,14 @@ strong{
 
 .cta-color{
     color: var(--orange);
-    
   }
+
+.prime-color{
+    color: var(--cyan);
+}
+.second-color{
+    color: var(--purple);
+}
 
 
   .colored-underline{
