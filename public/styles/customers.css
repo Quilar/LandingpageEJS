@@ -21,24 +21,12 @@
 .customers-header h2{
     color: var(--off-white);
 }
-.customers-header-sub{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0 ;
-}
-
-.customers-header-sub{
-    text-align: center;
-    margin: 0;
-}
 
 .customers-logos{
     display:flex;
     align-items: center;
     white-space: nowrap;
     animation: scroll-logos 20s linear infinite;
-    box-shadow: 0px 5px 10px 0px #00000017;
 }
 
 .logo{
