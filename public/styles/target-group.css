@@ -9,9 +9,6 @@
   .target-group-section p{
     color: var(--obscure-green);
   }
-  .target-group-section strong{
-    color: var(--orange);
-  }
 
   .target-group-section-bkg{
     position: absolute;
