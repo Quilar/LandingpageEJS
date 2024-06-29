@@ -6,6 +6,10 @@
   .prob-sol-section strong{
     color: var(--obscure-blue);
   }
+
+  .prob-sol-section{
+    margin-top: var(--margin-sec-v);
+  }
   
   .prob-sol-group{
     display: flex;
