@@ -215,6 +215,11 @@ strong{
     color: var(--purple);
 }
 
+.highlight{
+    background: var(--cyan);
+    color: var(--off-white);
+}
+
 
   .colored-underline{
     position: relative;

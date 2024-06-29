@@ -40,7 +40,7 @@
 }
 
 .values-section h3{
-  color: var(--orange);
+  color: var(--obscure-green);
 }
 
 .value-body{position: relative;}
@@ -90,14 +90,17 @@
     gap: var(--margin-sec-v);
   }
 
+  .value-story p{
+    margin-top: 0;
+  }
   .value-reverse{
     flex-direction: row-reverse;
   }
   .value-header{
-    width: 39%;
+    width: 50%;
   }
   .value-body{
-    width: 61%;
+    width: 50%;
   }
 
   .value-body img{
@@ -133,14 +136,19 @@
     gap: var(--margin-sec-v);
   }
 
+  .value-story p{
+    margin-top: 0;
+  }
+
   .value-reverse{
     flex-direction: row-reverse;
   }
   .value-header{
-    width: 39%;
+    width: 50%;
   }
   .value-body{
-    width: 61%;
+    width: 50%;
+    font-size: var(--font-size-h4);
   }
 
   .value-body img{
