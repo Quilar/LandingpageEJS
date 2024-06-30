@@ -130,11 +130,22 @@
 }
 
 
-
+/* Desktop Screens */
   @media only screen and (min-width: 992px){
     .walkthrough-section-bkg{
       top: 0;
       width: 20%;
+    }
+
+    .walkthrough-video{
+      width: 50%;
+      padding-top: 28.125%
+    }
+    .walkthrough-video img{
+      height: unset;
+    }
+    .walkthrough-video iframe{
+      position: absolute;
     }
 
     .walkthrough-steps {
@@ -257,12 +268,6 @@
   .walkthrough-content{
     width: 100%;
     padding-left: 0;
-  }
-
-  .walkthrough-step img{
-      height: 200px;
-      width: unset;
-      max-width: unset;
   }
 
   .walkthrough-more-btn {
