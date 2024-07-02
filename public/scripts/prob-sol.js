@@ -1,5 +1,4 @@
 window.addEventListener('scroll', () => {
-    handleScroll();
     if(window.innerWidth < 992) handleBoxes();
     
     

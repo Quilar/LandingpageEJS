@@ -1,11 +1,8 @@
 .comparison-section {
-  background: var(--obscure-blue);
+  margin-top: var(--margin-sec-v);
   width: 100%;
 }
 
-.comparison-head h2{
-  color: var(--off-white);
-}
 
 .comparison-body {
   display: flex;
@@ -30,24 +27,24 @@
 .comparison-benefit p {
   margin-top: 0;
   text-align: center;
+  color: var(--obscure-green);
+}
+.comparison-benefit h4{
+  color: var(--obscure-green);
 }
 
 .hometour-icon{
-  background: url("/content/icons/HomeTour.png");
-  background-size:cover;
+  background: url("/content/logo/logo-farbverlauf.png");
+  background-size: contain;
   background-repeat: no-repeat;
-  border-radius: 40px;
-  border: solid 3px var(--orange);
   width: 80px;
   height: 80px;
   box-shadow: 0px 2px 4px 1px rgba(255, 255, 255, 0.25);
 }
 .vr-icon{
   background: url("/content/icons/VR.png");
-  background-size:cover;
+  background-size:contain;
   background-repeat: no-repeat;
-  border-radius: 40px;
-  border: solid 3px var(--obscure-green);
   width: 80px;
   height: 80px;
   box-shadow: 0px 2px 4px 1px rgba(255, 255, 255, 0.25);

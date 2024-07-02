@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  background: var(--linear-gradient);
+  background: var(--obscure-blue);
   padding: calc(var(--margin-sec-v)/2) 0;
   margin-bottom: 0;
   z-index:0;
