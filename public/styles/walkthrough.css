@@ -37,10 +37,13 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-top: 56.25%;
+    margin-top: var(--margin-sec-v);
   }
-
-
+.walkthrough-video-container{
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}  
   .walkthrough-video iframe{
     opacity: 0;
     position: absolute;
@@ -121,7 +124,7 @@
 .walkthrough-foot{
   display: flex;
   justify-content: center;
-  margin: calc(var(--margin-sec-v)/2) 0;
+  margin-top: calc(var(--margin-sec-v)/2);
 }
 
 .walkthrough-foot button{
@@ -137,10 +140,11 @@
       width: 20%;
     }
 
-    .walkthrough-video{
+    
+    .walkthrough-video-container{
       width: 50%;
-      padding-top: 28.125%
-    }
+      padding-top: 28.125%;
+    }  
     .walkthrough-video img{
       height: unset;
     }
@@ -208,7 +212,7 @@
   }
 
   .walkthrough-foot button{
-    width: 30%;
+    width: 50%;
   }
 
   }
@@ -223,6 +227,11 @@
     .walkthrough-video{
       align-self: center;
     }
+
+    .walkthrough-video-container{
+      width: 50%;
+      padding-top: 28.125%;
+    }  
 
     .walkthrough-steps {
       position: relative;
@@ -276,7 +285,7 @@
   }
 
   .walkthrough-foot button{
-    width: 30%;
+    width: 50%;
   }
 
     
