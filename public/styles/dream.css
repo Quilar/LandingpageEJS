@@ -1,0 +1,169 @@
+.dream-section{
+    margin: 50px 0;
+  }
+  
+  .dream-section-bkg{
+    position: absolute;
+    width: 50%;
+    top: 50%; 
+    transform: translateY(-50%);
+    transform: rotate(180deg);
+    right: 0;
+    z-index: -1;
+  }
+  
+  .dream-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--margin-sec-v);
+  }
+  /* Rectangles */
+  .dream{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+  }
+  
+  .dream-header img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .dream-section p, 
+  .dream-section span{
+    color: var(--obscure-green);
+  }
+  
+  .dream-section h3{
+    color: var(--obscure-green);
+  }
+
+  .dream-body{
+    width: 100%;
+  }
+  
+  .dream-body img{
+    width: 60%;
+    object-fit: fill;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    opacity: 0.05;
+  }
+  
+  .rotate-left{
+    left: -20%;
+    rotate: -20deg;
+  }
+  
+  .rotate-right{
+    right: -20%;
+    rotate: 20deg;
+  }
+  
+  
+  
+  
+  /* Landscape screens */
+  @media only screen and (orientation: landscape) and (max-width: 992px){
+    /* Styles specific to landscape orientation */
+  
+    .dream-section-bkg{
+      top: 0;
+      width: 20%;
+    }
+  
+    .dream-section h3{
+      margin-top: 0;
+    }
+  
+    .dream ul{
+      padding-inline-start: 0;
+    }
+    .dream{
+      width: 100%;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: var(--margin-sec-v);
+    }
+  
+    .dream-story p{
+      margin-top: 0;
+    }
+    .dream-reverse{
+      flex-direction: row-reverse;
+    }
+    .dream-header{
+      width: 50%;
+    }
+    .dream-body{
+        position: relative;
+        width: 50%;
+    }
+  
+    .dream-body img{
+      left: 0;
+      bottom: -50%;
+      max-width: 200px;
+    }
+  
+    .rotate-right{
+      left: unset !important;
+      right: 0 !important;
+    }
+  }
+  
+  /* Desktop screens */
+  @media only screen and (min-width:992px){
+  
+    .dream-section-bkg{
+      top: 0;
+      width: 20%;
+    }
+  
+    .dream-section h3{
+      margin-top: 0;
+    }
+    .dream ul{
+      padding-inline-start: 0;
+    }
+    .dream{
+      width: 100%;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: var(--margin-sec-v);
+    }
+  
+    .dream-story p{
+      margin-top: 0;
+    }
+  
+    .dream-reverse{
+      flex-direction: row-reverse;
+    }
+    .dream-header{
+      width: 50%;
+    }
+    .dream-body{
+      width: 50%;
+      font-size: var(--font-size-h4);
+      position: relative;
+    }
+  
+    .dream-body img{
+      left: 0;
+      bottom: -50%;
+      max-width: 300px;
+    }
+  
+    .rotate-right{
+      left: unset !important;
+      right: 0 !important;
+    }
+  
+  }
+  
