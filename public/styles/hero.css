@@ -20,7 +20,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -10;
+  z-index: 0;
 }
 
 .hero-bkg video{
@@ -67,6 +67,7 @@
   backface-visibility: hidden;
   opacity: 0;
   animation: fadeIn 2s ease forwards 1s;
+  pointer-events: none;
 }
 
 @keyframes fadeIn {
@@ -95,6 +96,7 @@
   width: 95%;
   gap: 10px;
   margin: 20px 0;
+  pointer-events: auto;
 }
 
 .hero-cta-btn{
