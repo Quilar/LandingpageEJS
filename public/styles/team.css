@@ -5,11 +5,26 @@
     align-items: center;
     width: 90%;
     padding-top: var(--margin-sec-v);
-    margin-bottom: 0;
+}
+
+.team-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.team-body-img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.team-body-img img{
+    width: 100%;
+    object-fit: cover;
 }
 
 .team-section h2,
-.team-section h3,
+
 .team-section p,
 .team-section span,
 .team-section li{
@@ -21,7 +36,114 @@
     margin-bottom: calc(var(--margin-sec-v)*0.5);
 }
 
+.team-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--margin-sec-v);
+  }
+  /* Rectangles */
+  .team-row{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+  }
+  
+  
+  .team-row-header img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .team-row-body{position: relative;}
+  
+  .team-row-body img{
+    width: 60%;
+    object-fit: fill;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    opacity: 0.05;
+  }
+
+  .team-footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: var(--margin-sec-v);
+  }
+  .team-footer-cta{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team-footer-cta h3{
+    text-align: center;
+    color: var(--obscure-green);
+  }
+
 /* Desktop screens */
 @media only screen and (min-width: 992px){
 
+    .team-row{
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: var(--margin-sec-v);
+      }
+    
+      .team-row-reverse{
+        flex-direction: row-reverse;
+      }
+      .team-row-header{
+        width: 50%;
+      }
+      .team-row-body{
+        width: 50%;
+        font-size: var(--font-size-h4);
+      }
+    
+      .team-row-body img{
+        left: 0;
+        bottom: -50%;
+        max-width: 300px;
+      }
+
+      .team-footer-cta{
+        width: 50%;
+      }
+      
+    
+}
+
+/* Landscape screens */
+@media only screen and (orientation: landscape) and (max-width: 992px){
+    .team-row{
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: var(--margin-sec-v);
+      }
+    
+      .team-row-reverse{
+        flex-direction: row-reverse;
+      }
+      .team-row-header{
+        width: 50%;
+      }
+      .team-row-body{
+        width: 50%;
+      }
+    
+      .team-row-body img{
+        left: 0;
+        bottom: -50%;
+        max-width: 200px;
+      }
+
+      .team-footer-cta{
+        width: 50%;
+      }
 }
