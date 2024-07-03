@@ -49,7 +49,6 @@
   }
   
   .about-hero-header {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,6 +83,7 @@
 
   .about-hero-btns{
     width: 95%;
+    pointer-events: auto;
   }
   .about-hero-cta-btn{
     width: 100%;
@@ -109,6 +109,7 @@
   overflow: hidden; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  pointer-events: auto;
 }
 
 /* Modal Content */
